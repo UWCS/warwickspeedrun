@@ -5,6 +5,13 @@ Started in 2016, WASD (Warwick's Awesome Speedruns and Demos) is a 2-day speedru
 
 Donations to the event are in support of [SpecialEffect](https://specialeffect.org.uk/), a wonderful UK-based charity whose mission is to put fun and inclusion back into the lives of people with physical disabilities, by helping them to play video games. They do this by using and developing a range of accessibility hardware and software, from modified joypads to eye-gaze technology. The WASD events to date have raised over £5,000 for SpecialEffect!
 
+</div>
+
+</div>
+
+<div markdown="1" class="column is-6">
+<div markdown="1" class="content">
+
 <h4 class="title is-size-4">When</h4>
 
 WASD 2021 begins at **12PM UTC** on **13th February 2021**.
@@ -12,13 +19,6 @@ WASD 2021 begins at **12PM UTC** on **13th February 2021**.
 <h4 class="title is-size-4">Where</h4>
 
 Due to the ongoing coronavirus pandemic, **WASD 2021 will be held fully remotely**. WASD 2021 will be **streamed live on Twitch** on the [Warwick's Awesome Speedruns and Demos](https://twitch.tv/warwickspeedrun) Twitch channel.
-
-</div>
-
-</div>
-
-<div markdown="1" class="column is-6">
-<div markdown="1" class="content">
 
 <h4 class="title is-size-4">Who</h4>
 
