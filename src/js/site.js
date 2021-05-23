@@ -4,7 +4,7 @@ function easing(t) {
 };
 
 /** Countdown timer **/
-const countDownDate = new Date("2021-02-13T10:00:00Z").getTime();
+const countDownDate = new Date("2021-08-14T12:00:00Z").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
@@ -28,7 +28,7 @@ const x = setInterval(function () {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "WASD2021 is now <strong><a href=\"https://twitch.tv/warwickspeedrun\">live on Twitch</a></strong>!"
+        document.getElementById("countdown").innerHTML = "WASD Summer is now <strong><a href=\"https://twitch.tv/warwickspeedrun\">live on Twitch</a></strong>!"
     }
 }, 1000);
 
