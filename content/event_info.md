@@ -14,11 +14,11 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 
 <h4 class="title is-size-4">When</h4>
 
-WASD Summer begins at **12PM UTC** on **14th August 2021**.
+WASD Summer 2021 begins at **12PM UTC** on **14th August 2021**.
 
 <h4 class="title is-size-4">Where</h4>
 
-WASD Summer will be held entirely remotely and streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).
+WASD Summer 2021 will be held entirely remotely and streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).
 
 <h4 class="title is-size-4">Who</h4>
 
