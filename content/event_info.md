@@ -22,7 +22,7 @@ WASD Summer 2021 will be held entirely remotely and streamed live on the WASD [T
 
 <h4 class="title is-size-4">Who</h4>
 
-WASD is run by a committee of students and alumni of the University of Warwick, with support from the University of Warwick Computing Society and Warwick Esports. You can get in contact with the organisers by [email](mailto:wasd@warwick.gg) or on [Discord](https://wasd.warwick.gg/discord).
+WASD is run by a committee of students and alumni of the University of Warwick, with support from the University of Warwick Computing Society and Warwick Esports. You can get in contact with the organisers by [email](mailto:wasd@warwick.gg) or on [Discord](https://warwickspeed.run/discord).
 
 </div>
 

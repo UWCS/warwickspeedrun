@@ -30,6 +30,6 @@ with open(os.path.join("index.html"), mode="w") as out_file:
     content = jinja_template.render(**rendered_content)
     # Remove development mode content from the template
     if not dev_flag:
-        content = content.replace('http://localhost:8080', 'https://wasd.warwick.gg')
+        content = content.replace('http://localhost:8080', 'https://warwickspeed.run')
 
     out_file.write(content)
