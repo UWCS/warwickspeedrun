@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description"
-        content="A student-led speedrunning marathon in the UK supporting SpecialEffect starting mid-February 2021."/>
+        content="A student-led speedrunning marathon in the UK supporting SpecialEffect."/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#8338EC"/>
 
-  <title>Warwick's Awesome Speedruns and Demos Summer 2021</title>
+  <title>Warwick's Awesome Speedruns and Demos 2022</title>
 
   <!-- IE10 Tile -->
   <meta name="msapplication-TileColor" content="#8338EC">
   <meta name="msapplication-TileImage" content="http://localhost:8080/dist/favicon-144.png"
 
   <!-- IE11 Tile -->
-  <meta name="application-name" content="WASD2021 Website">
-  <meta name="msapplication-tooltip" content="Warwick's Awesome Speedruns and Demos Summer 2021 website">
+  <meta name="application-name" content="WASD2022 Website">
+  <meta name="msapplication-tooltip" content="Warwick's Awesome Speedruns and Demos {{ event_year }} website">
   <meta name="msapplication-config" content="http://localhost:8080/dist/ieconfig.xml">
 
   <!-- Apple touch icons -->
@@ -43,11 +43,11 @@
   <meta property="og:image" content="http://localhost:8080/dist/img/og-avatar.png">
   <meta property="og:image:width" content="400px">
   <meta property="og:image:height" content="400px">
-  <meta property="og:title" content="Warwick's Awesome Speedruns and Demos Summer 2021">
+  <meta property="og:title" content="Warwick's Awesome Speedruns and Demos {{ event_year }}">
   <meta property="og:type" content="website">
   <meta property="og:determiner" content="">
   <meta property="og:description"
-        content="A student-led speedrunning marathon in the UK supporting SpecialEffect starting 14th August 2021.">
+        content="A student-led speedrunning marathon in the UK supporting SpecialEffect.">
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://warwickspeed.run">
 <body>
@@ -86,8 +86,9 @@
         <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
                                                                        href="https://specialeffect.org.uk">SpecialEffect</a>.
         </p>
-        <p id="countdown"><strong>WASD Summer</strong> starts on <strong>14th August 2021</strong> in <strong id="days">93 days</strong>, <strong id="hours">15
-          hours</strong> and <strong id="mins">23 minutes</strong></p>
+        <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
+        <a target="_blank" href="{{ signup_link }}" class="button is-wasd">Sign up</a>
+        <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
       </div>
     </div>
   </div>
@@ -165,16 +166,16 @@
   <div class="container">
     <h1 class="title is-size-2">What's On</h1>
     <hr class="title-divider"/>
-    <div class="content">
-      <p>Due to the ongoing situation, we can't ensure upcoming events will be run in-person. Our next event, WASD Summer 2021, will be entirely remote. We hope to be able to run the next WASD event in person!</p>
-    </div>
     <div class="whats-on-wrapper">
       {{ whats_on }}
     </div>
     <div class="columns" id="signupBottom">
       <div class="column is-8 is-offset-2">
         <div class="content has-text-centered">
-          <p>Signups for WASD2021 have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p>
+          <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
+          <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd">Sign up</a>
+          <!--<p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>-->
+          <!-- <p>Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
         </div>
       </div>
     </div>
@@ -200,7 +201,7 @@
         </div>
         <div class="column">
           <div class="content has-text-centered">
-            <p>Copyright © University of Warwick Computing Society. Website built by <a target="_blank"
+            <p>Copyright &copy; University of Warwick Computing Society. Website built by <a target="_blank"
                                                                                         href="https://github.com/davidjrichardson">David
               Richardson</a>.</p>
           </div>
