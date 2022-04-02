@@ -1,3 +1,3 @@
-Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its fifth year, it's the largest student-run speedrunning event in the UK. Our next event is WASD Summer 2021, which will take place on the 14th and 15th of August 2021.
+Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its sixth year, it's the largest student-run speedrunning event in the UK. Our next event is WASD {{ event_year }}, which will take place on the {{ event_date_range }}.
 
 The event raises money for SpecialEffect, a charity which develops and provides assistive technology to help people with disabilities to play games.

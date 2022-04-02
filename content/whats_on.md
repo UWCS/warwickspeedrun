@@ -1,9 +1,11 @@
 <div class="content" markdown="1">
 
-#### Weekend-Long Speedruning Stream
+Unlike last year, WASD 2022 will be held in-person, so come along and support the runners!
+
+#### Weekend-Long Speedrunning Stream
 ![A wide-angle shot of the event](http://localhost:8080/dist/img/speedrunning.jpg)
 
-Two days of speedrunning in aid of [SpecialEffect](https://specialeffect.org) streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun). Come and say hi in the chat!
+Two days of speedrunning in aid of [SpecialEffect](https://specialeffect.org) live on Warwick campus and streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun). Come and say hi!
 </div>
 
 <div class="content" markdown="1">
