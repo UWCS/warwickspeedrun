@@ -33,7 +33,7 @@ rendered_content["event_year"] = "2022"  # e.g. "2022" or "Summer 2021"
 rendered_content["event_start_date"] = "18th June 2022"
 rendered_content["event_date_range"] = "18-20th June 2022"
 rendered_content["signup_link"] = "https://oengus.io/marathon/wasd-2022"
-rendered_content["money_raised"] = "&#163;5,000"
+rendered_content["money_raised"] = "&#163;6,000"
 
 if os.path.exists("build"): shutil.rmtree("build")
 os.makedirs("build")
