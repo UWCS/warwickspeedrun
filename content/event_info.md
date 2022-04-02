@@ -22,7 +22,7 @@ WASD {{ event_year }} will be held on campus, as well as streamed live on the WA
 
 <h4 class="title is-size-4">Who</h4>
 
-WASD is run by the University of Warwick Computing Society and Warwick Esports with support from a committee of students and alumni of the University of Warwick. You can get in contact with the organisers by [email](mailto:wasd@warwick.gg) or on [Discord](https://warwickspeed.run/discord).
+WASD is run by the University of Warwick Computing Society and Warwick Esports with support from a committee of students and alumni of the University of Warwick. You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](https://warwickspeed.run/discord).
 
 </div>
 
