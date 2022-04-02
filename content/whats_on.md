@@ -1,7 +1,5 @@
 <div class="content" markdown="1">
 
-Unlike last year, WASD 2022 will be held in-person, so come along and support the runners!
-
 #### Weekend-Long Speedrunning Stream
 ![A wide-angle shot of the event](http://localhost:8080/dist/img/speedrunning.jpg)
 
