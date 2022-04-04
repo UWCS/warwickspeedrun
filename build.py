@@ -22,8 +22,17 @@ for file_name in os.listdir("content"):
             rendered_content[file_name.strip(".md")] = content_html
 
 # SVG Asset injection
-rendered_content["wasd_keys_logo"] = open(os.path.join("src", "svg", "wasd-keys.svg"), "r").read()
-rendered_content["stopwatch_svg"] = open(os.path.join("src", "svg", "stopwatch.svg"), "r").read()
+def svg_inject(placeholder, filename, ext=".svg"):
+    if not filename.endswith(ext): filename += ext
+    rendered_content[placeholder] = open(os.path.join("src", "svg", filename), "r").read()
+
+svg_inject("wasd_keys_logo", "wasd-keys")
+svg_inject("stopwatch_svg", "stopwatch")
+svg_inject("uwcs_svg", "uwcs")
+svg_inject("uwcs_dots_svg", "uwcs-dots")
+svg_inject("esports_svg", "esports")
+svg_inject("esports_centre_svg", "esports-centre")
+svg_inject("su_svg", "su")
 
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
