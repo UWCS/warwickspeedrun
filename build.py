@@ -35,7 +35,9 @@ rendered_content["event_date_range"] = "18-20th June 2022"
 rendered_content["signup_link"] = "https://oengus.io/marathon/wasd-2022"
 rendered_content["money_raised"] = "&#163;6,000"
 
-if os.path.exists("build"): shutil.rmtree("build")
+path = os.path.join("build", "dist")
+if os.path.exists("build"): 
+    shutil.rmtree("build")
 os.makedirs("build")
 
 with open(os.path.join("build", "index.html"), mode="w") as out_file:
@@ -52,4 +54,4 @@ with open(os.path.join("build", "index.html"), mode="w") as out_file:
 
     out_file.write(content)
 
-shutil.copytree(os.path.join("src", "wasd-stylesheet", "dist"), os.path.join("build", "dist"))
+shutil.copytree("resources", os.path.join("build", "dist"))
