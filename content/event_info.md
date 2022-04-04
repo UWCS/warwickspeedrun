@@ -1,5 +1,5 @@
 <div markdown="1" class="column is-6">
-<div markdown="1" class="content">
+<div markdown="1" class="content backing">
 
 Started in 2016, Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning event held annually at the University of Warwick. It is the largest student-run speedrunning event in the UK. Past events have featured a diverse range of games, from Final Fantasy IX to Rise of the Tomb Raider, from Super Monkey Ball to Parasite Eve II. The next WASD event will run from {{ event_date_range }}.
 
@@ -10,7 +10,7 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 </div>
 
 <div markdown="1" class="column is-6">
-<div markdown="1" class="content">
+<div markdown="1" class="content backing">
 
 <h4 class="title is-size-4">When</h4>
 
