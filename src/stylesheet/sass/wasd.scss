@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+
+$family-sans-serif: 'Montserrat', Arial, sans-serif;
+
+$wasd-background: #FAFAFA;
+// $wasd-blue: #3C99FF;
+// $wasd-teal: #83FFCE;
+// $wasd-indigo: #8896ff;
+// $wasd-purple: rgb(146, 116, 255);
+// $wasd-light-blue: #57EDFF;
+
+// $wasd-violet: #8338EC;
+// $wasd-magenta: #FF006E;
+// $wasd-orange: #FB5607;
+
+$hero-gradient-end: #FF3000;
+$hero-gradient-start: #ff8800;
+$hero-gradient-tint: #FFBD9E;
+
+$hero-text: #f3eae1;
+$hero-divider: #ffd9ad;
+$hero-button: #ffddb6;
+
+$wasd-grad-1: #f8b22f;
+$wasd-grad-2: #fc9667;
+$wasd-grad-3: #ff8a6d;
+$wasd-grad-4: #fc582f;
+$wasd-grad-5: #ff5d5d;
+$wasd-grad-6: #ff7e6d;
+$wasd-grad-7: #ffaa71;
+$wasd-grad-8: #ffda34;
+$wasd-grad-9: #ffaf46;
+$wasd-grad-10: #fd8989;
+
+$where-grad-start: #ffbb00;
+$where-grad-end: #ce0e00;
+$where-text: $hero-text;
+
+$where-grad-1: #ffeb90;
+$where-grad-2: #ec806d;
+$where-grad-3: #ff966d;
+$where-grad-4: #ff6565;
+$where-grad-5: #ffb390;
+
+// Screen width overrides
+$mobile-width: 400px;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$body-background-color: $wasd-background;
+
+$navbar-background-colour: transparent;
+$navbar-item-hover-background-color: transparent;
+
+$primary: #FF3000;
+$secondary: #FFAF00;
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+@import "custom";
+
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/grid/tiles.sass";
+// @import "../node_modules/bulma/sass/components/level.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
