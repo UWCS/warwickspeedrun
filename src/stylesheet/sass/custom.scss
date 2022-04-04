@@ -8,9 +8,50 @@
     );
   
     color: $hero-text;
+    position: relative;
   
     & .hero-body {
       padding-top: 0;
+      
+      & .hero-bg, & .hero-bg svg {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        max-width: none;
+      }
+
+      & .hero-bg {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      & .hero-bg svg {
+        height: 100%;
+        width: auto;
+      }
+
+      & > .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+    }
+
+    & hr.hero-divider {
+      width: 250px;
+      height: 2px;
+  
+      margin-top: 0;
+  
+      background-color: $hero-divider;
+  
+      border-radius: 1px;
+      box-shadow: -3px 3px 0 #FF300088;
     }
   
     & strong,
@@ -22,6 +63,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-shadow: -1px 1px 0 #FF300088;
   
       & * {
         z-index: 5;
@@ -49,269 +91,8 @@
       }
     }
   
-    & .hero-streaks {
-      & * {
-        transform: rotate(188deg);
-  
-        border-radius: 49px;
-  
-        z-index: 1;
-      }
-  
-      & .pos-1 {
-        position: absolute;
-  
-        left: calc(50vw - 86px);
-        top: 268px;
-  
-        @media only screen and (min-width: $mobile-width) {
-          top: 256px;
-        }
-      }
-  
-      & .pos-2 {
-        position: absolute;
-  
-        left: calc(50vw - 736px);
-        top: 130px;
-      }
-  
-      & .pos-3 {
-        position: absolute;
-  
-        left: calc(50vw - 668px);
-        top: 96px;
-      }
-  
-      & .pos-4 {
-        position: absolute;
-  
-        left: calc(50vw - 837px);
-        top: 410px;
-      }
-  
-      & .pos-5 {
-        position: absolute;
-  
-        left: calc(50vw - 258px);
-        top: 363px;
-      }
-  
-      & .pos-6 {
-        position: absolute;
-  
-        left: calc(50vw - 232px);
-        top: 525px;
-  
-        @media only screen and (min-width: $mobile-width) {
-          top: 504px;
-        }
-      }
-  
-      & .pos-7 {
-        position: absolute;
-  
-        left: calc(50vw + 91px);
-        top: 452px;
-      }
-  
-      & .pos-8 {
-        position: absolute;
-  
-        left: calc(50vw + 71px);
-        top: 122px;
-      }
-  
-      & .pos-9 {
-        position: absolute;
-  
-        left: calc(50vw + 133px);
-        top: 165px;
-      }
-  
-      & .pos-10 {
-        position: absolute;
-  
-        left: calc(50vw + 317px);
-        top: 302px;
-      }
-  
-      & .pos-11 {
-        position: absolute;
-  
-        left: calc(50vw + 487px);
-        top: 356px;
-      }
-  
-      & .above {
-        z-index: 2;
-      }
-  
-      & .op-100 {
-        opacity: 1;
-      }
-  
-      & .op-83 {
-        opacity: 0.83;
-      }
-  
-      & .op-82 {
-        opacity: 0.82;
-      }
-  
-      & .op-79 {
-        opacity: 0.79;
-      }
-  
-      & .op-76 {
-        opacity: 0.76;
-      }
-  
-      & .op-74 {
-        opacity: 0.74;
-      }
-  
-      & .op-64 {
-        opacity: 0.64;
-      }
-  
-      & .op-61 {
-        opacity: 0.61;
-      }
-  
-      & .op-58 {
-        opacity: 0.58;
-      }
-  
-      & .grad-1 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-1, 0) 17%,
-          $wasd-grad-1
-        );
-      }
-  
-      & .grad-2 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-2, 0) 17%,
-          $wasd-grad-2
-        );
-      }
-  
-      & .grad-3 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-3, 0) 17%,
-          $wasd-grad-3
-        );
-      }
-  
-      & .grad-4 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-4, 0) 17%,
-          $wasd-grad-4
-        );
-      }
-  
-      & .grad-5 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-5, 0) 17%,
-          $wasd-grad-5
-        );
-      }
-  
-      & .grad-6 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-6, 0) 17%,
-          $wasd-grad-6
-        );
-      }
-  
-      & .grad-7 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-7, 0) 17%,
-          $wasd-grad-7
-        );
-      }
-  
-      & .grad-8 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-8, 0) 17%,
-          $wasd-grad-8
-        );
-      }
-  
-      & .grad-9 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-9, 0) 17%,
-          $wasd-grad-9
-        );
-      }
-  
-      & .grad-10 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($wasd-grad-10, 0) 17%,
-          $wasd-grad-10
-        );
-      }
-  
-      & .size-1 {
-        width: 536px;
-        height: 98px;
-      }
-  
-      & .size-2 {
-        width: 328px;
-        height: 60px;
-      }
-  
-      & .size-3 {
-        width: 294px;
-        height: 54px;
-      }
-  
-      & .size-4 {
-        width: 218px;
-        height: 40px;
-      }
-  
-      & .size-5 {
-        width: 122px;
-        height: 22px;
-      }
-  
-      & .size-6 {
-        width: 64px;
-        height: 12px;
-      }
-  
-      & .size-7 {
-        width: 272px;
-        height: 50px;
-      }
-    }
-  
-    & hr.hero-divider {
-      width: 250px;
-      height: 2px;
-  
-      margin-top: 0;
-  
-      background-color: $hero-divider;
-  
-      border-radius: 1px;
-    }
-  
     & svg#wasd-keys {
-      max-width: 326px;
+      width: 326px;
   
       & g.hero-text-fill {
         fill: $hero-text;
@@ -372,6 +153,12 @@
   }
   
   .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+
     & .navbar-menu {
       display: flex;
       flex-direction: row;
@@ -493,13 +280,6 @@
         filter: opacity(75%);
         transition: filter 0.2s ease-in-out;
   
-        // &.we {
-        //   filter: opacity(60%);
-        // }
-  
-        // &.uwcs {
-        //   filter: opacity(65%);
-        // }
       }
       & svg path {
         fill: #222222;
@@ -540,14 +320,35 @@
   .where-wrapper {
     position: relative;
   
-    & svg {
-      position: relative;
-      z-index: 999;
+    & .where-bg, & .where-bg svg {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      max-width: none;
+    }
+
+    & .where-bg {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    & .where-bg svg {
+      height: 100%;
+      width: auto;
     }
   
-    & #event-bottom-mask {
+    & #event-bottom-mask, & #event-top-mask {
       position: relative;
-      z-index: 999;
+      z-index: 10;
+    }
+
+    & #event-bottom-mask {
+      // position: absolute;
+      // bottom: 0;
+      margin-bottom: -7px;
     }
   
     background-image: linear-gradient(
@@ -555,142 +356,6 @@
       $where-grad-start -20%,
       $where-grad-end 70%
     );
-  
-    & .where-streaks {
-      position: absolute;
-      bottom: -121px;
-  
-      & * {
-        transform: rotate(188deg);
-  
-        border-radius: 49px;
-      }
-  
-      & .grad-1 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($where-grad-1, 0) 17%,
-          $where-grad-1
-        );
-      }
-  
-      & .grad-2 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($where-grad-2, 0) 17%,
-          $where-grad-2
-        );
-      }
-  
-      & .grad-3 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($where-grad-3, 0) 17%,
-          $where-grad-3
-        );
-      }
-  
-      & .grad-4 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($where-grad-4, 0) 17%,
-          $where-grad-4
-        );
-      }
-  
-      & .grad-5 {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($where-grad-5, 0) 17%,
-          $where-grad-5
-        );
-      }
-  
-      & .pos-1 {
-        position: absolute;
-  
-        left: calc(50vw - 640px);
-        top: -363px;
-      }
-  
-      & .pos-2 {
-        position: absolute;
-  
-        left: calc(50vw - 46px);
-        top: -215px;
-      }
-  
-      & .pos-3 {
-        position: absolute;
-  
-        left: calc(50vw + 257px);
-        top: -465px;
-      }
-  
-      & .pos-4 {
-        position: absolute;
-  
-        left: calc(50vw - 507px);
-        top: -283px;
-      }
-  
-      & .pos-5 {
-        position: absolute;
-  
-        left: calc(50vw - 101px);
-        top: -1264px;
-      }
-  
-      & .pos-6 {
-        position: absolute;
-        
-        left: calc(50vw - 452px);
-        top: -1198px;
-      }
-  
-      & .size-1 {
-        width: 596px;
-        height: 98px;
-      }
-  
-      & .size-2 {
-        width: 328px;
-        height: 60px;
-      }
-  
-      & .size-3 {
-        width: 294px;
-        height: 54px;
-      }
-  
-      & .size-4 {
-        width: 218px;
-        height: 40px;
-      }
-  
-      & .op-64 {
-        opacity: 0.64;
-      }
-  
-      & .op-34 {
-        opacity: 0.34;
-      }
-  
-      & .op-58 {
-        opacity: 0.58;
-      }
-      & .op-44 {
-        opacity: 0.44;
-      }
-    }
-  
-    & svg:last-child {
-      margin-bottom: -7px;
-    }
-  
-    & svg {
-      min-width: auto;
-    }
   
     & #where {
       min-height: 500px;

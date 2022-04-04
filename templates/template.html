@@ -12,7 +12,7 @@
 
   <!-- IE10 Tile -->
   <meta name="msapplication-TileColor" content="#FF3000">
-  <meta name="msapplication-TileImage" content="http://localhost:8080/dist/favicon-144.png"
+  <meta name="msapplication-TileImage" content="http://localhost:8080/dist/favicon-144.png">
 
   <!-- IE11 Tile -->
   <meta name="application-name" content="WASD2022 Website">
@@ -66,25 +66,14 @@
     </div>
   </nav>
   <div class="hero-body">
-    <div class="hero-streaks">
-      <div class="size-3 grad-1 op-100 pos-1"></div>
-      <div class="size-1 grad-6 op-79 pos-2"></div>
-      <div class="size-4 grad-7 op-74 pos-3 above"></div>
-      <div class="size-2 grad-4 op-58 pos-4"></div>
-      <div class="size-6 grad-8 op-74 pos-5"></div>
-      <div class="size-5 grad-9 op-76 pos-6"></div>
-      <div class="size-1 grad-3 op-64 pos-7 is-hidden-mobile"></div>
-      <div class="size-2 grad-3 op-61 pos-8 above is-hidden-mobile"></div>
-      <div class="size-5 grad-5 op-100 pos-9 is-hidden-mobile"></div>
-      <div class="size-7 grad-2 op-82 pos-10 is-hidden-mobile"></div>
-      <div class="size-5 grad-10 op-83 pos-11 is-hidden-mobile"></div>
+    <div class="hero-bg">
+      {{ capsule_bg_top }}
     </div>
     <div class="container">
       <div class="hero-items">
         {{ wasd_keys_logo }}
         <hr class="hero-divider"/>
-        <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
-                                                                       href="https://specialeffect.org.uk">SpecialEffect</a>.
+        <p>A student-led speedrunning marathon in the UK supporting <a target="_blank" href="https://specialeffect.org.uk">SpecialEffect</a>.
         </p>
         <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
         <a target="_blank" href="{{ signup_link }}" class="button is-wasd">Sign up</a>
@@ -136,17 +125,15 @@
   </div>
 </section>
 <div class="where-wrapper">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
+
+  <div class="where-bg">
+    {{ capsule_bg_where }}
+  </div>
+  <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
     <path fill="#FAFAFA" fill-rule="evenodd"
           d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z"/>
   </svg>
   <section id="where" class="section">
-    <div class="where-streaks">
-      <div class="size-1 grad-4 op-58 pos-1 is-hidden-mobile"></div>
-      <div class="size-2 grad-3 op-34 pos-2 is-hidden-mobile"></div>
-      <div class="size-4 grad-2 op-58 pos-3 is-hidden-mobile"></div>
-      <div class="size-3 grad-1 op-44 pos-4 is-hidden-mobile"></div>
-    </div>
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-12">
