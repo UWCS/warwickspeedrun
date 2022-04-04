@@ -1,0 +1,17 @@
+{
+  "name": "wasd-stylesheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/wasd.scss ../../resources/css/wasd.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.1"
+  }
+}

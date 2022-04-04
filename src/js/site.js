@@ -19,17 +19,13 @@ const x = setInterval(function () {
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-'<strong>WASD Summer</strong> starts on <strong>18th June 2022</strong> in <strong id="days">76 days</strong>, <strong id="hours">22 hours</strong> and <strong id="mins">53 minutes</strong>'
     // Display the result in the countdown
     let daysText = days + (days === 1 ? " day" : " days");
     let hoursText = hours + (hours === 1 ? " hour" : " hours");
     let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
 
-    if (days < 7) {
-        document.getElementById("countdown").innerHTML = '<strong>WASD 2022</strong> starts on <strong>18th June 2022</strong> in <strong id="days">' + daysText + '</strong>, <strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>';
-    } else {
-        document.getElementById("countdown").innerHTML = '<strong>WASD 2022</strong> starts on <strong>18th June 2022</strong> in <strong id="days">' + daysText + '</strong>.';
-    }
+    document.getElementById("countdown").innerHTML = '<strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong> in <strong id="days">' + daysText + '</strong>' + (
+        days >= 7 ? '.' : ', <strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
 
     // If the count down is finished, write some text
     if (distance < 0) {
