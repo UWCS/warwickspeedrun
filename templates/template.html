@@ -67,15 +67,16 @@
   </nav>
   <div class="hero-body">
     <div class="hero-bg">
-      {{ capsule_bg_top }}
+      <img src="http://localhost:8080/dist/img/top-bg.png" />
     </div>
     <div class="container">
       <div class="hero-items">
         {{ wasd_keys_logo }}
-        <hr class="hero-divider"/>
+        <div class="backing">
         <p>A student-led speedrunning marathon in the UK supporting <a target="_blank" href="https://specialeffect.org.uk">SpecialEffect</a>.
         </p>
         <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
+        </div>
         <a target="_blank" href="{{ signup_link }}" class="button is-wasd">Sign up</a>
         <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
       </div>
@@ -127,7 +128,7 @@
 <div class="where-wrapper">
 
   <div class="where-bg">
-    {{ capsule_bg_where }}
+    <img src="http://localhost:8080/dist/img/where-bg.png" />
   </div>
   <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
     <path fill="#FAFAFA" fill-rule="evenodd"

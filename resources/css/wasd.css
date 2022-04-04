@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i");
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name {
@@ -82,13 +82,41 @@
   right: 0;
   top: 0; }
 
+.container .button, a.navbar-item {
+  color: #FF3000;
+  position: relative;
+  top: 0px;
+  padding: 10px 25px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  color: #FF3000;
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 #FF300088;
+  font-weight: 500;
+  text-decoration: none;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.2s ease-in-out; }
+  .container .button:hover, .container .button:focus, a.navbar-item:hover, a.navbar-item:focus {
+    box-shadow: -5px 8px 0 #FF300088;
+    top: -3px; }
+
+.backing {
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 60px;
+  box-shadow: -5px 5px 0 #FF300088;
+  font-weight: 500; }
+
+.where-wrapper .backing {
+  border-radius: 40px;
+  padding: 20px; }
+
 .hero.wasd-gradient {
   background-image: linear-gradient(5deg, #FF3000 5%, #ff8800 70%);
-  color: #f3eae1;
+  color: #ff3000;
   position: relative; }
   .hero.wasd-gradient .hero-body {
     padding-top: 0; }
-    .hero.wasd-gradient .hero-body .hero-bg, .hero.wasd-gradient .hero-body .hero-bg svg {
+    .hero.wasd-gradient .hero-body .hero-bg, .hero.wasd-gradient .hero-body .hero-bg img {
       position: absolute;
       top: 0;
       margin: 0;
@@ -99,7 +127,7 @@
       left: 0;
       display: flex;
       justify-content: center; }
-    .hero.wasd-gradient .hero-body .hero-bg svg {
+    .hero.wasd-gradient .hero-body .hero-bg img {
       height: 100%;
       width: auto; }
     .hero.wasd-gradient .hero-body > .container {
@@ -113,16 +141,15 @@
     height: 2px;
     margin-top: 0;
     background-color: #ffd9ad;
-    border-radius: 1px;
-    box-shadow: -3px 3px 0 #FF300088; }
+    border-radius: 1px; }
   .hero.wasd-gradient strong,
   .hero.wasd-gradient a {
-    color: #f3eae1; }
+    color: #ff3000; }
   .hero.wasd-gradient .hero-items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: -1px 1px 0 #FF300088; }
+    text-shadow: -2px 2px 2 #FF3000; }
     .hero.wasd-gradient .hero-items * {
       z-index: 5; }
     .hero.wasd-gradient .hero-items *:not(:last-child) {
@@ -134,11 +161,11 @@
       .hero.wasd-gradient .hero-items p a {
         text-decoration: underline; }
         .hero.wasd-gradient .hero-items p a:hover, .hero.wasd-gradient .hero-items p a:focus {
-          color: white; }
+          color: #cc2600; }
   .hero.wasd-gradient svg#wasd-keys {
     width: 326px; }
     .hero.wasd-gradient svg#wasd-keys g.hero-text-fill {
-      fill: #f3eae1; }
+      fill: #ff3000; }
   .hero.wasd-gradient svg#hero-wave-mask {
     min-width: auto;
     margin-bottom: -1px;
@@ -153,23 +180,7 @@ hr.title-divider {
   max-width: 200px;
   height: 2px;
   border-radius: 1px;
-  background-color: rgba(255, 175, 0, 0.8); }
-
-.button.is-wasd.is-wasd.is-wasd {
-  position: relative;
-  top: 0px;
-  transition: top 0.1s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  background-color: #fff2e4;
-  color: #FF3000;
-  border: 0px solid transparent;
-  text-decoration: none;
-  box-shadow: 0 2px 4px rgba(230, 43, 0, 0.3);
-  border-radius: 6px;
-  margin-bottom: 5px; }
-  .button.is-wasd.is-wasd.is-wasd:hover, .button.is-wasd.is-wasd.is-wasd:focus {
-    top: -1px;
-    box-shadow: 0 3px 6px rgba(230, 43, 0, 0.5);
-    background-color: white; }
+  background-color: #fff; }
 
 .navbar {
   position: absolute;
@@ -205,19 +216,6 @@ hr.title-divider {
         .navbar .navbar-menu .navbar-end {
           flex-grow: 0;
           height: auto; } }
-    .navbar .navbar-menu a.navbar-item {
-      text-decoration: none;
-      color: #f3eae1;
-      padding: 7px 10px;
-      border-radius: 6px;
-      box-shadow: 0 0 0 transparent;
-      transition: background-color 0.1s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
-      .navbar .navbar-menu a.navbar-item:not(:last-child) {
-        margin-right: 1rem; }
-      .navbar .navbar-menu a.navbar-item:hover, .navbar .navbar-menu a.navbar-item:focus {
-        background-color: #f3eae1;
-        color: #FF3000;
-        box-shadow: 0 2px 4px rgba(179, 34, 0, 0.3); }
 
 :root {
   --stopwatch-rotation: 0deg; }
@@ -282,7 +280,7 @@ svg .background-fill {
 .where-wrapper {
   position: relative;
   background-image: linear-gradient(175deg, #ffbb00 -20%, #ce0e00 70%); }
-  .where-wrapper .where-bg, .where-wrapper .where-bg svg {
+  .where-wrapper .where-bg, .where-wrapper .where-bg img {
     position: absolute;
     top: 0;
     margin: 0;
@@ -293,7 +291,7 @@ svg .background-fill {
     left: 0;
     display: flex;
     justify-content: center; }
-  .where-wrapper .where-bg svg {
+  .where-wrapper .where-bg img {
     height: 100%;
     width: auto; }
   .where-wrapper #event-bottom-mask, .where-wrapper #event-top-mask {
@@ -305,19 +303,19 @@ svg .background-fill {
     min-height: 500px;
     position: relative; }
     .where-wrapper #where hr.title-divider {
-      background-color: rgba(243, 234, 225, 0.7);
+      background-color: #fff;
       margin-bottom: 0; }
   .where-wrapper .title {
-    color: #f3eae1; }
+    color: #fff; }
   .where-wrapper .content p,
   .where-wrapper .content a,
   .where-wrapper .content h4,
   .where-wrapper .content strong {
-    color: #f3eae1; }
+    color: #ff3000; }
   .where-wrapper .content a {
     text-decoration: underline; }
     .where-wrapper .content a:hover, .where-wrapper .content a:focus {
-      color: white; }
+      color: #cc2600; }
   .where-wrapper .content h4:not(:first-child) {
     margin-top: 1.2em; }
   .where-wrapper .content iframe {
@@ -354,17 +352,6 @@ svg .background-fill {
 
 #whats-on .whats-on-row {
   margin-bottom: 1.5rem; }
-
-#whats-on .button.is-wasd.is-wasd.is-wasd {
-  background-color: #ce0e00;
-  color: white;
-  box-shadow: 0 2px 4px rgba(206, 14, 0, 0.2);
-  border-radius: 6px;
-  margin-bottom: 5px; }
-  #whats-on .button.is-wasd.is-wasd.is-wasd:hover, #whats-on .button.is-wasd.is-wasd.is-wasd:focus {
-    top: -1px;
-    box-shadow: 0 3px 6px rgba(206, 14, 0, 0.25);
-    background-color: #e81000; }
 
 #signupBottom {
   margin-top: 2em; }
