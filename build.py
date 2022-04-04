@@ -33,6 +33,8 @@ svg_inject("uwcs_dots_svg", "uwcs-dots")
 svg_inject("esports_svg", "esports")
 svg_inject("esports_centre_svg", "esports-centre")
 svg_inject("su_svg", "su")
+svg_inject("capsule_bg_top", "capsule-bg-top")
+svg_inject("capsule_bg_where", "capsule-bg-where")
 
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
