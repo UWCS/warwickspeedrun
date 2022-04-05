@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name {
@@ -83,13 +83,12 @@
   top: 0; }
 
 .container .button, a.navbar-item {
-  color: #FF3000;
   position: relative;
   top: 0px;
   padding: 10px 25px;
   margin-bottom: 5px;
   background-color: #fff;
-  color: #FF3000;
+  color: #A81F00;
   border-radius: 50px;
   box-shadow: -5px 5px 0 #FF300088;
   font-weight: 500;
@@ -112,7 +111,7 @@
 
 .hero.wasd-gradient {
   background-image: linear-gradient(5deg, #FF3000 5%, #ff8800 70%);
-  color: #ff3000;
+  color: #A81F00;
   position: relative; }
   .hero.wasd-gradient .hero-body {
     padding-top: 0; }
@@ -126,9 +125,10 @@
       height: 100%;
       left: 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      overflow: hidden; }
     .hero.wasd-gradient .hero-body .hero-bg img {
-      height: 100%;
+      height: 125%;
       width: auto; }
     .hero.wasd-gradient .hero-body > .container {
       display: flex;
@@ -144,12 +144,11 @@
     border-radius: 1px; }
   .hero.wasd-gradient strong,
   .hero.wasd-gradient a {
-    color: #ff3000; }
+    color: #A81F00; }
   .hero.wasd-gradient .hero-items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-shadow: -2px 2px 2 #FF3000; }
+    align-items: center; }
     .hero.wasd-gradient .hero-items * {
       z-index: 5; }
     .hero.wasd-gradient .hero-items *:not(:last-child) {
@@ -163,9 +162,10 @@
         .hero.wasd-gradient .hero-items p a:hover, .hero.wasd-gradient .hero-items p a:focus {
           color: #cc2600; }
   .hero.wasd-gradient svg#wasd-keys {
+    padding-top: 50px;
     width: 326px; }
     .hero.wasd-gradient svg#wasd-keys g.hero-text-fill {
-      fill: #ff3000; }
+      fill: #A81F00; }
   .hero.wasd-gradient svg#hero-wave-mask {
     min-width: auto;
     margin-bottom: -1px;
@@ -311,7 +311,7 @@ svg .background-fill {
   .where-wrapper .content a,
   .where-wrapper .content h4,
   .where-wrapper .content strong {
-    color: #ff3000; }
+    color: #A81F00; }
   .where-wrapper .content a {
     text-decoration: underline; }
     .where-wrapper .content a:hover, .where-wrapper .content a:focus {
