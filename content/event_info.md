@@ -12,15 +12,15 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 <div markdown="1" class="column is-6">
 <div markdown="1" class="content backing">
 
-<h4 class="title is-size-4">When</h4>
+<h4 class="title is-size-4">When?</h4>
 
 WASD {{ event_year }} begins on **{{ event_start_date }}**.
 
-<h4 class="title is-size-4">Where</h4>
+<h4 class="title is-size-4">Where?</h4>
 
 WASD {{ event_year }} will be held on campus, as well as streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).
 
-<h4 class="title is-size-4">Who</h4>
+<h4 class="title is-size-4">Who?</h4>
 
 WASD is run by the University of Warwick Computing Society and Warwick Esports with support from a committee of students and alumni of the University of Warwick. You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](https://warwickspeed.run/discord).
 
