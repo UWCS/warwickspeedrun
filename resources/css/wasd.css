@@ -184,7 +184,7 @@ hr.title-divider {
 
 .navbar {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   z-index: 5; }
@@ -305,6 +305,10 @@ svg .background-fill {
     .where-wrapper #where hr.title-divider {
       background-color: #fff;
       margin-bottom: 0; }
+    .where-wrapper #where .columns {
+      align-items: stretch; }
+      .where-wrapper #where .columns .content {
+        height: 100%; }
   .where-wrapper .title {
     color: #fff; }
   .where-wrapper .content p,

@@ -160,7 +160,7 @@
   
   .navbar {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     z-index: 5;
@@ -371,6 +371,14 @@
         background-color: #fff;
   
         margin-bottom: 0;
+      }
+
+      & .columns {
+        align-items: stretch;
+
+        & .content {
+          height: 100%;
+        }
       }
     }
   

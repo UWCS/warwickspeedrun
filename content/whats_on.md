@@ -1,6 +1,6 @@
 <div class="content" markdown="1">
 
-#### Weekend-Long Speedrunning Stream
+#### Weekend-Long Stream
 ![A wide-angle shot of the event](http://localhost:8080/dist/img/speedrunning.jpg)
 
 Two days of speedrunning in aid of [SpecialEffect](https://specialeffect.org) live on Warwick campus and streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun). Come and say hi!
