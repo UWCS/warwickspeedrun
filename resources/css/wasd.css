@@ -100,7 +100,7 @@
 
 .backing {
   background: #fff;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border-radius: 60px;
   box-shadow: -5px 5px 0 #FF300088;
   font-weight: 500; }
@@ -108,6 +108,31 @@
 .where-wrapper .backing {
   border-radius: 40px;
   padding: 20px; }
+
+.countdown-box {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -170px;
+  margin-bottom: 50px;
+  font-size: 1.2em;
+  text-align: center; }
+  .countdown-box .backing {
+    margin-bottom: 20px; }
+  .countdown-box p {
+    text-align: center; }
+
+#about {
+  position: relative;
+  z-index: 20; }
+
+section strong,
+section a {
+  color: #A81F00; }
+
+section a {
+  text-decoration: underline; }
+  section a:hover, section a:focus {
+    color: #cc2600; }
 
 .hero.wasd-gradient {
   background-image: linear-gradient(5deg, #FF3000 5%, #ff8800 70%);
@@ -142,9 +167,6 @@
     margin-top: 0;
     background-color: #ffd9ad;
     border-radius: 1px; }
-  .hero.wasd-gradient strong,
-  .hero.wasd-gradient a {
-    color: #A81F00; }
   .hero.wasd-gradient .hero-items {
     display: flex;
     flex-direction: column;
@@ -157,16 +179,15 @@
       margin-top: 20px; }
     .hero.wasd-gradient .hero-items p {
       text-align: center; }
-      .hero.wasd-gradient .hero-items p a {
-        text-decoration: underline; }
-        .hero.wasd-gradient .hero-items p a:hover, .hero.wasd-gradient .hero-items p a:focus {
-          color: #cc2600; }
   .hero.wasd-gradient svg#wasd-keys {
-    padding-top: 50px;
-    width: 326px; }
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 400px; }
     .hero.wasd-gradient svg#wasd-keys g.hero-text-fill {
       fill: #A81F00; }
   .hero.wasd-gradient svg#hero-wave-mask {
+    position: absolute;
+    bottom: 0;
     min-width: auto;
     margin-bottom: -1px;
     z-index: 10; }
