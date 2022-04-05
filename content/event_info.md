@@ -1,5 +1,5 @@
 <div markdown="1" class="column is-6">
-<div markdown="1" class="content">
+<div markdown="1" class="content backing">
 
 Started in 2016, Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning event held annually at the University of Warwick. It is the largest student-run speedrunning event in the UK. Past events have featured a diverse range of games, from Final Fantasy IX to Rise of the Tomb Raider, from Super Monkey Ball to Parasite Eve II. The next WASD event will run from {{ event_date_range }}.
 
@@ -10,19 +10,19 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 </div>
 
 <div markdown="1" class="column is-6">
-<div markdown="1" class="content">
+<div markdown="1" class="content backing">
 
-<h4 class="title is-size-4">When</h4>
+<h4 class="title is-size-4">When?</h4>
 
 WASD {{ event_year }} begins on **{{ event_start_date }}**.
 
-<h4 class="title is-size-4">Where</h4>
+<h4 class="title is-size-4">Where?</h4>
 
 WASD {{ event_year }} will be held on campus, as well as streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).
 
-<h4 class="title is-size-4">Who</h4>
+<h4 class="title is-size-4">Who?</h4>
 
-WASD is run by the University of Warwick Computing Society and Warwick Esports with support from a committee of students and alumni of the University of Warwick. You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](https://warwickspeed.run/discord).
+WASD is run by the University of [Warwick Computing Society](https://uwcs.co.uk) and [Warwick Esports](https://warwickesports.com/) with support from a committee of students and alumni of the University of Warwick. You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](https://warwickspeed.run/discord).
 
 </div>
 
