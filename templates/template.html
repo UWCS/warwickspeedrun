@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-        content="A student-led speedrunning marathon in the UK supporting SpecialEffect."/>
+  <meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#FF7400"/>
+  <meta name="theme-color" content="#FF7400" />
 
   <title>Warwick's Awesome Speedruns and Demos 2022</title>
 
@@ -37,7 +37,7 @@
 
   <link rel="stylesheet" href="http://localhost:8080/dist/css/wasd.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="cannonical" href="https://warwickspeed.run">
 
   <meta property="og:image" content="http://localhost:8080/dist/img/og-avatar.png">
@@ -46,12 +46,11 @@
   <meta property="og:title" content="Warwick's Awesome Speedruns and Demos {{ event_year }}">
   <meta property="og:type" content="website">
   <meta property="og:determiner" content="">
-  <meta property="og:description"
-        content="A student-led speedrunning marathon in the UK supporting SpecialEffect.">
+  <meta property="og:description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect.">
   <meta property="og:locale" content="en_GB">
   <meta property="og:url" content="https://warwickspeed.run">
+
 <body>
-<section class="hero wasd-gradient">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-menu">
@@ -61,144 +60,156 @@
       </div>
     </div>
   </nav>
-  <div class="hero-body">
-    <div class="hero-bg">
-      <img src="http://localhost:8080/dist/img/top-bg.png" />
-    </div>
-    <div class="container">
-      <div class="hero-items">
-        {{ wasd_keys_logo }}
+  <section class="hero wasd-gradient">
+    <div class="hero-body">
+      <div class="hero-bg">
+        <img src="http://localhost:8080/dist/img/top-bg.png" />
       </div>
-    </div>
-  </div>
-  <svg id="hero-wave-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 142">
-    <g fill="none" fill-rule="evenodd">
-      <path class="wave-tint"
-            d="M0 142h1440V30.9999997c-168.30243 38.8000679-331.54474 59.2070567-489.726918 61.2209662C712.999813 95.2418302 501.330499 8.35625208 334.252643.97570722 222.867406-3.94465603 111.449858 12.4778854 0 50.2433316V142z"/>
-      <path class="wave-mask"
-            d="M0 142h1440.76408V41.7496602c-217.4358 50.4864131-406.47299 77.1638928-567.111578 80.0324388-240.957881 4.302819-367.332301-78.675841-534.410157-86.0563858C227.857108 30.8053499 114.776326 39.1241339 0 60.6820651V142z"/>
-    </g>
-  </svg>    
-</section>
-<section id="about" class="section">
-  <div class="container">
-    <div class="countdown-box">
-      <div class="backing">
-        <p>A student-led speedrunning marathon in the UK supporting <a target="_blank" href="https://specialeffect.org.uk">SpecialEffect</a>.
-        </p>
-        <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
-      </div>
-      <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
-      <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
-    </div>
-    <div class="columns">
-      <div class="column is-8">
-        <div class="content">
-          <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
-          <hr class="title-divider"/>
-          {{ intro }}
+      <div class="container">
+        <div class="hero-items">
+          {{ wasd_keys_logo }}
         </div>
       </div>
-      <div id="stopwatch-column" class="column is-4 is-flex-tablet is-hidden-mobile">
-        {{ stopwatch_svg }}
-      </div>
     </div>
-    <div class="logo-level">
-      <h4 class="title is-size-4">Partners</h4>
-      {{ partners_list }}
-    </div>
-    {% if sponsors_list %}
-    <div class="logo-level">
-      <h4 class="title is-size-4">Sponsors</h4>
-      {{ sponsors_list }}
-    </div>
-    {% endif %}
-    <div class="logo-level">
-      <h4 class="title is-size-4">Supporting</h4>
-      <div class="logos">
-        <a class="large" href="https://www.specialeffect.org.uk/">
-          <img src="http://localhost:8080/dist/img/specialeffect.png" alt="SpecialEffect"/>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="where-wrapper">
+    <svg id="hero-wave-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 142">
+      <g fill="none" fill-rule="evenodd">
+        <path class="wave-tint"
+          d="M0 142h1440V30.9999997c-168.30243 38.8000679-331.54474 59.2070567-489.726918 61.2209662C712.999813 95.2418302 501.330499 8.35625208 334.252643.97570722 222.867406-3.94465603 111.449858 12.4778854 0 50.2433316V142z" />
+        <path class="wave-mask"
+          d="M0 142h1440.76408V41.7496602c-217.4358 50.4864131-406.47299 77.1638928-567.111578 80.0324388-240.957881 4.302819-367.332301-78.675841-534.410157-86.0563858C227.857108 30.8053499 114.776326 39.1241339 0 60.6820651V142z" />
+      </g>
+    </svg>
+  </section>
 
-  <div class="where-bg">
-    <img src="http://localhost:8080/dist/img/where-bg.png" />
-  </div>
-  <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
-    <path fill="#FAFAFA" fill-rule="evenodd"
-          d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z"/>
-  </svg>
-  <section id="where" class="section">
+  <section id="about" class="section">
     <div class="container">
-      <div class="columns is-multiline">
-        <div class="column is-12">
-          <h1 class="title is-size-2">Event Info</h1>
-          <hr class="title-divider"/>
+      <div class="countdown-box">
+        <div class="backing">
+          <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
+              href="https://specialeffect.org.uk">SpecialEffect</a>.
+          </p>
+          <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
         </div>
-        {{ event_info }}
+        <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
+        <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
+      </div>
+      <div class="columns">
+        <div class="column is-8">
+          <div class="content">
+            <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
+            <hr class="title-divider" />
+            {{ intro }}
+          </div>
+        </div>
+        <div id="stopwatch-column" class="column is-4 is-flex-tablet is-hidden-mobile">
+          {{ stopwatch_svg }}
+        </div>
+      </div>
+      <div class="logo-level">
+        <h4 class="title is-size-4">Partners</h4>
+        {{ partners_list }}
+      </div>
+      {% if sponsors_list %}
+      <div class="logo-level">
+        <h4 class="title is-size-4">Sponsors</h4>
+        {{ sponsors_list }}
+      </div>
+      {% endif %}
+      <div class="logo-level">
+        <h4 class="title is-size-4">Supporting</h4>
+        <div class="logos">
+          <a href="https://www.specialeffect.org.uk/">
+            <img src="http://localhost:8080/dist/img/specialeffect.png" alt="SpecialEffect" />
+          </a>
+        </div>
       </div>
     </div>
   </section>
-  <svg id="event-bottom-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
-    <path fill="#FAFAFA" fill-rule="evenodd"
-          d="M0 .10914c87.12525 46.49599 178.68374 73.86863 274.67547 82.11792C418.66306 94.60099 740 24.0293 978 39.0293c220.661936 13.90727 302.943618 58.73527 430.1054273 76.35063 9.9914815 1.3841 21.26004 2.60018 31.8945727 3.62007v22H0V.10914z"/>
-  </svg>
-</div>
-<section id="whats-on" class="section">
-  <div class="container">
-    <h1 class="title is-size-2">What's On</h1>
-    <hr class="title-divider"/><div class="content">
-      <p>
-        Unlike last year, WASD 2022 will be held in-person, so come along and support the runners!</p>
+  <div class="event-wrapper">
+
+    <div class="event-bg">
+      <img src="http://localhost:8080/dist/img/event-bg.png" />
     </div>
-    <div class="whats-on-wrapper">
-      {{ whats_on }}
-    </div>
-    <div class="columns" id="signupBottom">
-      <div class="column is-8 is-offset-2">
-        <div class="content has-text-centered">
-          <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
-          <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd">Sign up</a>
-          <!--<p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>-->
-          <!-- <p>Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
+    <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
+      <path fill="#FAFAFA" fill-rule="evenodd"
+        d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z" />
+    </svg>
+
+    <section id="event" class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <h1 class="title is-size-2">Event Info</h1>
+            <hr class="title-divider" />
+          </div>
+          {{ event_info }}
         </div>
       </div>
-    </div>
+    </section>
+
+    <svg id="event-bottom-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
+      <path fill="#FAFAFA" fill-rule="evenodd"
+        d="M0 .10914c87.12525 46.49599 178.68374 73.86863 274.67547 82.11792C418.66306 94.60099 740 24.0293 978 39.0293c220.661936 13.90727 302.943618 58.73527 430.1054273 76.35063 9.9914815 1.3841 21.26004 2.60018 31.8945727 3.62007v22H0V.10914z" />
+    </svg>
   </div>
-</section>
-<footer class="footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 97">
-    <path fill="#FAFAFA" fill-rule="evenodd"
-          d="M1440.3432403 0H.343244l-.34324 16.74966c217.4358 50.48641 406.47299 77.16389 567.111578 80.03244 240.957881 4.30282 367.332301-78.67584 534.410157-86.05639 111.385237-4.92036 224.466019 3.39842 339.242345 24.95636L1440.3432403 0z"/>
-  </svg>
-  <div class="section">
+
+  <section id="whats-on" class="section">
     <div class="container">
-      <div class="columns">
-        <div class="column is-4 has-text-centered-mobile">
-          <h3 class="socials-title is-size-4 title">Socials</h4>
-            <ul class="socials">
-              <li><a target="_blank" href="https://warwickspeed.run/discord"><i class="fab fa-discord"></i></a></li>
-              <li><a target="_blank" href="https://twitter.com/warwickspeedrun"><i class="fab fa-twitter"></i></a></li>
-              <li><a target="_blank" href="https://twitch.tv/warwickspeedrun"><i class="fab fa-twitch"></i></a></li>
-              <li><a target="_blank" href="https://www.youtube.com/channel/UCrQLf-vqI47qzSWOeODR_6g"><i
-                  class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="column">
+      <h1 class="title is-size-2">What's On</h1>
+      <hr class="title-divider" />
+      <div class="content">
+        <p>
+          Unlike last year, WASD 2022 will be held in-person, so come along and support the runners!</p>
+      </div>
+      <div class="whats-on-wrapper">
+        {{ whats_on }}
+      </div>
+      <div class="columns" id="signupBottom">
+        <div class="column is-8 is-offset-2">
           <div class="content has-text-centered">
-            <p>Copyright &copy; <a target="_blank" href="https://uwcs.co.uk">University of Warwick Computing Society</a>.<br>Website built by <a target="_blank" href="https://github.com/davidjrichardson">David Richardson</a>; updated for 2022 by <a target="_blank" href="https://github.com/ericthelemur">Owen Connors</a>.</p>
+            <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
+            <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd">Sign up</a>
+            <!--<p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>-->
+            <!-- <p>Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-<script type="text/javascript">
-    {{ javascript }}
-</script>
+  </section>
+  <footer class="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 97">
+      <path fill="#FAFAFA" fill-rule="evenodd"
+        d="M1440.3432403 0H.343244l-.34324 16.74966c217.4358 50.48641 406.47299 77.16389 567.111578 80.03244 240.957881 4.30282 367.332301-78.67584 534.410157-86.05639 111.385237-4.92036 224.466019 3.39842 339.242345 24.95636L1440.3432403 0z" />
+    </svg>
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4 has-text-centered-mobile">
+            <h3 class="socials-title is-size-4 title">Socials</h4>
+              <ul class="socials">
+                <li><a target="_blank" href="https://warwickspeed.run/discord"><i class="fab fa-discord"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/warwickspeedrun"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a target="_blank" href="https://twitch.tv/warwickspeedrun"><i class="fab fa-twitch"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCrQLf-vqI47qzSWOeODR_6g"><i
+                      class="fab fa-youtube"></i></a></li>
+              </ul>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>Copyright &copy; <a target="_blank" href="https://uwcs.co.uk">University of Warwick Computing
+                  Society</a>.<br>Website built by <a target="_blank" href="https://github.com/davidjrichardson">David
+                  Richardson</a>; updated for 2022 by <a target="_blank" href="https://github.com/ericthelemur">Owen
+                  Connors</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    { { javascript; } }
+  </script>
 </body>
+
 </html>
