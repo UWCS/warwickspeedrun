@@ -23,6 +23,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      
+      height: 90vh;
+      min-height: 800px;
 
       & * {
         z-index: 5;
@@ -32,18 +36,14 @@
         margin-bottom: 20px;
       }
 
-      &:first-child {
-        margin-top: 20px;
-      }
-
       & p {
         text-align: center;
       }
 
       & svg#wasd-keys {
-        margin-top: 200px;
-        margin-bottom: 200px;
         height: 400px;
+        max-width: 100%;
+        margin: 100px 0;
 
         & g.hero-text-fill {
           fill: $hero-text;
@@ -78,11 +78,11 @@
   }
 }
 
-.countdown-box {
+.descriptor-box {
   width: fit-content;
   margin: 0 auto;
-  margin-top: -170px;
-  margin-bottom: 50px;
+  // margin-top: -170px;
+  // margin-bottom: 50px;
   font-size: 1.2em;
 
   & .backing {

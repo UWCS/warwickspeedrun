@@ -68,6 +68,16 @@
       <div class="container">
         <div class="hero-items">
           {{ wasd_keys_logo }}
+          <div class="descriptor-box">
+            <div class="backing">
+              <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
+                  href="https://specialeffect.org.uk">SpecialEffect</a>.
+              </p>
+              <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
+            </div>
+            <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
+            <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
+          </div>
         </div>
       </div>
     </div>
@@ -83,16 +93,7 @@
 
   <section id="about" class="section">
     <div class="container">
-      <div class="countdown-box">
-        <div class="backing">
-          <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
-              href="https://specialeffect.org.uk">SpecialEffect</a>.
-          </p>
-          <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
-        </div>
-        <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
-        <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
-      </div>
+      
       <div class="columns">
         <div class="column is-8">
           <div class="content">

@@ -4884,19 +4884,19 @@ a.navbar-item {
     .hero .hero-body .hero-items {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      min-height: 800px; }
       .hero .hero-body .hero-items * {
         z-index: 5; }
       .hero .hero-body .hero-items *:not(:last-child) {
         margin-bottom: 20px; }
-      .hero .hero-body .hero-items:first-child {
-        margin-top: 20px; }
       .hero .hero-body .hero-items p {
         text-align: center; }
       .hero .hero-body .hero-items svg#wasd-keys {
-        margin-top: 200px;
-        margin-bottom: 200px;
-        height: 400px; }
+        height: 400px;
+        max-width: 100%; }
         .hero .hero-body .hero-items svg#wasd-keys g.hero-text-fill {
           fill: #a81f00; }
     .hero .hero-body .hero-bg img {
@@ -4913,17 +4913,19 @@ a.navbar-item {
       fill: #ffbd9e;
       opacity: 0.43; }
 
-.countdown-box {
+.descriptor-box {
   width: fit-content;
   margin: 0 auto;
-  margin-top: -170px;
-  margin-bottom: 50px;
   font-size: 1.2em;
   text-align: center; }
-  .countdown-box .backing {
+  .descriptor-box .backing {
     margin-bottom: 20px; }
-  .countdown-box p {
+  .descriptor-box p {
     text-align: center; }
+
+#about .descriptor-box {
+  margin-top: -170px;
+  margin-bottom: 50px; }
 
 :root {
   --stopwatch-rotation: 0deg; }
