@@ -1,0 +1,73 @@
+.event-wrapper {
+  position: relative;
+
+  background-image: linear-gradient(
+    175deg,
+    $where-grad-start -20%,
+    $where-grad-end 70%
+  );
+
+  & .title {
+    color: #fff;
+  }
+
+  & .backing {
+    border-radius: 40px;
+    padding: 20px;
+  }
+
+  & .content {
+    & p,
+    & h4 {
+      color: $where-text;
+    }
+
+    & h4:not(:first-child) {
+      margin-top: 1.2em;
+    }
+
+    & iframe {
+      margin-top: 1.2em;
+      border-radius: $radius;
+      width: 100%;
+      height: 400px;
+
+      // box-shadow: 0 3px 6px rgba(darken($where-grad-end, 15%), 0.3);
+    }
+  }
+
+  & .event-bg {
+    @extend .feature-section;
+  }
+
+  & #event-bottom-mask,
+  & #event-top-mask {
+    position: relative;
+    z-index: 10;
+  }
+
+  & #event-bottom-mask {
+    margin-bottom: -7px;
+  }
+
+
+  & #event {
+    min-height: 500px;
+    position: relative;
+
+    & hr.title-divider {
+      background-color: #fff;
+
+      margin-bottom: 0;
+    }
+
+    & .columns {
+      align-items: stretch;
+
+      & .content {
+        height: 100%;
+      }
+    }
+  }
+
+}

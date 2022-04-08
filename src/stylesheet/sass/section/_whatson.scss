@@ -1,0 +1,39 @@
+.whats-on-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $block-spacing;
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  & .content {
+
+    & h4 {
+      text-align: center;
+
+      font-size: 1.5rem;
+    }
+
+    & p img {
+      border-radius: $radius;
+
+      box-shadow: 0 2px 4px rgba(black, 0.2);
+      width: calc(100% - 4em);
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 1em;
+    }
+  }
+
+  & #whats-on {
+    & hr.title-divider {
+      background-color: rgba($where-grad-end, 0.8);
+    }
+  
+    & .whats-on-row {
+      margin-bottom: $block-spacing;
+    }
+  }
+}
+

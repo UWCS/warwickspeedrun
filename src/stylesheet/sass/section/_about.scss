@@ -1,0 +1,87 @@
+:root {
+  --stopwatch-rotation: 0deg;
+}
+
+#about {
+  position: relative;
+  z-index: 20;
+
+  & #stopwatch-column {
+    & path#stopwatch-hand {
+      transform: rotate(var(--stopwatch-rotation));
+      transform-origin: 234.5px 161px;
+    }
+
+    & svg .primary-fill {
+      fill: $primary;
+    }
+
+    & svg .primary-stroke {
+      stroke: $primary;
+    }
+
+    & svg .secondary-stroke {
+      stroke: $secondary;
+    }
+
+    & svg .background-fill {
+      fill: $body-background-color;
+    }
+  }
+
+  // Partner Logos
+
+  & .logo-level {
+    margin-top: 40px;
+
+    & h4 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: hsl(0, 0%, 48%);
+    }
+
+    // Logo row
+    & .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: start;
+        gap: 0;
+      }
+
+      // Logo
+      & a {
+        max-height: 160px;
+        min-width: 25%;
+
+        display: flex;
+        justify-content: center;
+
+        & svg {
+          max-height: inherit;
+          height: 100px;
+          width: auto;
+
+          & path {
+            fill: #222222;
+          }
+        }
+
+        filter: opacity(75%);
+        transition: filter 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+          filter: opacity(100%);
+        }
+      }
+    }
+  }
+}

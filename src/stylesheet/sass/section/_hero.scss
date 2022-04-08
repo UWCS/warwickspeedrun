@@ -1,0 +1,96 @@
+.hero {
+  background-image: linear-gradient(
+    5deg,
+    $hero-gradient-end 5%,
+    $hero-gradient-start 70%
+  );
+
+  color: $hero-text;
+  position: relative;
+
+  & .hero-body {
+    padding-top: 0;
+
+    & .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    & .hero-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      height: 90vh;
+      min-height: 800px;
+
+      & * {
+        z-index: 5;
+      }
+
+      & *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      & p {
+        text-align: center;
+      }
+
+      & svg#wasd-keys {
+        height: 400px;
+        max-width: 100%;
+        margin: 100px 0;
+
+        & g.hero-text-fill {
+          fill: $hero-text;
+        }
+      }
+    }
+
+    & .hero-bg {
+      @extend .feature-section;
+
+      & img {
+        height: 125%;
+      }
+    }
+  }
+
+  & svg#hero-wave-mask {
+    position: absolute;
+    bottom: 0;
+    min-width: auto;
+    margin-bottom: -1px;
+    z-index: 10;
+
+    & path.wave-mask {
+      fill: $body-background-color;
+    }
+
+    & path.wave-tint {
+      fill: $hero-gradient-tint;
+      opacity: 0.43;
+    }
+  }
+}
+
+.descriptor-box {
+  width: fit-content;
+  margin: 0 auto;
+  // margin-top: -170px;
+  // margin-bottom: 50px;
+  font-size: 1.2em;
+
+  & .backing {
+    margin-bottom: 20px;
+  }
+
+  text-align: center;
+  & p {
+    text-align: center;
+  }
+}
