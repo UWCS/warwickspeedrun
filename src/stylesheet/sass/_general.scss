@@ -1,0 +1,71 @@
+section strong,
+section a {
+  color: $hero-text;
+}
+
+section a {
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken($hero-text, 10);
+  }
+}
+
+.backing {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 60px;
+  box-shadow: -5px 5px 0 #ff300088;
+  font-weight: 500;
+}
+
+// Button formatting
+.button,
+a.navbar-item {
+  padding: 10px 25px;
+  margin-bottom: 5px;
+
+  background-color: #fff;
+  color: $hero-text;
+
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 #ff300088;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out,
+    background-color 0.2s ease-in-out;
+
+  position: relative;
+  top: 0px;
+
+  &:hover,
+  &:focus {
+    color: darken($hero-text, 10);
+    box-shadow: -5px 8px 0 #ff300088;
+    top: -3px;
+  }
+}
+
+.feature-section {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &,
+  & img {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    max-width: none;
+  }
+
+  & img {
+    height: 100%;
+    width: auto;
+  }
+}
