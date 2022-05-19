@@ -32,7 +32,7 @@
         z-index: 5;
       }
 
-      & *:not(:last-child) {
+      & .backing > *:not(:last-child) {
         margin-bottom: 20px;
       }
 
@@ -41,9 +41,9 @@
       }
 
       & svg#wasd-keys {
-        height: 400px;
+        height: 350px;
         max-width: 100%;
-        margin: 100px 0;
+        margin: 100px 0 50px 0;
 
         & g.hero-text-fill {
           fill: $hero-text;
