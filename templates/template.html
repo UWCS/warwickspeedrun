@@ -73,7 +73,8 @@
               <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
                   href="https://specialeffect.org.uk">SpecialEffect</a>.
               </p>
-              <p id="countdown"><strong>WASD</strong> starts on <strong>{{ event_start_date }}</strong>.</p>
+              <!-- This section is edited by site.js -->
+              <p id="countdown"><strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>.<br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong></p>
             </div>
             <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
             <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->

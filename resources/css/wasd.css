@@ -4890,13 +4890,14 @@ a.navbar-item {
       min-height: 800px; }
       .hero .hero-body .hero-items * {
         z-index: 5; }
-      .hero .hero-body .hero-items *:not(:last-child) {
+      .hero .hero-body .hero-items .backing > *:not(:last-child) {
         margin-bottom: 20px; }
       .hero .hero-body .hero-items p {
         text-align: center; }
       .hero .hero-body .hero-items svg#wasd-keys {
-        height: 400px;
-        max-width: 100%; }
+        height: 350px;
+        max-width: 100%;
+        margin: 100px 0 50px 0; }
         .hero .hero-body .hero-items svg#wasd-keys g.hero-text-fill {
           fill: #a81f00; }
     .hero .hero-body .hero-bg img {
@@ -4922,10 +4923,6 @@ a.navbar-item {
     margin-bottom: 20px; }
   .descriptor-box p {
     text-align: center; }
-
-#about .descriptor-box {
-  margin-top: -170px;
-  margin-bottom: 50px; }
 
 :root {
   --stopwatch-rotation: 0deg; }

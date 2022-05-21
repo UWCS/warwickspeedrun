@@ -39,10 +39,10 @@ svg_inject("capsule_bg_event", "capsule-bg-event")
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
-
 rendered_content["event_year"] = "2022"  # e.g. "2022" or "Summer 2021"
 rendered_content["event_start_date"] = "18th June 2022"
-rendered_content["event_date_range"] = "18-20th June 2022"
+rendered_content["subs_close_date"] = "28th May"
+rendered_content["event_date_range"] = "18-19th June 2022"
 rendered_content["signup_link"] = "https://oengus.io/marathon/wasd-2022"
 rendered_content["money_raised"] = "&#163;6,000"
 

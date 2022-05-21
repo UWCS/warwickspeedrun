@@ -16,6 +16,8 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 
 WASD {{ event_year }} begins on **{{ event_start_date }}**.
 
+WASD submissions close on **{{ subs_close_date }}**.
+
 <h4 class="title is-size-4">Where?</h4>
 
 WASD {{ event_year }} will be held on campus, as well as streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).

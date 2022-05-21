@@ -4,6 +4,7 @@ function easing(t) {
 };
 
 /** Countdown timer **/
+const subCloseDate = new Date("2022-05-28T23:59:59Z").getTime();
 const countDownDate = new Date("2022-06-18T12:00:00Z").getTime();
 
 // Update the count down every 1 second
@@ -12,8 +13,9 @@ const x = setInterval(function () {
     // Get today's date and time
     const now = new Date().getTime();
 
+    let subOrEventDate = now <= subCloseDate
     // Find the distance between now and the count down date
-    const distance = countDownDate - now;
+    const distance = (subOrEventDate ? subCloseDate : countDownDate) - now;
 
     // Time calculations for days, hours, minutes and seconds
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -24,8 +26,10 @@ const x = setInterval(function () {
     let hoursText = hours + (hours === 1 ? " hour" : " hours");
     let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
 
-    document.getElementById("countdown").innerHTML = '<strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong> in <strong id="days">' + daysText + '</strong>' + (
-        days >= 7 ? '.' : ', <strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
+    let subText = subOrEventDate ? '<br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong> ' : ''
+
+    document.getElementById("countdown").innerHTML = '<strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>' + subText + ' in <strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
+        days >= 7 ? '.' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
 
     // If the count down is finished, write some text
     if (distance < 0) {
