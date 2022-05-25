@@ -37,6 +37,9 @@ svg_inject("su_svg", "su")
 svg_inject("capsule_bg_top", "capsule-bg-top")
 svg_inject("capsule_bg_event", "capsule-bg-event")
 
+for i in range(6):
+    svg_inject(f"howto{i}", os.path.join("howto", f"howto{i}"))
+
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
