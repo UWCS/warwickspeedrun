@@ -303,7 +303,6 @@
 <path d="M399.972 343.094V348.867H376.837V344.275L388.645 333.123C389.899 331.928 390.744 330.907 391.182 330.062C391.619 329.187 391.838 328.327 391.838 327.481C391.838 326.257 391.415 325.324 390.569 324.682C389.753 324.012 388.543 323.677 386.94 323.677C385.598 323.677 384.388 323.939 383.31 324.464C382.231 324.959 381.327 325.717 380.598 326.738L375.438 323.414C376.633 321.636 378.28 320.251 380.379 319.259C382.479 318.239 384.884 317.729 387.596 317.729C389.87 317.729 391.852 318.108 393.543 318.866C395.264 319.595 396.59 320.644 397.523 322.015C398.485 323.356 398.966 324.945 398.966 326.782C398.966 328.444 398.616 330.003 397.917 331.461C397.217 332.919 395.861 334.581 393.849 336.447L386.808 343.094H399.972Z" fill="white"/>
 <path d="M426.862 343.094V348.867H403.726V344.275L415.535 333.123C416.788 331.928 417.634 330.907 418.071 330.062C418.508 329.187 418.727 328.327 418.727 327.481C418.727 326.257 418.304 325.324 417.459 324.682C416.643 324.012 415.433 323.677 413.829 323.677C412.488 323.677 411.278 323.939 410.199 324.464C409.12 324.959 408.216 325.717 407.488 326.738L402.327 323.414C403.522 321.636 405.17 320.251 407.269 319.259C409.368 318.239 411.773 317.729 414.485 317.729C416.759 317.729 418.742 318.108 420.433 318.866C422.153 319.595 423.48 320.644 424.413 322.015C425.375 323.356 425.856 324.945 425.856 326.782C425.856 328.444 425.506 330.003 424.806 331.461C424.106 332.919 422.751 334.581 420.739 336.447L413.698 343.094H426.862Z" fill="white"/>
 </g>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" font-weight="bold" letter-spacing="0em"><tspan x="979.135" y="376.925">PRACTICE MY DUDES</tspan></text>
 <mask id="mask3_6_1245" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="502" y="111" width="1138" height="149">
 <rect width="1063.71" height="147.666" transform="matrix(-1 1.57898e-09 -1.35313e-09 1 1639.87 111.772)" fill="#C4C4C4"/>
 <ellipse rx="73.8331" ry="73.8331" transform="matrix(-1 1.57898e-09 -1.35313e-09 1 576.164 185.605)" fill="#C4C4C4"/>
@@ -317,11 +316,14 @@
 </g>
 <g filter="url(#filter1_d_6_1245)">
 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="79.617" font-weight="bold" letter-spacing="0em"><tspan x="557" y="210.043">Step 3 - Put it in action!</tspan></text>
-<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="79.617" font-weight="bold" letter-spacing="0em"><tspan x="557" y="210.043">Step 3 - Put it in action!</tspan></text>
 </g>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" font-weight="500" letter-spacing="0em"><tspan x="48.4053" y="549.925">There&#x2019;s no substitute for practice! </tspan><tspan x="1126.68" y="549.925"> from small </tspan><tspan x="48.4053" y="617.925">individual components to larger sections. &#10;</tspan><tspan x="48.4053" y="685.925">&#10;</tspan><tspan x="48.4053" y="753.925">Eventually you want to be completing full runs. But </tspan><tspan x="48.4053" y="821.925">remember, at this stage you are practicing, </tspan></text>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" font-weight="bold" letter-spacing="0em"><tspan x="906.413" y="549.925">Build up</tspan><tspan x="1151.38" y="821.925">complete runs </tspan><tspan x="48.4053" y="889.925">are more important than perfect runs.&#10;</tspan><tspan x="48.4053" y="957.925">&#10;</tspan></text>
-<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" letter-spacing="0em"><tspan x="48.4053" y="1025.92">Use a utility like LiveSplit to time your &#10;</tspan><tspan x="48.4053" y="1093.92">sections and runs.</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" font-weight="bold" letter-spacing="0em"><tspan x="979.135" y="376.925">PRACTICE MY DUDES</tspan></text>
+
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="50" font-weight="500" letter-spacing="0em"><tspan x="48.4053" y="549.925">There&#x2019;s no substitute for practice! </tspan><tspan font-weight="bold" x="906.413" y="549.925">Build up</tspan><tspan x="1126.68" y="549.925"> from small </tspan>
+
+<tspan x="48.4053" y="617.925">individual components to larger sections. &#10;</tspan>
+<tspan x="48.4053" y="753.925">Eventually you want to be completing full runs. But </tspan><tspan x="48.4053" y="821.925">remember, at this stage you are practicing, </tspan><tspan font-weight="bold" x="1151.38" y="821.925">complete runs </tspan><tspan font-weight="bold" x="48.4053" y="889.925">are more important than perfect runs.&#10;</tspan><tspan x="48.4053" y="1025.92">Use a utility like LiveSplit to time your &#10;</tspan><tspan x="48.4053" y="1093.92">sections and runs.</tspan>
+</text>
 <mask id="mask4_6_1245" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="708" y="892" width="1487" height="1460">
 <rect x="708.877" y="1990.89" width="1331.84" height="500.322" transform="rotate(-43.9802 708.877 1990.89)" fill="#C4C4C4"/>
 <circle cx="1840.96" cy="1246.06" r="250.161" transform="rotate(-43.9802 1840.96 1246.06)" fill="#C4C4C4"/>

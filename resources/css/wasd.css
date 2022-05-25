@@ -5050,7 +5050,7 @@ a.navbar-item {
 
 .slideshow-dots {
   position: absolute;
-  bottom: 20px; }
+  bottom: 10px; }
 
 .dot {
   cursor: pointer;
@@ -5096,6 +5096,9 @@ a.navbar-item {
     background-color: rgba(206, 14, 0, 0.8); }
   .whats-on-wrapper #whats-on .whats-on-row {
     margin-bottom: 1.5rem; }
+
+.how-to .content.backing {
+  margin: 0; }
 
 #signupBottom {
   margin-top: 2em; }
