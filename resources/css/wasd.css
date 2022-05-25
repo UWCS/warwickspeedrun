@@ -5008,7 +5008,6 @@ a.navbar-item {
       .event-wrapper #event .columns .content {
         height: 100%; }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -5018,14 +5017,12 @@ a.navbar-item {
   display: flex;
   justify-content: center; }
 
-/* Hide the images by default */
 .mySlides {
   display: none; }
 
-.slideshow-container img {
+.slideshow-container img, .slideshow-container svg {
   display: block; }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -5044,12 +5041,10 @@ a.navbar-item {
   left: 0;
   border-radius: 0 3px 3px 0; }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px; }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   color: #ff3000; }
 
@@ -5057,7 +5052,6 @@ a.navbar-item {
   position: absolute;
   bottom: 20px; }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -5071,10 +5065,9 @@ a.navbar-item {
 .active, .dot:hover {
   background-color: #717171; }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s; }
+  animation-duration: 1s; }
 
 @keyframes fade {
   from {
