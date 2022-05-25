@@ -27,20 +27,3 @@ WASD is run by the University of [Warwick Computing Society](https://uwcs.co.uk)
 
 </div>
 </div>
-
-<div class="howto-gallery backing">
-    <input class="gallery__select" type="radio" name="gallery-select" id="0" checked="checked"/>
-    <input class="gallery__select" type="radio" name="gallery-select" id="1"/>
-    <input class="gallery__select" type="radio" name="gallery-select" id="2"/>
-    <input class="gallery__select" type="radio" name="gallery-select" id="3"/>
-    <input class="gallery__select" type="radio" name="gallery-select" id="4"/>
-    <input class="gallery__select" type="radio" name="gallery-select" id="5"/>
-    <div class="gallery">
-    <label class="gallery__item" for="0"><img src="http://localhost:8080/dist/img/howto/howto0.png" alt="Something random"/></label>
-    <label class="gallery__item" for="1"><img src="http://localhost:8080/dist/img/howto/howto1.png" alt="Something random"/></label>
-    <label class="gallery__item" for="2"><img src="http://localhost:8080/dist/img/howto/howto2.png" alt="Something random"/></label>
-    <label class="gallery__item" for="3"><img src="http://localhost:8080/dist/img/howto/howto3.png" alt="Something random"/></label>
-    <label class="gallery__item" for="4"><img src="http://localhost:8080/dist/img/howto/howto4.png" alt="Something random"/></label>
-    <label class="gallery__item" for="5"><img src="http://localhost:8080/dist/img/howto/howto5.png" alt="Something random"/></label>
-    </div>
-</div>
