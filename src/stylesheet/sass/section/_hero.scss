@@ -29,7 +29,7 @@
       min-height: 800px;
 
       & * {
-        z-index: 5;
+        // z-index: 5;
       }
 
       & .backing > *:not(:last-child) {
@@ -65,7 +65,7 @@
     bottom: 0;
     min-width: auto;
     margin-bottom: -1px;
-    z-index: 10;
+    // z-index: 10;
 
     & path.wave-mask {
       fill: $body-background-color;
