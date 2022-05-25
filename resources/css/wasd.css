@@ -4888,8 +4888,6 @@ a.navbar-item {
       justify-content: center;
       height: 90vh;
       min-height: 800px; }
-      .hero .hero-body .hero-items * {
-        z-index: 5; }
       .hero .hero-body .hero-items .backing > *:not(:last-child) {
         margin-bottom: 20px; }
       .hero .hero-body .hero-items p {
@@ -4906,8 +4904,7 @@ a.navbar-item {
     position: absolute;
     bottom: 0;
     min-width: auto;
-    margin-bottom: -1px;
-    z-index: 10; }
+    margin-bottom: -1px; }
     .hero svg#hero-wave-mask path.wave-mask {
       fill: #fafafa; }
     .hero svg#hero-wave-mask path.wave-tint {
@@ -4928,8 +4925,7 @@ a.navbar-item {
   --stopwatch-rotation: 0deg; }
 
 #about {
-  position: relative;
-  z-index: 20; }
+  position: relative; }
   #about #stopwatch-column path#stopwatch-hand {
     transform: rotate(var(--stopwatch-rotation));
     transform-origin: 234.5px 161px; }
@@ -4996,8 +4992,7 @@ a.navbar-item {
     height: 400px; }
   .event-wrapper #event-bottom-mask,
   .event-wrapper #event-top-mask {
-    position: relative;
-    z-index: 10; }
+    position: relative; }
   .event-wrapper #event-bottom-mask {
     margin-bottom: -7px; }
   .event-wrapper #event {
