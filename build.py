@@ -14,12 +14,13 @@ dev_flag = 'DEV' in os.environ
 
 # Loads and renders markdown
 for file_name in os.listdir("content"):
-    if file_name.endswith(".md"):
+    if (md := file_name.endswith(".md")) or file_name.endswith(".html"):
         with open(os.path.join("content", file_name)) as file:
             content_md = file.read()
-            content_html = markdown.markdown(content_md, extensions=['extra'])
+            if md: content_html = markdown.markdown(content_md, extensions=['extra'])
+            else: content_html = content_md
 
-            rendered_content[file_name.strip(".md")] = content_html
+            rendered_content[file_name.removesuffix(".md" if md else ".html")] = content_html
 
 # SVG Asset injection
 def svg_inject(placeholder, filename, ext=".svg"):
@@ -35,6 +36,9 @@ svg_inject("esports_centre_svg", "esports-centre")
 svg_inject("su_svg", "su")
 svg_inject("capsule_bg_top", "capsule-bg-top")
 svg_inject("capsule_bg_event", "capsule-bg-event")
+
+for i in range(6):
+    svg_inject(f"howto{i}", os.path.join("howto", f"howto{i}"))
 
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
