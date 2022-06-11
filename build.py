@@ -36,6 +36,7 @@ svg_inject("esports_centre_svg", "esports-centre")
 svg_inject("su_svg", "su")
 svg_inject("capsule_bg_top", "capsule-bg-top")
 svg_inject("capsule_bg_event", "capsule-bg-event")
+svg_inject("schedule_svg", "schedule")
 
 for i in range(6):
     svg_inject(f"howto{i}", os.path.join("howto", f"howto{i}"))
