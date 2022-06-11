@@ -1,3 +1,6 @@
+
+<div markdown="1" class="content backing" style="padding: 0; overflow: hidden;">{{ schedule_svg }}</div>
+
 <div markdown="1" class="column is-6">
 <div markdown="1" class="content backing">
 
