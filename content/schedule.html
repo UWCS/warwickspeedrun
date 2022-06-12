@@ -3,6 +3,23 @@
         height: 32px;
         width: 64px;
     }
+
+    @media screen and (max-width: 767px) {
+        .tg {
+            width: auto !important;
+        }
+
+        .tg col {
+            width: auto !important;
+        }
+
+        .content {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: auto 0px;
+        }
+    }
+</style>
 </style>
 
 <div markdown="1" class="content backing">
@@ -13,7 +30,7 @@
     <br>
     <br>
     <label for="offset">Time Offset (UTC+__):</label>
-    <input type="number" id="offset" name="offset" min="-12" max="14" value="1" onchange="updateTimezone(this.value)"> 
+    <input type="number" id="offset" name="offset" min="-12" max="14" value="1" onchange="updateTimezone(this.value)">
 </div>
 <div markdown="1" class="content">
     <h1 class="title capbg-1">Day 1 Schedule</h1>
@@ -21,7 +38,7 @@
     <table class="tg">
         <thead>
             <tr>
-                <th>BST</th>
+                <th class="bst-header">BST</th>
                 <th class="timezone-header">UTC+1</th>
                 <th>Runner</th>
                 <th>Category</th>
@@ -31,9 +48,9 @@
             <tr class="sch-row">
                 <td class="bst-time">11:30</td>
                 <td class="var-time">11:30</td>
-                <td>MutantAura</td>
-                <td><span style="font-weight:bold">Zelda: Ocarina of Time</span><span
-                        style="font-weight:normal"> Bingo</span></td>
+                <td>Mutant&#8203;Aura</td>
+                <td><span style="font-weight:bold">Zelda: Ocarina of Time</span><span style="font-weight:normal">
+                        Bingo</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">13:15</td>
@@ -51,27 +68,27 @@
                 <td class="bst-time">14:45</td>
                 <td class="var-time">14:45</td>
                 <td>Kev360</td>
-                <td><span style="font-weight:bold">Cuphead</span><span
-                        style="font-weight:normal"> All Bosses 1.1+</span></td>
+                <td><span style="font-weight:bold">Cuphead</span><span style="font-weight:normal"> All Bosses
+                        1.1+</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">15:25</td>
                 <td class="var-time">15:25</td>
-                <td>Panini_Cupcake</td>
-                <td><span style="font-weight:bold">Into The Breach</span><span
-                        style="font-weight:normal"> 2-Islands Hard-Mode</span></td>
+                <td>Panini_&#8203;Cupcake</td>
+                <td><span style="font-weight:bold">Into The Breach</span><span style="font-weight:normal"> 2-Islands
+                        Hard-Mode</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">16:00</td>
                 <td class="var-time">16:00</td>
                 <td>eiko</td>
-                <td><span style="font-weight:bold">Mario Kart 8 </span><span
-                        style="font-weight:normal">32 Tracks, Items, 200cc</span></td>
+                <td><span style="font-weight:bold">Mario Kart 8 </span><span style="font-weight:normal">32 Tracks,
+                        Items, 200cc</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">17:15</td>
                 <td class="var-time">17:15</td>
-                <td>smallpence</td>
+                <td>small&#8203;pence</td>
                 <td><span style="font-weight:bold">Pokemon Yellow</span></td>
             </tr>
             <tr class="sch-row">
@@ -83,7 +100,7 @@
         </tbody>
     </table>
 </div>
-<div  markdown="1" class="content">
+<div markdown="1" class="content">
     <h1 class="title capbg-2">Overnight Schedule</h1>
     <h3 style="padding-top: 0">18th-19th <b>Remote</b></h3>
 
@@ -100,9 +117,9 @@
             <tr class="sch-row">
                 <td class="bst-time">18:45</td>
                 <td class="var-time">18:45</td>
-                <td>DanSpence94</td>
-                <td><span style="font-weight:bold">Devil May Cry</span><span
-                        style="font-weight:normal"> All Collectibles</span></td>
+                <td>Dan&#8203;Spence94</td>
+                <td><span style="font-weight:bold">Devil May Cry</span><span style="font-weight:normal"> All
+                        Collectibles</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">20:00</td>
@@ -114,45 +131,45 @@
                 <td class="bst-time">21:45</td>
                 <td class="var-time">21:45</td>
                 <td>Treylina</td>
-                <td><span style="font-weight:bold">Jazz Jackrabbit 2</span><span
-                        style="font-weight:normal"> Jazz 1-4</span></td>
+                <td><span style="font-weight:bold">Jazz Jackrabbit 2</span><span style="font-weight:normal"> Jazz
+                        1-4</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">22:15</td>
                 <td class="var-time">22:15</td>
-                <td>3gotistical</td>
+                <td>3gotist&shy;ical</td>
                 <td><span style="font-weight:bold">Super Mario Odyssey</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">23:45</td>
                 <td class="var-time">23:45</td>
-                <td>liam122221</td>
-                <td><span style="font-weight:bold">Sonic Mania</span><span
-                        style="font-weight:normal"> Good Ending</span></td>
+                <td>liam&#8203;122221</td>
+                <td><span style="font-weight:bold">Sonic Mania</span><span style="font-weight:normal"> Good
+                        Ending</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">1:00</td>
                 <td class="var-time">1:00</td>
-                <td>awesomessprime</td>
-                <td><span style="font-weight:bold">Resident Evil Survivor</span><span
-                        style="font-weight:normal"> NG+</span></td>
+                <td>awesomess&#8203;prime</td>
+                <td><span style="font-weight:bold">Resident Evil Survivor</span><span style="font-weight:normal">
+                        NG+</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">1:50</td>
                 <td class="var-time">1:50</td>
-                <td>electric_man17</td>
+                <td>electric_&#8203;man17</td>
                 <td><span style="font-weight:bold">Toy Story 2: Buzz Lightyear To The Rescue</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">2:40</td>
                 <td class="var-time">2:40</td>
-                <td>danejerus</td>
+                <td>dane&#8203;jerus</td>
                 <td><span style="font-weight:bold">RAGE</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">4:55</td>
                 <td class="var-time">4:55</td>
-                <td>bunniestbunrena</td>
+                <td>bunniest&#8203;bunrena</td>
                 <td><span style="font-weight:bold">Deathsmiles IIX: Makai no Merry Christmas!</span></td>
             </tr>
             <tr class="sch-row">
@@ -165,13 +182,13 @@
         </tbody>
     </table>
 </div>
-<div  markdown="1" class="content">
+<div markdown="1" class="content">
     <h1 class="title capbg-3">Day 2 Schedule</h1>
     <h3 style="padding-top: 0">Sunday 19th <b>In-person</b></h3>
     <table class="tg">
         <thead>
             <tr>
-                <td class="bst-time">BST</th>
+                <th class="bst-time">BST</th>
                 <th class="timezone-header">UTC+1</th>
                 <th>Runner</th>
                 <th>Category</th>
@@ -182,13 +199,12 @@
                 <td class="bst-time">8:20</td>
                 <td class="var-time">8:20</td>
                 <td>Tricrow</td>
-                <td><span style="font-weight:bold">Haven </span><span
-                        style="font-weight:normal">Good Ending</span></td>
+                <td><span style="font-weight:bold">Haven </span><span style="font-weight:normal">Good Ending</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">9:20</td>
                 <td class="var-time">9:20</td>
-                <td>squiddenhid420</td>
+                <td>squidden&#8203;hid420</td>
                 <td><span style="font-weight:bold">Mirror's Edge</span></td>
             </tr>
             <tr class="sch-row">
@@ -200,7 +216,7 @@
             <tr class="sch-row">
                 <td class="bst-time">12:20</td>
                 <td class="var-time">12:20</td>
-                <td>Hudsonbtw</td>
+                <td>Hudson&#8203;btw</td>
                 <td><span style="font-weight:bold">Dead Rising 2: Off the
                         Record</span><span style="font-weight:normal"> TimeSkip</span></td>
             </tr>
@@ -214,8 +230,8 @@
                 <td class="bst-time">14:00</td>
                 <td class="var-time">14:00</td>
                 <td>Jahva</td>
-                <td><span style="font-weight:bold">Hollow Knight</span><span
-                        style="font-weight:normal"> Pantheon of Hallownest</span></td>
+                <td><span style="font-weight:bold">Hollow Knight</span><span style="font-weight:normal"> Pantheon of
+                        Hallownest</span></td>
             </tr>
             <tr class="sch-row">
                 <td class="bst-time">14:45</td>
@@ -227,8 +243,8 @@
                 <td class="bst-time">15:45</td>
                 <td class="var-time">15:45</td>
                 <td>eiko</td>
-                <td><span style="font-weight:bold">Mario Teaches Typing</span><span
-                        style="font-weight:normal"> Typed: 3000</span></td>
+                <td><span style="font-weight:bold">Mario Teaches Typing</span><span style="font-weight:normal"> Typed:
+                        3000</span></td>
             </tr>
         </tbody>
     </table>

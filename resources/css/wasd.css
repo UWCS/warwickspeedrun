@@ -5117,6 +5117,8 @@ html {
     background-color: rgba(206, 14, 0, 0.8); }
   .whats-on-wrapper #whats-on .whats-on-row {
     margin-bottom: 1.5rem; }
+  .whats-on-wrapper .bst-header, .whats-on-wrapper .bst-time {
+    display: none; }
 
 .how-to .content.backing {
   margin: 0; }
