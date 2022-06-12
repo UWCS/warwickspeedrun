@@ -73,11 +73,11 @@
               <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
                   href="https://specialeffect.org.uk">SpecialEffect</a>.
               </p>
-              <!-- This section is edited by site.js -->
+              <!-- This section is edited in site.js -->
               <p id="countdown"><strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>.<br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong></p>
             </div>
-            <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
-            <!--<p><small>Sign ups close 23:59 UTC on 4th December 2020</small></p>-->
+            <!-- <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a> -->
+            <a class="button is-wasd is-medium", href="#schedule">See the Schedule!</a>
           </div>
         </div>
       </div>
@@ -157,6 +157,13 @@
 
   <section id="whats-on" class="section">
     <div class="container">
+      <a id="schedule"></a>
+      <h1 class="title is-size-2">Schedule</h1>
+      <hr class="title-divider" />
+      <div class="whats-on-wrapper">
+        {{ schedule }}
+      </div>
+
       <h1 class="title is-size-2">What's On</h1>
       <hr class="title-divider" />
       <div class="content">

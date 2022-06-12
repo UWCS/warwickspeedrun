@@ -50,3 +50,72 @@ const x = setInterval(function () {
         document.documentElement.style.setProperty('--stopwatch-rotation', angle + 'deg');
     });
 })();
+
+(function () {
+    let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
+    const bodyRect = document.body.getBoundingClientRect().y;
+    const clockBottom = clock - bodyRect;
+
+    document.addEventListener('scroll', function (event) {
+        let angle = easing((clockBottom - window.scrollY) / clockBottom);
+        angle = 360 - (360 * angle);
+
+        document.documentElement.style.setProperty('--stopwatch-rotation', angle + 'deg');
+    });
+})();
+
+function updateTimezone(val) {
+    // Update column header
+    const headers = document.getElementsByClassName("timezone-header");
+    for (let i = 0; i < headers.length; i++) {
+        headers[i].innerHTML = "UTC" + (val >= 0 ? "+" : "") + val;
+    }
+    
+    // Init vars
+    let dayind = -1;
+    let prevhr = 25;
+    const days = ["Fri", "Sat", "Sun", "Mon"]
+
+    // Update rows
+    const rows = document.getElementsByClassName("sch-row");
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        // Get time
+        const bsttime = row.getElementsByClassName("bst-time")[0].innerHTML;
+        const splittime = bsttime.split(":");
+        
+        // Update time
+        let newhr = parseInt(splittime[0]) + parseInt(val)
+        if (dayind == -1) dayind = newhr < 0 ? 0 : 1; // Initialize day index to Fri or Sat depending on first val
+
+        if (newhr < 0) newhr += 24
+        else if (newhr >= 24) newhr -= 24
+        
+        // Include day on day change
+        let day = ""
+        if (prevhr > newhr) {
+            day = days[dayind] + "\n"
+            dayind += 1;
+        }
+        // Construct new time
+        const newtime = day + (newhr + ":" + splittime[1]);
+        row.getElementsByClassName("var-time")[0].innerText = newtime;
+        prevhr = newhr;
+        
+        // Update url to match
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set("tz", val);
+        history.replaceState(null, null, "?"+urlParams.toString());
+    }
+}
+
+(function () {
+    // On load, read timezone from url
+    const urlParams = new URLSearchParams(window.location.search);
+    const tz = urlParams.get("tz");
+    if (tz !== null) {
+        document.getElementById("offset").value = tz;
+        updateTimezone(tz);
+        document.getElementById("schedule").scrollIntoView();
+    }
+})();
