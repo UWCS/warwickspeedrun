@@ -31,6 +31,21 @@
     <br>
     <label for="offset">Time Offset (UTC+__):</label>
     <input type="number" id="offset" name="offset" min="-12" max="14" value="1" onchange="updateTimezone(this.value)">
+    
+    <br>
+    <br>
+    <br>
+
+    <a class="button" onclick="updateTimezone(1)">BST (+1) [Default]</a>
+    <a class="button" onclick="updateTimezone(-7)">PDT (-7)</a>
+    <a class="button" onclick="updateTimezone(-4)">EDT (-4)</a>
+    <a class="button" onclick="updateTimezone(0)">UTC (0)</a>
+    <a class="button" onclick="updateTimezone(2)">CEST (+2)</a>
+
+    <br>
+    <br>
+
+    Share this page with the <code>?tz=xx</code> to link a timezone adjusted version.
 </div>
 <div markdown="1" class="content">
     <h1 class="title capbg-1">Day 1 Schedule</h1>
