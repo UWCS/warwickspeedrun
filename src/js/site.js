@@ -65,10 +65,14 @@ const x = setInterval(function () {
 })();
 
 function updateTimezone(val) {
+    const inp = document.getElementById("offset");
+    if (inp.value != val) inp.value = val;
+
     // Update column header
     const headers = document.getElementsByClassName("timezone-header");
     for (let i = 0; i < headers.length; i++) {
-        headers[i].innerHTML = "UTC" + (val >= 0 ? "+" : "") + val;
+        if (val == 1) headers[i].innerHTML = "BST"
+        else headers[i].innerHTML = "UTC" + (val >= 0 ? "+" : "") + val;
     }
     
     // Init vars
@@ -85,7 +89,7 @@ function updateTimezone(val) {
         const splittime = bsttime.split(":");
         
         // Update time
-        let newhr = parseInt(splittime[0]) + parseInt(val)
+        let newhr = parseInt(splittime[0]) - 1 + parseInt(val)  // -1 as BST is UTC+1
         if (dayind == -1) dayind = newhr < 0 ? 0 : 1; // Initialize day index to Fri or Sat depending on first val
 
         if (newhr < 0) newhr += 24
@@ -114,7 +118,6 @@ function updateTimezone(val) {
     const urlParams = new URLSearchParams(window.location.search);
     const tz = urlParams.get("tz");
     if (tz !== null) {
-        document.getElementById("offset").value = tz;
         updateTimezone(tz);
         document.getElementById("schedule").scrollIntoView();
     }
