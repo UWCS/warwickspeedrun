@@ -20,6 +20,30 @@ section a {
   font-weight: 500;
 }
 
+.capbg-1 {
+  background-color: #FF7400;
+  background-image: url("/dist/img/gradbg-o.png");
+  background-size: cover;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 25px;
+
+  color: white !important;
+  text-shadow: -3px 3px 0 #ff3000a0;
+}
+
+.capbg-2 {
+  @extend .capbg-1;
+  background-color: #ffaf00;
+  background-image: url("/dist/img/gradbg-y.png");
+}
+
+.capbg-3 {
+  @extend .capbg-1;
+  background-color: #FF3000;
+  background-image: url("/dist/img/gradbg-r.png");
+}
+
 // Button formatting
 .button,
 a.navbar-item {
@@ -69,4 +93,8 @@ a.navbar-item {
     height: 100%;
     width: auto;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

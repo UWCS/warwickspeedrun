@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name {
@@ -4807,6 +4807,24 @@ section a {
   box-shadow: -5px 5px 0 #ff300088;
   font-weight: 500; }
 
+.capbg-1, .capbg-2, .capbg-3 {
+  background-color: #FF7400;
+  background-image: url("/dist/img/gradbg-o.png");
+  background-size: cover;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 25px;
+  color: white !important;
+  text-shadow: -3px 3px 0 #ff3000a0; }
+
+.capbg-2 {
+  background-color: #ffaf00;
+  background-image: url("/dist/img/gradbg-y.png"); }
+
+.capbg-3 {
+  background-color: #FF3000;
+  background-image: url("/dist/img/gradbg-r.png"); }
+
 .button,
 a.navbar-item {
   padding: 10px 25px;
@@ -4849,6 +4867,9 @@ a.navbar-item {
   .event-wrapper .event-bg img {
     height: 100%;
     width: auto; }
+
+html {
+  scroll-behavior: smooth; }
 
 .navbar {
   position: absolute;
