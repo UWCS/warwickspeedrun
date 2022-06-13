@@ -5,7 +5,7 @@ function easing(t) {
 
 /** Countdown timer **/
 const subCloseDate = new Date("2022-05-28T23:59:59Z").getTime();
-const countDownDate = new Date("2022-06-18T12:00:00Z").getTime();
+const countDownDate = new Date("2022-06-18T10:15:00Z").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
