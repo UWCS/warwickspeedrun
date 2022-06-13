@@ -4938,6 +4938,7 @@ html {
   margin: 0 auto;
   font-size: 1.2em;
   z-index: 10;
+  max-width: 800px;
   text-align: center; }
   .descriptor-box .backing {
     margin-bottom: 20px; }
