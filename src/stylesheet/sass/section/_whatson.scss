@@ -35,6 +35,10 @@
       margin-bottom: $block-spacing;
     }
   }
+
+  & .bst-header, & .bst-time {
+    display: none;
+  }
 }
 
 .how-to {
