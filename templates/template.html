@@ -10,30 +10,8 @@
 
   <title>Warwick's Awesome Speedruns and Demos 2022</title>
 
-  <!-- IE10 Tile -->
-  <meta name="msapplication-TileColor" content="#FF3000">
-  <meta name="msapplication-TileImage" content="http://localhost:8080/dist/favicon-144.png">
-
-  <!-- IE11 Tile -->
-  <meta name="application-name" content="WASD2022 Website">
-  <meta name="msapplication-tooltip" content="Warwick's Awesome Speedruns and Demos {{ event_year }} website">
-  <meta name="msapplication-config" content="http://localhost:8080/dist/ieconfig.xml">
-
-  <!-- Apple touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:8080/dist/favicon-180.png">
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:8080/dist/favicon-152.png">
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:8080/dist/favicon-120.png">
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:8080/dist/favicon-76.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://localhost:8080/dist/favicon-57.png">
-
   <!-- Favicons -->
-  <link rel="icon" sizes="16x16 24x24 32x32 64x64" href="http://localhost:8080/dist/favicon.ico">
-  <link rel="icon" sizes="228x228" href="http://localhost:8080/dist/favicon-228.png">
-  <link rel="icon" sizes="128x128" href="http://localhost:8080/dist/favicon-128.png">
-  <link rel="icon" sizes="96x96" href="http://localhost:8080/dist/favicon-96.png">
-  <link rel="icon" sizes="32x32" href="http://localhost:8080/dist/favicon-32.png">
-  <link rel="shortcut icon" sizes="196x196" href="http://localhost:8080/dist/favicon-chrome-196.png">
-  <link rel="mask-icon" href="http://localhost:8080/dist/icon.svg" color="#FF3000">
+  <link rel="icon" href="http://localhost:8080/dist/favicon.ico">
 
   <link rel="stylesheet" href="http://localhost:8080/dist/css/wasd.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -55,6 +33,7 @@
     <div class="container">
       <div class="navbar-menu">
         <a class="navbar-item" target="_blank" href="https://warwickspeed.run/vods">VODs</a>
+        <a class="navbar-item" target="_blank" href="https://www.twitch.tv/collections/GBN1jSGWABeQOA">VODs 2022</a>
         <a class="navbar-item" target="_blank" href="https://warwickspeed.run/discord"><i class="fab fa-discord"></i>
           Discord</a>
       </div>
@@ -74,12 +53,14 @@
                   href="https://specialeffect.org.uk">SpecialEffect</a>.
               </p>
               <!-- This section is edited in site.js -->
-              <p id="countdown"><strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>.<br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong></p>
+              
+              <p class="phase-placeholder" id="countdown"><strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>.
+                <br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong></p>
 
-              <p>WASD will be in-person at Warwick Esports Centre, and streamed online at <a href="https://www.twitch.tv/warwickesports">Warwick Esports' Twitch</a>.</p>
+              <p>WASD will be in-person on campus, and streamed on Twitch.</p>
             </div>
-            <!-- <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a> -->
-            <a class="button is-wasd is-medium", href="#schedule">See the Schedule!</a>
+            <a class="button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
+            <!-- <a class="button is-wasd is-medium", href="#schedule">See the Schedule!</a> -->
           </div>
         </div>
       </div>
@@ -132,7 +113,7 @@
   <div class="event-wrapper">
 
     <div class="event-bg">
-      <img src="http://localhost:8080/dist/img/event-bg.png" />
+      <img src="http://localhost:8080/dist/img/top-bg.png" />
     </div>
     <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
       <path fill="#FAFAFA" fill-rule="evenodd"
@@ -171,7 +152,7 @@
       <hr class="title-divider" />
       <div class="content">
         <p>
-          Unlike last year, WASD 2022 will be held in-person, so come along and support the runners!</p>
+          WASD {{ event_year }} will be held in-person, so come along and support the runners!</p>
       </div>
       <div class="whats-on-wrapper">
         {{ whats_on }}
@@ -181,9 +162,9 @@
         <div class="column is-8 is-offset-2">
           <div class="content has-text-centered">
             <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
-            <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd">Sign up</a>
-            <!--<p><small>Sign ups close on the 4th December 2020 at 23:59 UTC.</small></p>-->
-            <!-- <p>Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
+            <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd sign-up">Sign up</a>
+            <p><small>Sign ups close on {{ subs_close_date }}.</small></p>
+            <!-- <p class="schedule">Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
           </div>
         </div>
       </div>

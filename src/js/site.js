@@ -4,8 +4,8 @@ function easing(t) {
 };
 
 /** Countdown timer **/
-const subCloseDate = new Date("2022-05-28T23:59:59Z").getTime();
-const countDownDate = new Date("2022-06-18T10:15:00Z").getTime();
+const subCloseDate = new Date("{{ sub_close_time }}").getTime();
+const countDownDate = new Date("{{ count_down_time }}").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
@@ -51,19 +51,7 @@ const x = setInterval(function () {
     });
 })();
 
-(function () {
-    let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
-    const bodyRect = document.body.getBoundingClientRect().y;
-    const clockBottom = clock - bodyRect;
-
-    document.addEventListener('scroll', function (event) {
-        let angle = easing((clockBottom - window.scrollY) / clockBottom);
-        angle = 360 - (360 * angle);
-
-        document.documentElement.style.setProperty('--stopwatch-rotation', angle + 'deg');
-    });
-})();
-
+// For on page schedule, timezone adjusting
 function updateTimezone(val) {
     const inp = document.getElementById("offset");
     if (inp.value != val) inp.value = val;
