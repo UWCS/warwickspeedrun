@@ -7,6 +7,16 @@ import markdown
 from jinja2 import Environment, FileSystemLoader, Template
 
 rendered_content = dict()
+
+rendered_content["event_year"] = "2023"  # e.g. "2022" or "Summer 2021"
+rendered_content["event_start_date"] = "Feb 2023"
+rendered_content["subs_close_date"] = "1st Feb"
+rendered_content["sub_close_time"] = "2023-02-01T23:59:00Z"
+rendered_content["countdown_time"] = "2023-02-18T10:15:00Z"
+rendered_content["event_date_range"] = "February 2023"
+rendered_content["signup_link"] = "https://oengus.io/marathon/wasd-2023"
+rendered_content["money_raised"] = "&#163;6,000"
+
 env = Environment(
     loader=FileSystemLoader("templates"),
 )
@@ -45,12 +55,6 @@ for i in range(6):
 # Load the JS for injection into the template
 rendered_content["javascript"] = open(os.path.join("src", "js", "site.js"), "r").read()
 
-rendered_content["event_year"] = "2022"  # e.g. "2022" or "Summer 2021"
-rendered_content["event_start_date"] = "18th June 2022"
-rendered_content["subs_close_date"] = "28th May"
-rendered_content["event_date_range"] = "18-19th June 2022"
-rendered_content["signup_link"] = "https://oengus.io/marathon/wasd-2022"
-rendered_content["money_raised"] = "&#163;6,000"
 
 path = os.path.join("build", "dist")
 if os.path.exists("build"): 

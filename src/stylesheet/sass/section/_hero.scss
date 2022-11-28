@@ -24,13 +24,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 20px;
       
       height: 90vh;
       min-height: 800px;
-
-      & * {
-        // z-index: 5;
-      }
 
       & .backing > *:not(:last-child) {
         margin-bottom: 20px;
@@ -53,10 +50,6 @@
 
     & .hero-bg {
       @extend .feature-section;
-
-      // & img {
-      //   height: 125%;
-      // }
     }
   }
 
