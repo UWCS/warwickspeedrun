@@ -1,4 +1,5 @@
 import os
+import sys
 from pipes import Template
 import shutil
 
@@ -10,7 +11,7 @@ env = Environment(
     loader=FileSystemLoader("templates"),
 )
 jinja_template = env.get_template('template.html')
-dev_flag = 'DEV' in os.environ
+dev_flag = len(sys.argv) >= 2 and sys.argv[1] == "--dev"
 
 # Loads and renders markdown
 for file_name in os.listdir("content"):
