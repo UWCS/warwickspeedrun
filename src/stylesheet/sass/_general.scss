@@ -16,7 +16,7 @@ section a {
   background: #fff;
   padding: 15px 25px;
   border-radius: 60px;
-  box-shadow: -5px 5px 0 #ff300088;
+  box-shadow: -5px 5px 0 $drop-shadow;
   font-weight: 500;
 }
 
@@ -54,7 +54,7 @@ a.navbar-item {
   color: $hero-text;
 
   border-radius: 50px;
-  box-shadow: -5px 5px 0 #ff300088;
+  box-shadow: -5px 5px 0 $drop-shadow;
   font-weight: 500;
 
   text-decoration: none;
@@ -67,7 +67,7 @@ a.navbar-item {
   &:hover,
   &:focus {
     color: darken($hero-text, 10);
-    box-shadow: -5px 8px 0 #ff300088;
+    box-shadow: -5px 8px 0 $drop-shadow;
     top: -3px;
   }
 }
