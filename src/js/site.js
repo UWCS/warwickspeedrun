@@ -6,6 +6,25 @@ function easing(t) {
 /** Countdown timer **/
 const subCloseDate = new Date("{{ sub_close_time }}").getTime();
 const countDownDate = new Date("{{ count_down_time }}").getTime();
+const endDate = new Date("{{ end_time }}").getTime();
+
+(function () {
+    // Find phase and hide correct bits
+
+    // Get today's date and time
+    const now = new Date().getTime();
+
+    let phase = "phase-placeholder";
+    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-during", "phase-after"]
+    if (now <= subCloseDate) phase = "phase-sub";
+    else if (now <= countDownDate) phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};
+    else if (now <= endDate) phase = "phase-during";
+    else phase = "phase-after";
+
+    options.map(p => Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = false));
+
+    Array.prototype.map.call(document.getElementsByClassName(phase), e => e.hidden = true);
+})();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
