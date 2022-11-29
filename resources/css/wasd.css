@@ -4791,6 +4791,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
       .section.is-large {
         padding: 18rem 6rem; } }
 
+[hidden] {
+  display: none; }
+
 section strong,
 section a {
   color: #09002D; }
