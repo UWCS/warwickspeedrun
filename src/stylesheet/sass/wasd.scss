@@ -7,14 +7,16 @@ $family-sans-serif: 'Montserrat', Arial, sans-serif;
 
 $wasd-background: #fafafa;
 
-$hero-gradient-end: #ff3000;
-$hero-gradient-start: #ff8800;
-$hero-gradient-tint: #ffbd9e;
-$hero-text: #a81f00;
+$hero-gradient-end: #1F0051;
+$hero-gradient-start: #1e4b92;
+$hero-gradient-tint: #1EBDEF;
+$hero-text: #09002D;
 
-$where-grad-start: #ffbb00;
-$where-grad-end: #ce0e00;
+$where-grad-start: #1e4b92;
+$where-grad-end: #1F0051;
 $where-text: $hero-text;
+
+$drop-shadow: #1F005188;
 
 // Screen width overrides
 $mobile-width: 400px;
@@ -26,8 +28,8 @@ $body-background-color: $wasd-background;
 $navbar-background-colour: transparent;
 $navbar-item-hover-background-color: transparent;
 
-$primary: #ff3000;
-$secondary: #ffaf00;
+$primary: #1e4b92;
+$secondary: #1EBDEF;
 
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 
