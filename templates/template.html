@@ -57,16 +57,16 @@
                 --><span class="phase-sub">. <br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong></span> in <span id="countdown"><!-- Filled in by site.js, shows countdown to sub close or event start, blank otherwise --></span>.
               </p>
               <p class="phase-before">WASD will be in-person on campus, and streamed on Twitch.</p>
-              <p class="phase-sub-closed">Submissions are now closed, schedule will follow shortly.</p>
-              <p class="phase-schedule">Our schedule has been released! See below for more info:</p>
-              <p class="phase-during">WASD is now <strong><a href="https://twitch.tv/warwickspeedrun">live on Twitch</a></strong>!</p>
-              <p class="phase-ended"><strong>WASD {{ event_year }} has ended.</strong> Thanks everyone for your support!</p>
+              <p class="phase-sub-closed" hidden>Submissions are now closed, schedule will follow shortly.</p>
+              <p class="phase-schedule" hidden>Our schedule has been released! See below for more info:</p>
+              <p class="phase-during" hidden>WASD is now <strong><a href="https://twitch.tv/warwickspeedrun">live on Twitch</a></strong>!</p>
+              <p class="phase-ended" hidden><strong>WASD {{ event_year }} has ended.</strong> Thanks everyone for your support!</p>
 
             </div>
-            <div>
+            <div class="buttons">
               <a class="phase-sub button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
               <a class="phase-sub button is-wasd is-medium" href="#how-to">How To</a>
-              <a class="phase-schedule button is-wasd is-medium" href="#schedule">See the Schedule!</a>
+              <a class="phase-schedule button is-wasd is-medium" href="#schedule" hidden>See the Schedule!</a>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@
 
   <section id="whats-on" class="section">
     <div class="container">
-      <span class="phase-schedule">
+      <span class="phase-schedule" hidden>
       <a id="schedule"></a>
       <h1 class="title is-size-2">Schedule</h1>
       <hr class="title-divider" />
@@ -214,7 +214,7 @@
             <div class="content has-text-centered">
               <p>Copyright &copy; <a target="_blank" href="https://uwcs.co.uk">University of Warwick Computing
                   Society</a>.<br>Originally built by <a target="_blank" href="https://github.com/davidjrichardson">David
-                  Richardson</a>; maintained by by <a target="_blank" href="https://github.com/ericthelemur">Owen
+                  Richardson</a>; maintained by <a target="_blank" href="https://github.com/ericthelemur">Owen
                   Connors</a>.</p>
             </div>
           </div>
