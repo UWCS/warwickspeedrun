@@ -1,3 +1,8 @@
+// Allows flexbox elements to be hidden
+[hidden]{
+  display: none;
+}
+
 section strong,
 section a {
   color: $hero-text;
