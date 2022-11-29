@@ -2,7 +2,11 @@
 
 This is the GitHub repository of the website for Warwick's Awesome Speedruns and Demos (WASD), a student-run speedrunning marathon in the UK.
 
-The project uses a basic static site generator to combine markdown into a single page website. The code for this generator is in `build.py`. Running this project requires `python >= 3.6`.
+The project uses a basic static site generator to combine markdown into a single page website. The code for this generator is in `build.py`, run with `--dev` to link locally. Running this project requires `python >= 3.9`.
+
+Building CSS (from `src/stylesheet`) requires Node. Run `npm install` then `npm run css-watch` in `src/stylesheet`.
+
+Use `python -m http.server 8080 --directory build` to host a dev server (Note, run outside of build, so build can be recreated each time).
 
 ### License
 
