@@ -4927,8 +4927,9 @@ html {
   .hero svg#hero-wave-mask {
     position: absolute;
     bottom: 0;
-    min-width: auto;
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+    width: 100%;
+    height: 200px; }
     .hero svg#hero-wave-mask path.wave-mask {
       fill: #fafafa; }
     .hero svg#hero-wave-mask path.wave-tint {
@@ -5018,7 +5019,9 @@ html {
     height: 400px; }
   .event-wrapper #event-bottom-mask,
   .event-wrapper #event-top-mask {
-    position: relative; }
+    position: relative;
+    width: 100%;
+    height: 200px; }
   .event-wrapper #event-bottom-mask {
     margin-bottom: -7px; }
   .event-wrapper #event {
