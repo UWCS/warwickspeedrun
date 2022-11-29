@@ -55,7 +55,7 @@ const x = setInterval(function () {
     let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
 
     document.getElementById("countdown").innerHTML = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
-        days >= 7 ? '.' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
+        days >= 7 ? '' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
 
     // If the count down is finished, clear
     if (distance < 0) {
