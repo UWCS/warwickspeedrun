@@ -63,13 +63,16 @@
               <p class="phase-ended"><strong>WASD {{ event_year }} has ended.</strong> Thanks everyone for your support!</p>
 
             </div>
-            <a class="phase-sub button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
-            <a class="phase-schedule button is-wasd is-medium" href="#schedule">See the Schedule!</a>
+            <div>
+              <a class="phase-sub button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
+              <a class="phase-sub button is-wasd is-medium" href="#how-to">How To</a>
+              <a class="phase-schedule button is-wasd is-medium" href="#schedule">See the Schedule!</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <svg id="hero-wave-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 142">
+    <svg id="hero-wave-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 142">
       <g fill="none" fill-rule="evenodd">
         <path class="wave-tint"
           d="M0 142h1440V30.9999997c-168.30243 38.8000679-331.54474 59.2070567-489.726918 61.2209662C712.999813 95.2418302 501.330499 8.35625208 334.252643.97570722 222.867406-3.94465603 111.449858 12.4778854 0 50.2433316V142z" />
@@ -119,7 +122,7 @@
     <div class="event-bg">
       <img src="http://localhost:8080/dist/img/top-bg.png" />
     </div>
-    <svg id="event-top-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
+    <svg id="event-top-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
       <path fill="#FAFAFA" fill-rule="evenodd"
         d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z" />
     </svg>
@@ -136,7 +139,7 @@
       </div>
     </section>
 
-    <svg id="event-bottom-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
+    <svg id="event-bottom-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
       <path fill="#FAFAFA" fill-rule="evenodd"
         d="M0 .10914c87.12525 46.49599 178.68374 73.86863 274.67547 82.11792C418.66306 94.60099 740 24.0293 978 39.0293c220.661936 13.90727 302.943618 58.73527 430.1054273 76.35063 9.9914815 1.3841 21.26004 2.60018 31.8945727 3.62007v22H0V.10914z" />
     </svg>
@@ -176,6 +179,7 @@
       </div>
       <div>
       
+      <a name="how-to"></a>
       <h1 class="title is-size-2">How to</h1>
       <hr class="title-divider" />
       <div class="how-to whats-on-wrapper">
