@@ -29,8 +29,9 @@
       height: 90vh;
       min-height: 800px;
 
-      & .backing > *:not(:last-child) {
-        margin-bottom: 20px;
+      & .backing > * {
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
 
       & p {
@@ -38,13 +39,19 @@
       }
 
       & svg#wasd-keys {
-        height: 350px;
+        height: 250px;
         max-width: 100%;
         margin: 100px 0 50px 0;
 
         & g.hero-text-fill {
           fill: $hero-text;
         }
+      }
+
+      & .buttons {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
       }
     }
 
@@ -58,7 +65,7 @@
     bottom: 0;
     margin-bottom: -1px;
     width: 100%;
-    height: 200px;
+    height: 150px;
 
     & path.wave-mask {
       fill: $body-background-color;

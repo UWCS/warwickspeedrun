@@ -4914,22 +4914,27 @@ html {
       gap: 20px;
       height: 90vh;
       min-height: 800px; }
-      .hero .hero-body .hero-items .backing > *:not(:last-child) {
-        margin-bottom: 20px; }
+      .hero .hero-body .hero-items .backing > * {
+        margin-top: 10px;
+        margin-bottom: 10px; }
       .hero .hero-body .hero-items p {
         text-align: center; }
       .hero .hero-body .hero-items svg#wasd-keys {
-        height: 350px;
+        height: 250px;
         max-width: 100%;
         margin: 100px 0 50px 0; }
         .hero .hero-body .hero-items svg#wasd-keys g.hero-text-fill {
           fill: #09002D; }
+      .hero .hero-body .hero-items .buttons {
+        display: flex;
+        gap: 25px;
+        justify-content: center; }
   .hero svg#hero-wave-mask {
     position: absolute;
     bottom: 0;
     margin-bottom: -1px;
     width: 100%;
-    height: 200px; }
+    height: 150px; }
     .hero svg#hero-wave-mask path.wave-mask {
       fill: #fafafa; }
     .hero svg#hero-wave-mask path.wave-tint {
@@ -5021,7 +5026,7 @@ html {
   .event-wrapper #event-top-mask {
     position: relative;
     width: 100%;
-    height: 200px; }
+    height: 150px; }
   .event-wrapper #event-bottom-mask {
     margin-bottom: -7px; }
   .event-wrapper #event {
