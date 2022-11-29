@@ -15,16 +15,25 @@ const endDate = new Date("{{ end_time }}").getTime();
     const now = new Date().getTime();
 
     let phase = "phase-placeholder";
-    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-during", "phase-after"]
     if (now <= subCloseDate) phase = "phase-sub";
     else if (now <= countDownDate) phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};
     else if (now <= endDate) phase = "phase-during";
     else phase = "phase-after";
 
-    options.map(p => Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = false));
-
-    Array.prototype.map.call(document.getElementsByClassName(phase), e => e.hidden = true);
+    setPhase(phase);
 })();
+
+function setPhase(phase) {
+    // Options for possible phases, phase-before is a special case to shorten the many before event options
+    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-during", "phase-ended", "phase-before"]
+    options.map(p => Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = true));
+
+    Array.prototype.map.call(document.getElementsByClassName(phase), e => e.hidden = false);
+    const i = options.indexOf(phase)
+    if (i != -1 && i < options.indexOf("phase-during"))
+        Array.prototype.map.call(document.getElementsByClassName("phase-before"), e => e.hidden = false);
+    console.log("Phase " + phase);
+}
 
 // Update the count down every 1 second
 const x = setInterval(function () {
@@ -45,15 +54,13 @@ const x = setInterval(function () {
     let hoursText = hours + (hours === 1 ? " hour" : " hours");
     let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
 
-    let subText = subOrEventDate ? '<br><strong>Submissions close</strong> on <strong>{{ subs_close_date }}</strong> ' : ''
-
-    document.getElementById("countdown").innerHTML = '<strong>WASD {{ event_year }}</strong> starts on <strong>{{ event_start_date }}</strong>' + subText + ' in <strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
+    document.getElementById("countdown").innerHTML = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
         days >= 7 ? '.' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
 
-    // If the count down is finished, write some text
+    // If the count down is finished, clear
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "WASD is now <strong><a href=\"https://twitch.tv/warwickspeedrun\">live on Twitch</a></strong>!"
+        document.getElementById("countdown").innerHTML = ""
     }
 }, 1000);
 
