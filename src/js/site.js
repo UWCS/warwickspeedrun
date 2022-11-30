@@ -8,7 +8,7 @@ const subCloseDate = new Date("{{ sub_close_time }}").getTime();
 const countDownDate = new Date("{{ count_down_time }}").getTime();
 const endDate = new Date("{{ end_time }}").getTime();
 
-(function () {
+const findPhase = (function () {
     // Find phase and hide correct bits
 
     // Get today's date and time
@@ -19,24 +19,22 @@ const endDate = new Date("{{ end_time }}").getTime();
     else if (now <= countDownDate) phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};
     else if (now <= endDate) phase = "phase-during";
     else phase = "phase-after";
-
-    setPhase(phase);
-})();
+});
 
 function setPhase(phase) {
     // Options for possible phases, phase-before is a special case to shorten the many before event options
     let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-during", "phase-ended", "phase-before"]
-    options.map(p => Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = true));
-
-    Array.prototype.map.call(document.getElementsByClassName(phase), e => e.hidden = false);
     const i = options.indexOf(phase)
-    if (i != -1 && i < options.indexOf("phase-during"))
-        Array.prototype.map.call(document.getElementsByClassName("phase-before"), e => e.hidden = false);
+    const in_before = i != -1 && i < options.indexOf("phase-during")
+
+    options.map(p => {
+        const show = p == phase || (in_before && p == "phase-before")
+        Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = !show)});
     console.log("Phase " + phase);
 }
 
-// Update the count down every 1 second
-const x = setInterval(function () {
+// Update the count down every minute
+const countdown = function () {
 
     // Get today's date and time
     const now = new Date().getTime();
@@ -56,13 +54,21 @@ const x = setInterval(function () {
 
     document.getElementById("countdown").innerHTML = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
         days >= 7 ? '' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
-
+    
+    if (days == 0) {    // Once per sec if close
+        x.clearInterval();
+        x = setInterval(countdown, 6000);
+    }
     // If the count down is finished, clear
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = ""
+        findPhase();
     }
-}, 1000);
+};
+
+let x = setInterval(countdown, 6000);
+countdown();
 
 (function () {
     let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
@@ -76,6 +82,8 @@ const x = setInterval(function () {
         document.documentElement.style.setProperty('--stopwatch-rotation', angle + 'deg');
     });
 })();
+
+findPhase();
 
 // For on page schedule, timezone adjusting
 function updateTimezone(val) {
