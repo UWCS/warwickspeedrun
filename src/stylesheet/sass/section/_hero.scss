@@ -1,9 +1,7 @@
 .hero {
-  background-image: linear-gradient(
-    5deg,
-    $hero-gradient-end 5%,
-    $hero-gradient-start 70%
-  );
+  background-image: url(http://localhost:8080/dist/img/top-bg.png), linear-gradient(5deg,$hero-gradient-end 5%,$hero-gradient-start 70%);
+  background-size: cover;
+  background-position: center;
 
   color: $hero-text;
   position: relative;
@@ -53,10 +51,6 @@
         gap: 25px;
         justify-content: center;
       }
-    }
-
-    & .hero-bg {
-      @extend .feature-section;
     }
   }
 

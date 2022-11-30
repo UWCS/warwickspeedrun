@@ -77,29 +77,6 @@ a.navbar-item {
   }
 }
 
-.feature-section {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-
-  &,
-  & img {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    max-width: none;
-    pointer-events: none;
-  }
-
-  & img {
-    height: 100%;
-    width: auto;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
