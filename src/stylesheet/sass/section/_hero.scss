@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(http://localhost:8080/dist/img/top-bg.png), linear-gradient(5deg,$hero-gradient-end 5%,$hero-gradient-start 70%);
+  background-image: url('/dist/img/top-bg.png'), linear-gradient(5deg,$hero-gradient-end 5%,$hero-gradient-start 70%);
   background-size: cover;
   background-position: center;
 
