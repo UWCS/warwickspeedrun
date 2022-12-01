@@ -23,13 +23,13 @@ const findPhase = (function () {
 
 function setPhase(phase) {
     // Options for possible phases, phase-before is a special case to shorten the many before event options
-    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-during", "phase-ended", "phase-before"]
+    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-before", "phase-during", "phase-ended"]
     const i = options.indexOf(phase)
-    const in_before = i != -1 && i < options.indexOf("phase-during")
+    const in_before = i != -1 && i <= options.indexOf("phase-before")
 
     options.map(p => {
         const show = p == phase || (in_before && p == "phase-before")
-        Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = !show)});
+        Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = (!show & !e.classList.contains(phase)))});
     console.log("Phase " + phase);
 }
 
