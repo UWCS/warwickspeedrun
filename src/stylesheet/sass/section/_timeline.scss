@@ -63,10 +63,24 @@
   }
 }
   
+
+@media (min-device-width: 640px) and (max-device-width: 960px) {
+    .timeline {
+        float: left;
+    }
+}
+@media (max-device-width: 640px) {
+    #timeline-div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-device-width: 960px) {
     .timeline {
         list-style-type: none;
-        display: block;
+        display: inline-block;
+
 
         & .timestamp {
             width: 100px;
