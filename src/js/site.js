@@ -31,6 +31,10 @@ function setPhase(phase) {
         const show = p == phase || (in_before && p == "phase-before")
         Array.prototype.map.call(document.getElementsByClassName(p), e => e.hidden = (!show & !e.classList.contains(phase)))});
     console.log("Phase " + phase);
+
+    let tl = document.getElementById("timeline");
+    Array.prototype.map.call(tl.getElementsByClassName("tl-elem"), e => { e.hidden = false; e.classList.remove("complete") })
+    tl.getElementsByClassName(phase)[0].classList.add("complete");
 }
 
 // Update the count down every minute

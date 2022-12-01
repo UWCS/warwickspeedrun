@@ -4983,6 +4983,81 @@ html {
         #about .logo-level .logos a:hover, #about .logo-level .logos a:focus {
           filter: opacity(100%); }
 
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .timeline .timestamp {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100; }
+  .timeline .status {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 200ms ease-in;
+    padding: 20px;
+    min-width: max-content;
+    border-top: 4px solid #1EBDEF; }
+  .timeline .status:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    rotate: 45deg;
+    border: 4px solid #ddd;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 12.5px);
+    transition: all 200ms ease-in;
+    background-color: #1EBDEF;
+    border: none; }
+  .timeline .tl-elem.complete .status {
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, #1EBDEF 50%, #D6DCE0 50%) 100% 1; }
+  .timeline .tl-elem.complete .status:before {
+    background-color: #1EBDEF;
+    border: none; }
+  .timeline .tl-elem.complete ~ .tl-elem .status {
+    border-top: 4px solid #D6DCE0; }
+  .timeline .tl-elem.complete ~ .tl-elem .status:before {
+    background-color: white;
+    border: 4px solid #ddd;
+    transition: all 200ms ease-in; }
+
+@media (max-device-width: 960px) {
+  .timeline {
+    list-style-type: none;
+    display: block; }
+    .timeline .timestamp {
+      width: 100px;
+      align-items: end;
+      margin-right: 30px; }
+    .timeline .tl-elem {
+      transition: all 200ms ease-in;
+      width: inherit;
+      display: flex;
+      flex-direction: row; }
+    .timeline .tl-elem .status {
+      border-top: 0;
+      border-left: 4px solid #1EBDEF;
+      padding-left: 30px; }
+    .timeline .tl-elem.complete .status {
+      border-top: 0;
+      border-left: 4px solid;
+      border-image: none;
+      border-image: linear-gradient(to bottom, #1EBDEF 50%, #D6DCE0 50%) 1 100%; }
+    .timeline .tl-elem.complete ~ .tl-elem .status {
+      border-top: 0;
+      border-left: 4px solid #D6DCE0; }
+    .timeline .status:before {
+      left: -14.5px;
+      top: calc(50% - 12.5px);
+      transition: all 200ms ease-in;
+      z-index: 5; } }
+
 .event-wrapper {
   background-image: url("/dist/img/top-bg.png"), linear-gradient(5deg, #1F0051 5%, #1e4b92 70%);
   background-size: cover;
