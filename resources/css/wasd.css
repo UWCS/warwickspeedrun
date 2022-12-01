@@ -4838,7 +4838,7 @@ a.navbar-item {
   box-shadow: -5px 5px 0 #1F005188;
   font-weight: 500;
   text-decoration: none;
-  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.2s ease-in-out;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out, background-color 0.2s ease-in-out;
   position: relative;
   top: 0px; }
   .button:hover, .button:focus,
@@ -4852,11 +4852,9 @@ html {
   scroll-behavior: smooth; }
 
 .navbar {
-  position: absolute;
-  top: 20px;
-  left: 0;
   width: 100%;
-  z-index: 5; }
+  z-index: 5;
+  margin-top: 25px; }
   .navbar .navbar-menu {
     display: flex;
     flex-direction: row;
@@ -4889,7 +4887,6 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       gap: 20px;
       height: 90vh;
       min-height: 800px; }
@@ -4899,9 +4896,9 @@ html {
       .hero .hero-body .hero-items p {
         text-align: center; }
       .hero .hero-body .hero-items svg#wasd-keys {
-        height: 250px;
+        height: 400px;
         max-width: 100%;
-        margin: 100px 0 50px 0; }
+        margin: 25px 0; }
         .hero .hero-body .hero-items svg#wasd-keys g.hero-text-fill {
           fill: #09002D; }
       .hero .hero-body .hero-items .buttons {
@@ -4913,7 +4910,8 @@ html {
     bottom: 0;
     margin-bottom: -1px;
     width: 100%;
-    height: 150px; }
+    height: 150px;
+    max-height: 10vw; }
     .hero svg#hero-wave-mask path.wave-mask {
       fill: #fafafa; }
     .hero svg#hero-wave-mask path.wave-tint {
@@ -5091,7 +5089,8 @@ html {
   .event-wrapper #event-top-mask {
     position: relative;
     width: 100%;
-    height: 150px; }
+    height: 150px;
+    max-height: 10vw; }
   .event-wrapper #event-bottom-mask {
     margin-bottom: -7px; }
   .event-wrapper #event {
@@ -5208,6 +5207,10 @@ html {
 footer.footer {
   background-color: #1F0051;
   color: rgba(255, 255, 255, 0.85); }
+  footer.footer #footer-wave {
+    width: 100%;
+    height: 150px;
+    max-height: 6vw; }
   footer.footer svg {
     min-width: auto; }
   footer.footer .columns {
