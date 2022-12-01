@@ -1,0 +1,76 @@
+.timeline {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  & .timestamp {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+  }
+  
+  & .status {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #D6DCE0;
+    position: relative;
+    transition: all 200ms ease-in;
+    padding: 20px;
+    min-width: max-content;
+
+  }
+  & .status h4 {
+    font-weight: 600;
+  }
+  & .status:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    rotate: 45deg;
+    border: 4px solid #ddd;
+    position: absolute;
+    top: -15px;
+    left: 42%;
+    transition: all 200ms ease-in;
+  }
+  
+  & .li.complete .status {
+    border-top: 4px solid $hero-gradient-tint;
+  }
+  & .li.complete .status:before {
+    background-color: $hero-gradient-tint;
+    border: none;
+    transition: all 200ms ease-in;
+  }
+  & .li.complete .status h4 {
+    color: $hero-gradient-tint;
+  }
+  
+  @media (max-device-width: 960px) {
+    & .timeline {
+      list-style-type: none;
+      display: block;
+      flex-direction: column;
+    }
+  
+    & .li {
+      transition: all 200ms ease-in;
+      display: flex;
+      width: inherit;
+    }
+  
+    & .timestamp {
+      width: 100px;
+    }
+  
+    & .status:before {
+      left: -8%;
+      top: 30%;
+      transition: all 200ms ease-in;
+    }
+  }
+}
