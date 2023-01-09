@@ -18,7 +18,7 @@ The Atrium has a stage area, which we will be set up on, with two projector scre
 
 The computers will be borrowed from [Warwick Esports Centre](https://warwick.ac.uk/esports), and are top-end: 5900X processors and RTX 3080 graphics cards. Check the [bottom of this page](https://warwick.ac.uk/esports/play/) for the full stats of these beasts. We will also have the full set of peripherals, including a headset. We will also be able to provide some controllers, but if you want to bring any of your own equipment, feel free! Ideally let us know beforehand, so we know to expect the switch-over.
 
-![https://warwick.ac.uk/esports/play/tech.jpg](https://warwick.ac.uk/esports/play/tech.jpg)
+![https://warwickspeed.run/dist/img/tech.jpg](https://warwickspeed.run/dist/img/tech.jpg)
 
 </div>
 </div>
