@@ -32,6 +32,16 @@
 
       // box-shadow: 0 3px 6px rgba(darken($where-grad-end, 15%), 0.3);
     }
+    
+    & img {
+      border-radius: $radius;
+
+      box-shadow: 0 2px 4px rgba(black, 0.2);
+      width: calc(100% - 4em);
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 1em;
+    }
   }
 
   & #event-bottom-mask,
