@@ -28,14 +28,12 @@ The computers will be borrowed from [Warwick Esports Centre](https://warwick.ac.
 
 ## Consoles
 
-[Warwick Computing Society](https://uwcs.co.uk/) have a variety of consoles they are able to provide:
+[Warwick Computing Society](https://uwcs.co.uk/) have a variety of consoles they are able to provide. If you require any of these for your run, ensure to request them beforehand:
 
 - XBox: 360 & One
-- Nintendo: Switch, Wii U, Wii and GameCube
+- Nintendo: Switch, Wii U, (Wii & GameCube)
 - PS4
 - Valve Index
-
-If you require any of these for your run, ensure to request them beforehand. Ideally, the Wii and GameCube would not be used, as capturing them is more complex.
 
 If you are bringing your own console (or laptop/PC), we’ll be using a HDMI capture card to record your device’s output. Please ensure you can get a HDMI output from your console (if it is an old one) otherwise we cannot stream it.
 

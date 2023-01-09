@@ -9,12 +9,12 @@ from jinja2 import Environment, FileSystemLoader, Template
 rendered_content = dict()
 
 rendered_content["event_year"] = "2023"  # e.g. "2022" or "Summer 2021"
-rendered_content["event_start_date"] = "11th (TBC) Feb 2023"
+rendered_content["event_start_date"] = "11th Feb 2023"
 rendered_content["subs_close_date"] = "9th Jan"
 rendered_content["sub_close_time"] = "2023-01-09T23:59:00Z"
 rendered_content["countdown_time"] = "2023-02-11T10:15:00Z"
 rendered_content["end_time"] = "2023-02-12T19:00:00Z"
-rendered_content["event_date_range"] = "11-12th (TBC) Feb 2023"
+rendered_content["event_date_range"] = "11-12th Feb 2023"
 rendered_content["signup_link"] = "https://oengus.fun/wasd2023"
 rendered_content["money_raised"] = "&#163;6,000"
 
