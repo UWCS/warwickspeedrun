@@ -59,12 +59,13 @@ const countdown = function () {
     let hoursText = hours + (hours === 1 ? " hour" : " hours");
     let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
 
-    document.getElementById("countdown").innerHTML = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
+    time_rem_str = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
         days >= 7 ? '' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
     
+    document.getElementById("countdown").innerHTML = time_rem_str;
     if (days == 0) {    // Once per sec if close
         x.clearInterval();
-        x = setInterval(countdown, 6000);
+        x = setInterval(countdown, 1000);
     }
     // If the count down is finished, clear
     if (distance < 0) {
@@ -74,7 +75,7 @@ const countdown = function () {
     }
 };
 
-let x = setInterval(countdown, 6000);
+let x = setInterval(countdown, 60000);
 countdown();
 
 (function () {
