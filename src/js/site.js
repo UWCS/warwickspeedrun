@@ -5,7 +5,7 @@ function easing(t) {
 
 /** Countdown timer **/
 const subCloseDate = new Date("{{ sub_close_time }}").getTime();
-const countDownDate = new Date("{{ count_down_time }}").getTime();
+const countDownDate = new Date("{{ countdown_time }}").getTime();
 const endDate = new Date("{{ end_time }}").getTime();
 
 const findPhase = (function () {
@@ -14,11 +14,14 @@ const findPhase = (function () {
     // Get today's date and time
     const now = new Date().getTime();
 
+    console.log(now, subCloseDate, countDownDate);
     let phase = "phase-placeholder";
     if (now <= subCloseDate) phase = "phase-sub";
-    else if (now <= countDownDate) phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};
+    else if (now <= countDownDate) phase = "phase-sub-closed";
     else if (now <= endDate) phase = "phase-during";
     else phase = "phase-after";
+
+    setPhase(phase);
 });
 
 function setPhase(phase) {
