@@ -17,7 +17,7 @@ const findPhase = (function () {
     console.log(now, subCloseDate, countDownDate);
     let phase = "phase-placeholder";
     if (now <= subCloseDate) phase = "phase-sub";
-    else if (now <= countDownDate) phase = "phase-sub-closed";
+    else if (now <= countDownDate) phase =  phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};;
     else if (now <= endDate) phase = "phase-during";
     else phase = "phase-after";
 
@@ -40,6 +40,34 @@ function setPhase(phase) {
     tl.getElementsByClassName(phase)[0].classList.add("complete");
 }
 
+
+
+const formatPlural = function(n, term) {
+    if (n == 0) return "";
+    if (n == 1) return `${n} ${term}`;
+    else return `${n} ${term}s`;
+}
+
+const listStr = function(parts) {
+    if (parts.length == 0) return "";
+    if (parts.length == 1) return parts[0];
+    var result = parts[0];
+    for (var i = 1; i < parts.length-1; i++) {
+        result += `, ${parts[i]}`;
+    }
+    result += ` and ${parts[parts.length-1]}`;
+    return result;
+}
+
+const listStrNonEmpty = function(parts, max_numb) {
+    filtered = parts.filter(Boolean);
+    if (filtered.length > max_numb) {
+        filtered = filtered.slice(0, max_numb);
+    }
+    return listStr(filtered);
+}
+
+
 // Update the count down every minute
 const countdown = function () {
 
@@ -54,17 +82,20 @@ const countdown = function () {
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / (1000));
     // Display the result in the countdown
-    let daysText = days + (days === 1 ? " day" : " days");
-    let hoursText = hours + (hours === 1 ? " hour" : " hours");
-    let minutesText = minutes + (minutes === 1 ? " minute" : " minutes");
+    let daysText = formatPlural(days, "day");
+    let hoursText = formatPlural(hours, "hour");
+    let minutesText = formatPlural(minutes, "minute");
+    let secondsText = formatPlural(seconds, "second");
+    console.log(daysText, hoursText, minutesText, secondsText);
 
-    time_rem_str = '<strong id="days">' + (days == 0 ? '' : daysText) + '</strong>' + (
-        days >= 7 ? '' : (days == 0 ? '' : ", ") + '<strong id="hours">' + hoursText + '</strong> and <strong id="mins">' + minutesText + '</strong>')
-    
-    document.getElementById("countdown").innerHTML = time_rem_str;
+    time_rem_str = listStrNonEmpty([daysText, hoursText, minutesText, secondsText], 2);
+    if (days >= 7) time_rem_str = daysText;
+
+    document.getElementById("countdown").innerHTML = `<strong>${time_rem_str}</strong>`;
     if (days == 0) {    // Once per sec if close
-        x.clearInterval();
+        clearInterval(x);
         x = setInterval(countdown, 1000);
     }
     // If the count down is finished, clear
@@ -77,6 +108,7 @@ const countdown = function () {
 
 let x = setInterval(countdown, 60000);
 countdown();
+findPhase();
 
 (function () {
     let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
@@ -91,7 +123,6 @@ countdown();
     });
 })();
 
-findPhase();
 
 // For on page schedule, timezone adjusting
 function updateTimezone(val) {
