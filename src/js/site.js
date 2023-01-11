@@ -14,10 +14,9 @@ const findPhase = (function () {
     // Get today's date and time
     const now = new Date().getTime();
 
-    console.log(now, subCloseDate, countDownDate);
     let phase = "phase-placeholder";
     if (now <= subCloseDate) phase = "phase-sub";
-    else if (now <= countDownDate) phase =  phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};;
+    else if (now <= countDownDate) phase =  phase = {% if schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %};
     else if (now <= endDate) phase = "phase-during";
     else phase = "phase-after";
 
@@ -36,8 +35,10 @@ function setPhase(phase) {
     console.log("Phase " + phase);
 
     let tl = document.getElementById("timeline");
-    Array.prototype.map.call(tl.getElementsByClassName("tl-elem"), e => { e.hidden = false; e.classList.remove("complete") })
-    tl.getElementsByClassName(phase)[0].classList.add("complete");
+    if (tl) {
+        Array.prototype.map.call(tl.getElementsByClassName("tl-elem"), e => { e.hidden = false; e.classList.remove("complete") })
+        tl.getElementsByClassName(phase)[0].classList.add("complete");
+    }
 }
 
 
@@ -88,12 +89,13 @@ const countdown = function () {
     let hoursText = formatPlural(hours, "hour");
     let minutesText = formatPlural(minutes, "minute");
     let secondsText = formatPlural(seconds, "second");
-    console.log(daysText, hoursText, minutesText, secondsText);
 
     time_rem_str = listStrNonEmpty([daysText, hoursText, minutesText, secondsText], 2);
     if (days >= 7) time_rem_str = daysText;
 
-    document.getElementById("countdown").innerHTML = `<strong>${time_rem_str}</strong>`;
+    let cd = document.getElementById("countdown");
+    if (!cd) return clearInterval(x);
+    cd.innerHTML = `<strong>${time_rem_str}</strong>`;
     if (days == 0) {    // Once per sec if close
         clearInterval(x);
         x = setInterval(countdown, 1000);
@@ -101,7 +103,7 @@ const countdown = function () {
     // If the count down is finished, clear
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = ""
+        cd.innerHTML = ""
         findPhase();
     }
 };
@@ -111,7 +113,9 @@ countdown();
 findPhase();
 
 (function () {
-    let clock = document.getElementById('stopwatch-hand').getBoundingClientRect().bottom;
+    let elem = document.getElementById('stopwatch-hand');
+    if (!elem) return;
+    let clock = elem.getBoundingClientRect().bottom;
     const bodyRect = document.body.getBoundingClientRect().y;
     const clockBottom = clock - bodyRect;
 
