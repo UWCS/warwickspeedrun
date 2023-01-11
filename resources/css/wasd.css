@@ -5076,7 +5076,8 @@ html {
     border-radius: 40px;
     padding: 20px; }
   .event-wrapper .content p,
-  .event-wrapper .content h4 {
+  .event-wrapper .content h4,
+  .event-wrapper .content li {
     color: #09002D; }
   .event-wrapper .content h4:not(:first-child) {
     margin-top: 1.2em; }

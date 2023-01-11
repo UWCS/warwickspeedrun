@@ -16,7 +16,8 @@
 
   & .content {
     & p,
-    & h4 {
+    & h4,
+    & li {
       color: $where-text;
     }
 
