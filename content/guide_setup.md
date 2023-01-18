@@ -4,7 +4,7 @@
 
 We are set up in the SU Atrium, which is a lovely space. This picture is fairly old but well illustrates our setup.
 
-![https://warwickspeed.run/dist/img/speedrunning.jpg](https://warwickspeed.run/dist/img/speedrunning.jpg)
+![/dist/img/speedrunning.jpg](/dist/img/speedrunning.jpg)
 
 The Atrium has a stage area, which we will be set up on, with two projector screens to either side. You (the runners) will be centre stage alongside commentators and some tech as well. Beside or behind the audience, there's a practice area with some of the same computers you'll be using. This should help with a smooth transition between practice and the actual run.
 
@@ -18,7 +18,7 @@ The Atrium has a stage area, which we will be set up on, with two projector scre
 
 The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esports) and are top-end; they have 5900X processors and RTX 3080 graphics cards. Check [this page](https://warwick.ac.uk/esports/play/) for the full stats of these beasts! We also have the full set of peripherals, including a headset. We will be able to provide some controllers but feel free to bring any of your own equipment. If you do bring your own equipment, please let us know beforehand so we know what to expect with the switch-over.
 
-![https://warwickspeed.run/dist/img/tech.jpg](https://warwickspeed.run/dist/img/tech.jpg)
+![/dist/img/tech.jpg](/dist/img/tech.jpg)
 
 </div>
 </div>
