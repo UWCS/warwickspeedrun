@@ -1,6 +1,4 @@
 
-{# <div markdown="1" class="content backing" style="padding: 0; overflow: hidden;">{{ schedule }}</div> #}
-
 <div markdown="1" class="column is-6">
 <div markdown="1" class="content backing">
 
@@ -26,7 +24,7 @@ WASD {{ event_year }} will be held on campus, as well as streamed live on the WA
 
 <h4 class="title is-size-4">Who?</h4>
 
-WASD is run by the University of [Warwick Computing Society](https://uwcs.co.uk). You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](https://warwickspeed.run/discord).
+WASD is run by the University of [Warwick Computing Society](https://uwcs.co.uk). You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](/discord).
 
 </div>
 </div>
