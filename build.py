@@ -1,6 +1,5 @@
 import os
 import sys
-from pipes import Template
 import shutil
 
 import markdown
