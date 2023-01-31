@@ -14,7 +14,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
-          known_hosts: ${{ secrets.SSH_HOST }}
+          known_hosts: unnecessary
           config: ${{ vars.SITES_SSH_CONFIG }}
           if_key_exists: fail
       - name: Pull
