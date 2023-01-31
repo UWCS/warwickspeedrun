@@ -15,7 +15,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa
           known_hosts: ${{ secrets.SSH_HOST }}
-          config: ${{ secrets.CONFIG }}
+          config: ${{ env.SITES_SSH_CONFIG }}
           if_key_exists: fail
       - name: Pull
         run: ssh site "/srv/warwickspeedrun/update.sh"
