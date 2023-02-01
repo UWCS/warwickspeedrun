@@ -2,7 +2,7 @@ name: Deploy to site
 
 on:
   push:
-    branches: [ staging ]
+    branches: [ master ]
   workflow_dispatch:
     
 jobs:
@@ -12,10 +12,10 @@ jobs:
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SITES_SSH_PRIVATE_KEY }}
           name: id_rsa
-          known_hosts: ${{ secrets.SSH_HOST }}
+          known_hosts: ${{ secrets.SITES_SSH_KNOWN_HOSTS }}
           config: ${{ vars.SITES_SSH_CONFIG }}
           if_key_exists: fail
-      - name: Pull
+      - name: Update Server
         run: ssh sites "/srv/warwickspeedrun/update.sh"
