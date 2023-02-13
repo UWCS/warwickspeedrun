@@ -15,7 +15,7 @@ rendered_content["countdown_time"] = "2023-02-11T10:15:00Z"
 rendered_content["end_time"] = "2023-02-12T19:00:00Z"
 rendered_content["event_date_range"] = "11-12th Feb 2023"
 rendered_content["signup_link"] = "https://oengus.fun/wasd2023"
-rendered_content["money_raised"] = "&#163;6,000"
+rendered_content["money_raised"] = "&#163;9,000"
 
 env = Environment(
     loader=FileSystemLoader("templates"),
