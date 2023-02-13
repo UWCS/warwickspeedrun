@@ -25,7 +25,7 @@ const findPhase = (function () {
 
 function setPhase(phase) {
     // Options for possible phases, phase-before is a special case to shorten the many before event options
-    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-before", "phase-during", "phase-ended"]
+    let options = ["phase-placeholder", "phase-sub", "phase-sub-closed", "phase-schedule", "phase-before", "phase-during", "phase-after"]
     const i = options.indexOf(phase)
     const in_before = i != -1 && i <= options.indexOf("phase-before")
 
@@ -37,7 +37,8 @@ function setPhase(phase) {
     let tl = document.getElementById("timeline");
     if (tl) {
         Array.prototype.map.call(tl.getElementsByClassName("tl-elem"), e => { e.hidden = false; e.classList.remove("complete") })
-        tl.getElementsByClassName(phase)[0].classList.add("complete");
+        const tlElem = tl.getElementsByClassName(phase);
+        if (tlElem.length > 0) tlElem[0].classList.add("complete");
     }
 }
 
