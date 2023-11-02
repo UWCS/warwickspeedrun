@@ -20,7 +20,7 @@ WASD submissions close on **{{ subs_close_date }}**.
 
 <h4 class="title is-size-4">Where?</h4>
 
-WASD {{ event_year }} will be held on campus, as well as streamed live on the WASD [Twitch channel](https://twitch.tv/warwickspeedrun).
+WASD {{ event_year }} will be held on campus, as well as streamed live on the WASD [Twitch channel](https://warwickspeed.run/twitch).
 
 <h4 class="title is-size-4">Who?</h4>
 

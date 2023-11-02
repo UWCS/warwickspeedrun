@@ -18,16 +18,16 @@
               <p class="phase-before">WASD will be in-person on campus, and streamed on Twitch.</p>
               <p class="phase-sub-closed" hidden>Submissions are now closed, schedule will follow shortly.</p>
               <p class="phase-schedule" hidden>Our schedule has been released!</p>
-              <p class="phase-during" hidden>WASD is now <strong><a href="https://twitch.tv/warwickesports">live on Twitch</a></strong>!</p>
-              <p class="phase-during" hidden>Donate <strong><a href="https://warwickspeed.run/donate"> on Tiltify!</a></strong>!</p>
+              <p class="phase-during" hidden>WASD is now <strong><a target="_blank" href="https://warwickspeed.run/twitch">live on Twitch</a></strong>!</p>
+              <p class="phase-during" hidden>Donate <strong><a target="_blank" href="https://warwickspeed.run/donate"> on Tiltify!</a></strong>!</p>
               <p class="phase-after" hidden><strong>WASD {{ event_year }} has ended.</strong> Thanks everyone for your support!</p>
 
             </div>
             <div class="buttons">
-              <a class="phase-sub button is-wasd is-medium" target="_blank" href="{{ signup_link }}">Sign up</a>
-              <a class="phase-sub button is-wasd is-medium" href="#how-to">How To</a>
-              <a class="phase-schedule button is-wasd is-medium" href="#schedule" hidden>See the Schedule!</a>
-              <a class="phase-schedule button is-wasd is-medium" href="/guide.html" hidden>Runners Guide</a>
+              <a class="phase-sub button is-wasd is-medium" target="_blank" href="https://warwickspeed.run/signup">Sign up</a>
+              <a class="phase-sub button is-wasd is-medium" href="https://warwickspeed.run/howto">How To</a>
+              <a class="phase-schedule button is-wasd is-medium" href="https://warwickspeed.run/schedule" hidden>See the Schedule!</a>
+              <a class="phase-schedule button is-wasd is-medium" href="https://warwickspeed.run/guide" hidden>Runners Guide</a>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
       <a id="schedule"></a>
       <h1 class="title is-size-2">Schedule</h1>
       <hr class="title-divider" />
-      <p>Times are listed in GMT. To check other time zones, check <a href="/signup">Oengus</a></p><br>
+      <p>Times are listed in GMT. To check other time zones, check <a target="_blank" href="https://warwickspeed.run/signup">Oengus</a></p><br>
       <div class="whats-on-wrapper">
         {{ schedule }}
       </div>
@@ -133,15 +133,15 @@
         <div class="column is-8 is-offset-2">
           <div class="content has-text-centered">
             <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
-            <a target="_blank" href="{{ signup_link }}" class="button is-medium is-wasd sign-up">Sign up</a>
+            <a target="_blank" href="https://warwickspeed.run/signup" class="button is-medium is-wasd sign-up">Sign up</a>
             <p><small>Sign ups close on {{ subs_close_date }}.</small></p>
-            <!-- <p class="schedule">Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://twitch.tv/warwickspeedrun">Twitch channel</a>.</p> -->
+            <!-- <p class="schedule">Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://warwickspeed.run/signup">Twitch channel</a>.</p> -->
           </div>
         </div>
       </div>
       <div>
       
-      <a name="how-to"></a>
+      <a name="howto"></a>
       <h1 class="title is-size-2">How to</h1>
       <hr class="title-divider" />
       <div class="how-to whats-on-wrapper">
@@ -153,7 +153,7 @@
       
     </div>
   </section>
-  {{footer}}
+  {{ footer }}
   <script type="text/javascript">
     {{ javascript }}
   </script>
