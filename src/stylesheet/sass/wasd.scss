@@ -7,13 +7,13 @@ $family-sans-serif: 'Montserrat', Arial, sans-serif;
 
 $wasd-background: #fafafa;
 
-$hero-gradient-end: #1F0051;
-$hero-gradient-start: #1e4b92;
-$hero-gradient-tint: #1EBDEF;
-$hero-text: #09002D;
+$hero-gradient-end: #3b0051;
+$hero-gradient-start: #661e92;
+$hero-gradient-tint: #d71eef;
+$hero-text: #1c002d;
 
-$where-grad-start: #1e4b92;
-$where-grad-end: #1F0051;
+$where-grad-start: #501e92;
+$where-grad-end: #370051;
 $where-text: $hero-text;
 
 $drop-shadow: #1F005188;
@@ -28,8 +28,8 @@ $body-background-color: $wasd-background;
 $navbar-background-colour: transparent;
 $navbar-item-hover-background-color: transparent;
 
-$primary: #1e4b92;
-$secondary: #1EBDEF;
+$primary: #661e92;
+$secondary: #d01eef;
 
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 
