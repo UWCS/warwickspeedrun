@@ -2,7 +2,7 @@
 <div markdown="1" class="column is-6">
 <div markdown="1" class="content backing">
 
-Started in 2016, Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning event held annually at the University of Warwick. It is the largest student-run speedrunning event in the UK. Past events have featured a diverse range of games, from Final Fantasy IX to Rise of the Tomb Raider, from Super Monkey Ball to Parasite Eve II. The next WASD event will be on {{ event_date_range }}.
+Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its ninth year, it's the largest student-run speedrunning event in the UK.,the  ,It doesn't just have to be popular however! we've run Super *Monkey's* Ball,  Some runs Geoguessrone brave runnertwo to Warwick on the
 
 Donations to the event are in support of [SpecialEffect](https://specialeffect.org.uk/), a wonderful UK-based charity whose mission is to put fun and inclusion back into the lives of people with physical disabilities, by helping them to play video games. They achieve this by using and developing a range of accessibility hardware and software, from modified joypads to eye-gaze technology. To date, the WASD events have raised over {{ money_raised }} for SpecialEffect!
 
@@ -24,7 +24,7 @@ WASD {{ event_year }} will be held on campus, as well as streamed live on the WA
 
 <h4 class="title is-size-4">Who?</h4>
 
-WASD is run by the University of [Warwick Computing Society](https://uwcs.co.uk). You can get in contact with the organisers by [email](mailto:contact@warwickspeed.run) or on [Discord](/discord).
+WASD is primarily ran by the [University of Warwick Computing Society](https://uwcs.co.uk). You can get in contact with us by [email](mailto:contact@warwickspeed.run) or on [Discord](/discord).
 
 </div>
 </div>

@@ -2,48 +2,48 @@
 
 #### Step 1 - Find your game!
 
-Pick a game you want to play endlessly and **understand at a deeper level!** Speedrunning is all about optimising every aspect of your gameplay.
+Something you love? Something that’s short and sweet? Maybe even a game that’s never been run before...
 
-Some games have a obvious end, some do not! Check speedrun.com for existing categories if you aren’t sure what goals exist for your favourite game.
+Pick a game you want to play endlessly and **not get bored by!** Speedrunning is all about replaying sections of a game to optimise every aspect of your gameplay.
 
-Sometimes this goal is full completion (100%), reaching the end/goal (Any%), or doing so with no glitches or exploits (Glitchless).
+Some games have a obvious end, some do not! Check speedrun.com for existing categories if you aren’t sure what goals exist for your favourite game. Sometimes this is full completion (100%), reaching the end only (Any%), or without glitches & exploits (Glitchless).
 </div>
 
 <div class="content backing" markdown="1">
 
-#### Step 2 - Learn the strats!
+#### Step 2 - Practice!
 
-Speedrunning is no good without the speed! Spend some time studying what you should be doing:
+Speedrunning is no good without the speed! Existing runs and communities are really helpful for discovering new shortcuts and techniques:
 
-- See what existing runs are doing
-- Check videos or explainers
-- Many games have an active Discord community
+- See what existing runs are doing (e.g. on speedrun.com)
+- Check videos or explainers (e.g. on YouTube)
+- Many games have an active community (e.g. on Discord)
 
-Or simply **ask someone!** Most speedrunners are passionate about their game, and want to help anyone
-</div>
-
-<div class="content backing" markdown="1">
-
-#### Step 3 - Put it in action!
-
-There’s no substitute for practice! **Build up** from small individual components to larger sections. 
-
-Eventually you want to be completing full runs. But remember, at this stage you are practicing, **complete runs are more important than perfect runs.**
-
-Use a utility like LiveSplit to time your 
-sections and runs.
+Or simply **ask someone!** Most speedrunners are passionate about their game, and want to help out. **Don’t get burnt out! Improvement takes time.**
 
 </div>
 
 <div class="content backing" markdown="1">
 
-#### Step 4 - Record your run!
+#### Step 3 - Put it in Action!
 
-Whether it’s a phone camera pointed at your screen or a pro stream setup, **give us a video!** We aren’t expecting fireworks, but we do want an idea of what you can do.
+There’s no substitute for practice! **Build up** from small individual components to larger sections -- redo small sections until you nail them.
+
+Once you are successfully completing sections, use a utility like LiveSplit to time your sections and runs.
+
+Eventually you'll want to be putting together full runs. But remember, at this stage you are practicing, **complete runs are more important than perfect runs.** Don't just restart because you screwed up one minor thing.
+
+</div>
+
+<div class="content backing" markdown="1">
+
+#### Step 4 - Record your Run!
+
+Whether it’s a phone camera pointed at your screen or a pro stream setup, **give us a video!** We prefer a start-to-finish complete run, since it gives us an idea of your performance on stream. But don't worry, we know you'll improve!
 
 There are many screen recording utilities, use whatever you are familiar with. If you don’t know where to start, OBS is very popular! 
 
-Recording capabilities on consoles are variable (to put it nicely), and some computers cannot handle it as well as the game, so **don’t worry about the recording quality of this run - this is just for us organizers.**
+If you are recording a console, HDMI capture cards are useful -- you don't need a fancy one, though we recommend one with HDMI passthrough. Alternatively, many consoles allow streaming straight to Twitch -- just send us the VOD.
 
 </div>
 
@@ -51,11 +51,11 @@ Recording capabilities on consoles are variable (to put it nicely), and some com
 
 #### Step 5 - Submit!
 
-Submit a recording on our **Oengus!** Make sure you are in our Discord (link in bio) , and mark your availability over the dates.
+Submit a recording on our **Oengus!** Make sure you are in [our Discord](/discord), and mark your availability over the dates.
 
-For an event like ours, we would much prefer an **informative and interesting** run over a perfect silent run. 
+For an event like ours, we would much prefer an **informative and interesting** run over a flawless silent run. We’d love you to give an idea of your commentary and knowledge in your demo run, but no worries if you can’t manage it.
 
-We’d love you to give an idea of your commentary and knowledge in your demo run, but no worries if you can’t manage it.
+We're asking quite a few questions about tech, for most of you, these can be primarily ignored, but we don't want to miss any of your weirder setups!
 
 </div>
 
