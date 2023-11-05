@@ -4918,11 +4918,11 @@ html {
         margin-bottom: 10px; }
       .hero .hero-body .hero-items p {
         text-align: center; }
-      .hero .hero-body .hero-items svg#wasd-keys {
-        height: 400px;
+      .hero .hero-body .hero-items svg {
+        height: 350px;
         max-width: 100%;
         margin: 25px 0; }
-        .hero .hero-body .hero-items svg#wasd-keys g.hero-text-fill {
+        .hero .hero-body .hero-items svg g.hero-text-fill {
           fill: #1c002d; }
       .hero .hero-body .hero-items .buttons {
         display: flex;

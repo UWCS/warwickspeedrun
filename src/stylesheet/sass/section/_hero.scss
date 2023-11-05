@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('/dist/img/top-bg.png'), linear-gradient(5deg,$hero-gradient-end 5%,$hero-gradient-start 70%);
+  background-image: url('/dist/img/top-bg.png'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
   background-size: cover;
   background-position: center;
 
@@ -22,11 +22,11 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      
+
       height: 90vh;
       min-height: 800px;
 
-      & .backing > * {
+      & .backing>* {
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -35,8 +35,8 @@
         text-align: center;
       }
 
-      & svg#wasd-keys {
-        height: 400px;
+      & svg {
+        height: 350px;
         // max-height: 350px;
         max-width: 100%;
         margin: 25px 0;
@@ -87,6 +87,7 @@
   }
 
   text-align: center;
+
   & p {
     text-align: center;
   }
