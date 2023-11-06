@@ -1,4 +1,4 @@
-<div class="column is-6">
+<div class="col-6">
 <div class="content backing">
 
 Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its ninth year, it's the largest student-run speedrunning event in the UK.
@@ -8,7 +8,7 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 </div>
 </div>
 
-<div class="column is-6">
+<div class="col-6">
 <div class="content backing">
 
 <h4 class="title is-size-4">When?</h4>

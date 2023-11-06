@@ -5,7 +5,8 @@
 
   position: relative;
 
-  & .title {
+  & h1,
+  hr {
     color: #fff;
   }
 
@@ -64,10 +65,10 @@
     min-height: 500px;
     position: relative;
 
-    & hr.title-divider {
+    & hr {
       background-color: #fff;
-
-      margin-bottom: 0;
+      opacity: 1;
+      margin-bottom: 2em;
     }
 
     & .columns {
