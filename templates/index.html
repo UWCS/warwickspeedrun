@@ -13,11 +13,26 @@
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
 <article id="content" class="w-100 bg-transparent">
+  
   <section class="hero wasd-gradient">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container align-items-center">
+        <div class="navbar-nav">
+          <a class="nav-link" target="_blank" href="https://warwickspeed.run/vods">VODs</a>
+          <a class="nav-link" target="_blank" href="https://warwickspeed.run/discord"><i class="fab fa-discord"></i>
+            Discord</a>
+          <a class="nav-link" target="_blank" href="https://warwickspeed.run/twitch"><i class="fab fa-twitch"></i>
+            Twitch</a>
+          <button id="dark-mode" class="nav-link ml-1" aria-label="Toggle dark mode">
+            <span class="fs-4 icon">{{ shortcodes::icon(icon="ph-moon") }}</span>
+          </button>
+        </div>
+      </div>
+    </nav>
     <div class="hero-body">
       <div class="container">
         <div class="hero-items">
-          <img src="/images/wasd-keys.svg" >
+          <img id="keys-logo" src="/images/wasd-keys.svg" >
           <div class="descriptor-box">
             <div class="backing">
               <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
@@ -59,18 +74,18 @@
   <section id="about" class="section">
     <div class="container">
       
-      <div class="columns">
+      <div>
         <div class="content clearfix">
-          <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
-          <hr class="title-divider" />
-          <div id="stopwatch-column" class="float-lg-end d-none d-lg-block ms-3 mt-4">
+          <div id="stopwatch-column" class="float-lg-end d-none d-lg-block ms-3 my-5 pt-5 pb-3">
             {{ svgs::stopwatch() }}
           </div>
+          <h1>Warwick's Awesome Speedruns and Demos</h1>
+          <hr>
           {{ md::load_md(path="front/intro.md") }}
         </div>
       </div>
       
-      <div class="container">
+      <div>
         {% include "parts/timeline.html" %}
       </div>
       <div class="logo-level">

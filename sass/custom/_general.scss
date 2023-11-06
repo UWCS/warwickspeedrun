@@ -1,11 +1,17 @@
 // Allows flexbox elements to be hidden
-[hidden]{
+[hidden] {
   display: none;
 }
 
 section strong,
 section a {
   color: $hero-text;
+}
+
+@include media-breakpoint-up(md) {
+  .section {
+    padding: 3rem 3rem;
+  }
 }
 
 section a {
@@ -25,33 +31,9 @@ section a {
   font-weight: 500;
 }
 
-.capbg-1 {
-  background-color: #FF7400;
-  background-image: url("/dist/img/gradbg-o.png");
-  background-size: cover;
-  border-radius: 50px;
-  padding: 10px;
-  padding-left: 25px;
-
-  color: white !important;
-  text-shadow: -3px 3px 0 #ff3000a0;
-}
-
-.capbg-2 {
-  @extend .capbg-1;
-  background-color: #ffaf00;
-  background-image: url("/dist/img/gradbg-y.png");
-}
-
-.capbg-3 {
-  @extend .capbg-1;
-  background-color: #FF3000;
-  background-image: url("/dist/img/gradbg-r.png");
-}
-
 // Button formatting
 .button,
-a.navbar-item {
+.nav-link {
   padding: 10px 25px;
   margin-bottom: 5px;
 
@@ -75,8 +57,31 @@ a.navbar-item {
     box-shadow: -5px 8px 0 $drop-shadow;
     top: -3px;
   }
+
+  &#dark-mode {
+    padding-top: 7px;
+    padding-bottom: 1px;
+  }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  margin-bottom: $s2;
+}
+
+
+h1 {
+  margin-bottom: $s2;
+}
+
+hr {
+  opacity: 4%;
+  border-width: 2px;
 }

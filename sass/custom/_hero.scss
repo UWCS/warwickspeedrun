@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('/dist/img/top-bg.png'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
+  background-image: url('/images/top-bg.png'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
   background-size: cover;
   background-position: center;
 
@@ -35,7 +35,7 @@
         text-align: center;
       }
 
-      & svg {
+      & #keys-logo {
         height: 350px;
         // max-height: 350px;
         max-width: 100%;

@@ -7,6 +7,7 @@
   // z-index: 20;
 
   & #stopwatch-column {
+
     & path#stopwatch-hand {
       transform: rotate(var(--stopwatch-rotation));
       transform-origin: 234.5px 161px;
@@ -18,19 +19,27 @@
     }
 
     & svg .primary-fill {
-      fill: $primary;
+      fill: $purple;
     }
 
     & svg .primary-stroke {
-      stroke: $primary;
+      stroke: $purple;
     }
 
     & svg .secondary-stroke {
-      stroke: $secondary;
+      stroke: $dark-purple
+    }
+
+    & svg .tertiary-stroke {
+      stroke: $pink
     }
 
     & svg .background-fill {
       fill: var(--bs-body-bg);
+    }
+
+    & svg .body-stroke {
+      stroke: var(--bs-body-color)
     }
   }
 
@@ -53,7 +62,7 @@
       justify-content: start;
       gap: 10px;
 
-      @media screen and (min-width: 769px) {
+      @include media-breakpoint-up(md) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
