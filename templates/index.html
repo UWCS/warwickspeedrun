@@ -90,10 +90,10 @@
       </div>
       <div class="logo-level">
         <h4 class="title is-size-4">Partners</h4>
-        {{ md::load_md(path="front/partners.md") }}
+        {{ md::load_html(path="front/partners.html") }}
       </div>
-      {% set spon = md::load_md(path="front/sponsors.md") -%}
-      {% if spon %}
+      {% set spon = md::load_html(path="front/sponsors.html") -%}
+      {% if not spon is matching("^\s*$") %}
       <div class="logo-level">
         <h4 class="title is-size-4">Sponsors</h4>
         {{ spon | safe }}
@@ -103,7 +103,7 @@
         <h4 class="title is-size-4">Supporting</h4>
         <div class="logos">
           <a href="https://www.specialeffect.org.uk/">
-            <img src="/images/specialeffect.png" alt="SpecialEffect" />
+            <img src="/images/specialeffect.png" alt="SpecialEffect" style="height: auto" />
           </a>
         </div>
       </div>

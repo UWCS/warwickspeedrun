@@ -78,7 +78,8 @@
         display: flex;
         justify-content: center;
 
-        & svg {
+        & svg,
+        & img {
           max-height: inherit;
           height: 100px;
           width: auto;
@@ -86,14 +87,6 @@
           & path {
             fill: #222222;
           }
-        }
-
-        filter: opacity(75%);
-        transition: filter 0.2s ease-in-out;
-
-        &:hover,
-        &:focus {
-          filter: opacity(100%);
         }
       }
     }
