@@ -1,0 +1,42 @@
+// 75% Opacity -> 100% at hover
+.opacity-hover {
+    opacity: 75%;
+    transition: opacity .25s;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+// Silhouette makes the image solid white/black
+[data-bs-theme="light"] .silhouette {
+    filter: brightness(0);
+    -webkit-filter: brightness(0);
+}
+
+[data-bs-theme="dark"] .silhouette {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+// White hover combines opacity hover and silhoutte 
+.white-hover {
+    @extend .silhouette;
+    @extend .opacity-hover;
+    transition: all 0.25s;
+}
+
+.white-hover:hover {
+    filter: none;
+    -webkit-filter: none;
+    opacity: 100%;
+}
+
+// Greyish primary text colour -> pure white/black on hover
+.link-card {
+    transition: color .25s;
+}
+
+.link-card:hover {
+    @extend .text-body-emphasis;
+}

@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+{{ super() }}
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-700-computingsociety-only.woff2" crossorigin />
+{% endblock %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block main_extra %}{% endblock %}
+{% block outercontents %}
+<article id="content" class="w-100 bg-transparent">
+  <section class="hero wasd-gradient">
+    {{ parts::nav() }}
+    <div class="hero-body">
+      <div class="container">
+        <div class="hero-items">
+          {{ wasd_keys_logo }}
+          <div class="descriptor-box">
+            <div class="backing">
+              <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
+                  href="https://specialeffect.org.uk">SpecialEffect</a>.
+              </p>
+              
+              <p class="phase-before"><strong>WASD {{ config.extra.event_year }}</strong> starts on <strong>{{ config.extra.event_start_date }}</strong><!--
+                --><span class="phase-sub">. <br><strong>Submissions close</strong> on <strong>{{ config.extra.subs_close_date }}</strong></span> in <span id="countdown"><!-- Filled in by site.js, shows countdown to sub close or event start, blank otherwise --></span>.
+              </p>
+              <p class="phase-before">WASD will be in-person on campus, and streamed on Twitch.</p>
+              <p class="phase-sub-closed" hidden>Submissions are now closed, schedule will follow shortly.</p>
+              <p class="phase-schedule" hidden>Our schedule has been released!</p>
+              <p class="phase-during" hidden>WASD is now <strong><a target="_blank" href="https://warwickspeed.run/twitch">live on Twitch</a></strong>!</p>
+              <p class="phase-during" hidden>Donate <strong><a target="_blank" href="https://warwickspeed.run/donate"> on Tiltify!</a></strong>!</p>
+              <p class="phase-after" hidden><strong>WASD {{ config.extra.event_year }} has ended.</strong> Thanks everyone for your support!</p>
+
+            </div>
+            <div class="buttons">
+              <a class="phase-sub button is-wasd is-medium" target="_blank" href="https://warwickspeed.run/signup">Sign up</a>
+              <a class="phase-sub button is-wasd is-medium" href="https://warwickspeed.run/howto">How To</a>
+              <a class="phase-schedule button is-wasd is-medium" href="https://warwickspeed.run/schedule" hidden>See the Schedule!</a>
+              <a class="phase-schedule button is-wasd is-medium" href="https://warwickspeed.run/guide" hidden>Runners Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg id="hero-wave-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 142">
+      <g fill="none" fill-rule="evenodd">
+        <path class="wave-tint"
+          d="M0 142h1440V30.9999997c-168.30243 38.8000679-331.54474 59.2070567-489.726918 61.2209662C712.999813 95.2418302 501.330499 8.35625208 334.252643.97570722 222.867406-3.94465603 111.449858 12.4778854 0 50.2433316V142z" />
+        <path class="wave-mask"
+          d="M0 142h1440.76408V41.7496602c-217.4358 50.4864131-406.47299 77.1638928-567.111578 80.0324388-240.957881 4.302819-367.332301-78.675841-534.410157-86.0563858C227.857108 30.8053499 114.776326 39.1241339 0 60.6820651V142z" />
+      </g>
+    </svg>
+  </section>
+
+  
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="columns">
+        <div class="content">
+          <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
+          <div id="stopwatch-column" class="float-lg-end d-none d-lg-block">
+            {{ stopwatch_svg }}
+          </div>
+          <hr class="title-divider" />
+          {{ intro }}
+        </div>
+      </div>
+      
+      <div class="container">
+        {{ timeline }}
+      </div>
+      <div class="logo-level">
+        <h4 class="title is-size-4">Partners</h4>
+        {{ partners_list }}
+      </div>
+      {% if sponsors_list %}
+      <div class="logo-level">
+        <h4 class="title is-size-4">Sponsors</h4>
+        {{ sponsors_list }}
+      </div>
+      {% endif %}
+      <div class="logo-level">
+        <h4 class="title is-size-4">Supporting</h4>
+        <div class="logos">
+          <a href="https://www.specialeffect.org.uk/">
+            <img src="/dist/img/specialeffect.png" alt="SpecialEffect" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="event-wrapper">
+    <svg id="event-top-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
+      <path fill="#FAFAFA" fill-rule="evenodd"
+        d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z" />
+    </svg>
+
+    <section id="event" class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <h1 class="title is-size-2">Event Info</h1>
+            <hr class="title-divider" />
+          </div>
+          {{ event_info }}
+        </div>
+      </div>
+    </section>
+
+    <svg id="event-bottom-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
+      <path fill="#FAFAFA" fill-rule="evenodd"
+        d="M0 .10914c87.12525 46.49599 178.68374 73.86863 274.67547 82.11792C418.66306 94.60099 740 24.0293 978 39.0293c220.661936 13.90727 302.943618 58.73527 430.1054273 76.35063 9.9914815 1.3841 21.26004 2.60018 31.8945727 3.62007v22H0V.10914z" />
+    </svg>
+  </div>
+
+  <section id="whats-on" class="section">
+    <div class="container">
+      <span class="phase-schedule" hidden>
+      <a id="schedule"></a>
+      <h1 class="title is-size-2">Schedule</h1>
+      <hr class="title-divider" />
+      <p>Times are listed in GMT. To check other time zones, check <a target="_blank" href="https://warwickspeed.run/signup">Oengus</a></p><br>
+      <div class="whats-on-wrapper">
+        {{ schedule }}
+      </div>
+      </span>
+
+      <h1 class="title is-size-2">What's On</h1>
+      <hr class="title-divider" />
+      <div class="content">
+        <p>
+          WASD {{ event_year }} will be held in-person, so come along and support the runners!</p>
+      </div>
+      <div class="whats-on-wrapper">
+        {{ whats_on }}
+      </div>
+
+      <span class="phase-sub">
+      <div class="columns" id="signupBottom">
+        <div class="column is-8 is-offset-2">
+          <div class="content has-text-centered">
+            <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
+            <a target="_blank" href="https://warwickspeed.run/signup" class="button is-medium is-wasd sign-up">Sign up</a>
+            <p><small>Sign ups close on {{ subs_close_date }}.</small></p>
+            <!-- <p class="schedule">Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://warwickspeed.run/signup">Twitch channel</a>.</p> -->
+          </div>
+        </div>
+      </div>
+      <div>
+      
+      <a name="howto"></a>
+      <h1 class="title is-size-2">How to</h1>
+      <hr class="title-divider" />
+      <div class="how-to whats-on-wrapper">
+        {# {{ howto_carousel }} #}
+        {{ howto }}
+      </div>
+      </span>
+    </div>
+      
+    </div>
+  </section>
+</article>
+<script type="text/javascript">
+  {{ javascript }}
+</script>
+{% endblock content%}

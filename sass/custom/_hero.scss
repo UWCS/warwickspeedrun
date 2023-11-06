@@ -1,0 +1,30 @@
+#hero>svg>image {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@media (orientation: landscape) {
+    #hero-portrait {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) {
+    #hero-landscape {
+        display: none;
+    }
+}
+
+// Anim for hero circles
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

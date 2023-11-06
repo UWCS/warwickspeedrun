@@ -1,0 +1,45 @@
+{% import "macros/parts.html" as parts %}
+
+{% if page %} {% set resource = page %}
+{% elif section %} {% set resource = section %}
+{% elif term %} {% set resource = term %}
+{% elif taxonomy %} {% set resource = taxonomy %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  function dark () {
+      const curr_light = localStorage.getItem("dark_mode") == "light";
+      document.documentElement.setAttribute('data-bs-theme', curr_light ? "light" : "dark");
+  }
+  dark();
+</script>
+
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{{ resource.title | striptags | safe }}{% endblock %} - WASD {{ config.extra.event_year }}</title>
+  {% block head %}
+  {{ parts::head() }}
+  {% endblock %}
+
+  {% block opengraph %}
+  {{ parts::opengraph(resource=resource) }}
+  {% endblock %}
+
+</head>
+
+<body class="min-vh-100 viewport-width-100 vstack">
+  <div id="main" class="{% block main_extra %}bg-body px-3{% endblock %}">
+    {% block outercontents %}
+    <article id="content" class="py-4">
+      {% block header %}<h1>{{ resource.title | safe }}</h1>{% endblock %}
+      {% block content %}{% endblock %}
+    </article>
+    {% endblock %}
+  </div>
+  {{ parts::footer() }}
+</body>
+
+</html>

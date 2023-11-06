@@ -1,0 +1,33 @@
+#socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+
+    &>a {
+        @extend .block, .link-body-emphasis, .text-decoration-none;
+        display: flex;
+        align-items: stretch;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    }
+}
+
+.social {
+    @extend .hstack, .gap-3, .p-3, .rounded-4, .bg-body-secondary, .text-body-emphasis, .opacity-hover;
+    margin: 0 auto;
+
+    &>i,
+    &>.icon {
+        @extend .display-2, .lh-1;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 20vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
