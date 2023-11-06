@@ -2,4 +2,12 @@
 
 @import "bootstrap/bootstrap";
 
-@import "custom/custom";
+@import 'custom/_general';
+@import 'custom/_navbar';
+@import 'custom/_hero';
+@import 'custom/_about';
+@import 'custom/_timeline';
+@import 'custom/_event';
+@import 'custom/_gallery';
+@import 'custom/_whatson';
+@import 'custom/_footer';

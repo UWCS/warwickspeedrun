@@ -1,0 +1,9 @@
+{% macro load_md(path) %}
+{% set data = load_data(path=path) %}
+{% for key, value in config.extra %}
+{% if value is string %}
+    {% set_global data = data | replace(from="{{ " ~ key ~ " }}", to=value) %}
+{% endif %}
+{% endfor %}
+{{ data | markdown | safe }}
+{% endmacro %}

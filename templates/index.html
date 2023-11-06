@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 
+{% import "macros/svgs.html" as svgs %}
+{% import "macros/md.html" as md %}
 
 {% block head %}
 {{ super() }}
 <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-700-computingsociety-only.woff2" crossorigin />
 {% endblock %}
 
-{% block title %}{{ section.title }}{% endblock title %}
+{% block title %}Warwick Speedrunning 2024{% endblock title %}
 {% block header %}{% endblock header %}
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
 <article id="content" class="w-100 bg-transparent">
   <section class="hero wasd-gradient">
-    {{ parts::nav() }}
     <div class="hero-body">
       <div class="container">
         <div class="hero-items">
-          {{ wasd_keys_logo }}
+          <img src="/images/wasd-keys.svg" >
           <div class="descriptor-box">
             <div class="backing">
               <p>A student-led speedrunning marathon in the UK supporting <a target="_blank"
@@ -59,34 +60,35 @@
     <div class="container">
       
       <div class="columns">
-        <div class="content">
+        <div class="content clearfix">
           <h1 class="title is-size-2">Warwick's Awesome Speedruns and Demos</h1>
-          <div id="stopwatch-column" class="float-lg-end d-none d-lg-block">
-            {{ stopwatch_svg }}
-          </div>
           <hr class="title-divider" />
-          {{ intro }}
+          <div id="stopwatch-column" class="float-lg-end d-none d-lg-block ms-3 mt-4">
+            {{ svgs::stopwatch() }}
+          </div>
+          {{ md::load_md(path="front/intro.md") }}
         </div>
       </div>
       
       <div class="container">
-        {{ timeline }}
+        {% include "parts/timeline.html" %}
       </div>
       <div class="logo-level">
         <h4 class="title is-size-4">Partners</h4>
-        {{ partners_list }}
+        {{ md::load_md(path="front/partners.md") }}
       </div>
-      {% if sponsors_list %}
+      {% set spon = md::load_md(path="front/sponsors.md") -%}
+      {% if spon %}
       <div class="logo-level">
         <h4 class="title is-size-4">Sponsors</h4>
-        {{ sponsors_list }}
+        {{ spon | safe }}
       </div>
       {% endif %}
       <div class="logo-level">
         <h4 class="title is-size-4">Supporting</h4>
         <div class="logos">
           <a href="https://www.specialeffect.org.uk/">
-            <img src="/dist/img/specialeffect.png" alt="SpecialEffect" />
+            <img src="/images/specialeffect.png" alt="SpecialEffect" />
           </a>
         </div>
       </div>
@@ -105,7 +107,7 @@
             <h1 class="title is-size-2">Event Info</h1>
             <hr class="title-divider" />
           </div>
-          {{ event_info }}
+          {{ md::load_md(path="front/event_info.md") }}
         </div>
       </div>
     </section>
@@ -118,34 +120,36 @@
 
   <section id="whats-on" class="section">
     <div class="container">
-      <span class="phase-schedule" hidden>
-      <a id="schedule"></a>
-      <h1 class="title is-size-2">Schedule</h1>
-      <hr class="title-divider" />
-      <p>Times are listed in GMT. To check other time zones, check <a target="_blank" href="https://warwickspeed.run/signup">Oengus</a></p><br>
-      <div class="whats-on-wrapper">
-        {{ schedule }}
-      </div>
-      </span>
+      {% if purgecssConfig.extra.show_schedule %}
+        <span class="phase-schedule" hidden>
+        <a id="schedule"></a>
+        <h1 class="title is-size-2">Schedule</h1>
+        <hr class="title-divider" />
+        <p>Times are listed in GMT. To check other time zones, check <a target="_blank" href="https://warwickspeed.run/signup">Oengus</a></p><br>
+        <div class="whats-on-wrapper">
+          {% include "parts/schedule.html" %}
+        </div>
+        </span>
+      {% endif %}
 
       <h1 class="title is-size-2">What's On</h1>
       <hr class="title-divider" />
       <div class="content">
         <p>
-          WASD {{ event_year }} will be held in-person, so come along and support the runners!</p>
+          WASD {{ config.extra.event_year }} will be held in-person, so come along and support the runners!</p>
       </div>
       <div class="whats-on-wrapper">
-        {{ whats_on }}
+        {{ md::load_md(path="front/whats_on.md") }}
       </div>
 
       <span class="phase-sub">
       <div class="columns" id="signupBottom">
         <div class="column is-8 is-offset-2">
           <div class="content has-text-centered">
-            <p>Want to take part in WASD {{ event_year }}? <strong>Submit a run!</strong></p>
+            <p>Want to take part in WASD {{ config.extra.event_year }}? <strong>Submit a run!</strong></p>
             <a target="_blank" href="https://warwickspeed.run/signup" class="button is-medium is-wasd sign-up">Sign up</a>
-            <p><small>Sign ups close on {{ subs_close_date }}.</small></p>
-            <!-- <p class="schedule">Signups for WASD {{ event_year }} have closed, but you can still take part by watching along on our <a href="https://warwickspeed.run/signup">Twitch channel</a>.</p> -->
+            <p><small>Sign ups close on {{ config.extra.subs_close_date }}.</small></p>
+            <!-- <p class="schedule">Signups for WASD {{ config.extra.event_year }} have closed, but you can still take part by watching along on our <a href="https://warwickspeed.run/signup">Twitch channel</a>.</p> -->
           </div>
         </div>
       </div>
@@ -156,7 +160,7 @@
       <hr class="title-divider" />
       <div class="how-to whats-on-wrapper">
         {# {{ howto_carousel }} #}
-        {{ howto }}
+        {{ md::load_md(path="front/howto.md") }}
       </div>
       </span>
     </div>
@@ -164,7 +168,4 @@
     </div>
   </section>
 </article>
-<script type="text/javascript">
-  {{ javascript }}
-</script>
 {% endblock content%}

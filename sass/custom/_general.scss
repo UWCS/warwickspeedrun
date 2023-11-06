@@ -1,0 +1,82 @@
+// Allows flexbox elements to be hidden
+[hidden]{
+  display: none;
+}
+
+section strong,
+section a {
+  color: $hero-text;
+}
+
+section a {
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken($hero-text, 10);
+  }
+}
+
+.backing {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 60px;
+  box-shadow: -5px 5px 0 $drop-shadow;
+  font-weight: 500;
+}
+
+.capbg-1 {
+  background-color: #FF7400;
+  background-image: url("/dist/img/gradbg-o.png");
+  background-size: cover;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 25px;
+
+  color: white !important;
+  text-shadow: -3px 3px 0 #ff3000a0;
+}
+
+.capbg-2 {
+  @extend .capbg-1;
+  background-color: #ffaf00;
+  background-image: url("/dist/img/gradbg-y.png");
+}
+
+.capbg-3 {
+  @extend .capbg-1;
+  background-color: #FF3000;
+  background-image: url("/dist/img/gradbg-r.png");
+}
+
+// Button formatting
+.button,
+a.navbar-item {
+  padding: 10px 25px;
+  margin-bottom: 5px;
+
+  background-color: #fff;
+  color: $hero-text;
+
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 $drop-shadow;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition: top 0.1s ease-in-out, box-shadow 0.1s ease-in-out,
+    background-color 0.2s ease-in-out;
+
+  position: relative;
+  top: 0px;
+
+  &:hover,
+  &:focus {
+    color: darken($hero-text, 10);
+    box-shadow: -5px 8px 0 $drop-shadow;
+    top: -3px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

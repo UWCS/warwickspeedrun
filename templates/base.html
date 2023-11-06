@@ -1,4 +1,4 @@
-{% import "macros/parts.html" as parts %}
+{% import "macros/shortcodes.html" as shortcodes %}
 
 {% if page %} {% set resource = page %}
 {% elif section %} {% set resource = section %}
@@ -21,13 +21,8 @@
   <meta charset="utf-8" />
   <title>{% block title %}{{ resource.title | striptags | safe }}{% endblock %} - WASD {{ config.extra.event_year }}</title>
   {% block head %}
-  {{ parts::head() }}
+  {% include "parts/head.html" %}
   {% endblock %}
-
-  {% block opengraph %}
-  {{ parts::opengraph(resource=resource) }}
-  {% endblock %}
-
 </head>
 
 <body class="min-vh-100 viewport-width-100 vstack">
@@ -39,7 +34,7 @@
     </article>
     {% endblock %}
   </div>
-  {{ parts::footer() }}
+  {% include "parts/footer.html" %}
 </body>
 
 </html>
