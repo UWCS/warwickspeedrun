@@ -2,7 +2,7 @@
 <div markdown="1" class="column is-6">
 <div markdown="1" class="content backing">
 
-Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its ninth year, it's the largest student-run speedrunning event in the UK.,the  ,It doesn't just have to be popular however! we've run Super *Monkey's* Ball,  Some runs Geoguessrone brave runnertwo to Warwick on the
+Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the University of Warwick, UK. Now in its ninth year, it's the largest student-run speedrunning event in the UK.
 
 Donations to the event are in support of [SpecialEffect](https://specialeffect.org.uk/), a wonderful UK-based charity whose mission is to put fun and inclusion back into the lives of people with physical disabilities, by helping them to play video games. They achieve this by using and developing a range of accessibility hardware and software, from modified joypads to eye-gaze technology. To date, the WASD events have raised over {{ money_raised }} for SpecialEffect!
 
