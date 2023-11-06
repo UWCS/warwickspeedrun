@@ -9,12 +9,14 @@
 }
 
 // Silhouette makes the image solid white/black
-[data-bs-theme="light"] .silhouette {
+[data-bs-theme="light"] .silhouette,
+[data-bs-theme="dark"] .silhouette.inv {
     filter: brightness(0);
     -webkit-filter: brightness(0);
 }
 
-[data-bs-theme="dark"] .silhouette {
+[data-bs-theme="dark"] .silhouette,
+[data-bs-theme="light"] .silhouette.inv {
     filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1);
 }

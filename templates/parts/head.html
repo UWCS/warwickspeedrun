@@ -1,42 +1,55 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#FF7400" />
-<title>Warwick's Awesome Speedruns and Demos {{ config.extra.event_year }}</title>
 
-<!-- Favicons https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2024">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2024">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2024">
-<link rel="manifest" href="/site.webmanifest?v=2024">
-<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2024" color="#5bbad5">
-<link rel="shortcut icon" href="/favicon.ico?v=2024">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{{ resource.title | striptags | safe }}{% endblock %} - WASD {{ config.extra.event_year }}</title>
 
-<link rel="stylesheet" href="{{ get_url(path="uwcs-bootstrap.css", cachebust=true) }}">
-{# <script src="{{ get_url(path="scripts/bootstrap.bundle.min.js", cachebust=true) }}" defer></script> #}
-<link rel="stylesheet" href="{{ get_url(path="icon-packs/bootstrap-icons.min.css", cachebust=true) }}" defer>
-<link rel="stylesheet" href="{{ get_url(path="icon-packs/phosphor-bold.css", cachebust=true) }}" defer>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FF7400" />
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="cannonical" href="https://warwickspeed.run">
+  <!-- Favicons https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2024">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2024">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2024">
+  <link rel="manifest" href="/site.webmanifest?v=2024">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2024" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v=2024">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="{{ get_url(path="uwcs-bootstrap.css", cachebust=true) }}">
+  {# <script src="{{ get_url(path="scripts/bootstrap.bundle.min.js", cachebust=true) }}" defer></script> #}
+  <link rel="stylesheet" href="{{ get_url(path="icon-packs/bootstrap-icons.min.css", cachebust=true) }}" defer>
+  <link rel="stylesheet" href="{{ get_url(path="icon-packs/phosphor-bold.css", cachebust=true) }}" defer>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="cannonical" href="https://warwickspeed.run">
+
+  <script src="{{ get_url(path="scripts/site.js", cachebust=true) }}" defer></script>
+  <script src="{{ get_url(path="scripts/darkmode.js", cachebust=true) }}" defer></script>
+
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/mulish-v13-latin-regular.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-600.woff2" crossorigin />
+
+  {# Open Graph #}
+  <meta property="og:title" content="Warwick Speedrunning 2024" />
+  <meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
+  <meta property="og:description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
+  <meta property="og:url" content="{{current_url | safe }}" />
+  <meta property="og:image" content="{{ get_url(path=" bg-16-9.png")}}" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="keywords" content="Speedrunning, Warwick, Speedrun, Charity, SpecialEffect, UK, UWCS, Computing, University, Computer Science, Warwick, University of Warwick Computing Society, Programming, Gaming, Coding">
+
+</head>
+
 <script>
   const schedulePhase = {% if purgecssConfig.extra.show_schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %}
+  
+/** Countdown timer **/
+const subCloseDate = new Date("{{ config.extra.sub_close_time }}").getTime();
+const countDownDate = new Date("{{ config.extra.countdown_time }}").getTime();
+const endDate = new Date("{{ config.extra.end_time }}").getTime();
 </script>
-<script src="{{ get_url(path="scripts/site.js", cachebust=true) }}" defer></script>
-<script src="{{ get_url(path="scripts/darkmode.js", cachebust=true) }}" defer></script>
-
-<link rel="preload" as="font" type="font/woff2" href="/fonts/mulish-v13-latin-regular.woff2" crossorigin />
-<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-600.woff2" crossorigin />
-
-{# Open Graph #}
-<meta property="og:title" content="Warwick Speedrunning 2024" />
-<meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
-<meta property="og:description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
-<meta property="og:url" content="{{current_url | safe }}" />
-<meta property="og:image" content="{{ get_url(path=" bg-16-9.png")}}" />
-<meta property="og:locale" content="en_GB" />
-<meta name="keywords" content="Speedrunning, Warwick, Speedrun, Charity, SpecialEffect, UK, UWCS, Computing, University, Computer Science, Warwick, University of Warwick Computing Society, Programming, Gaming, Coding">

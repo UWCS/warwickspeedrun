@@ -5,7 +5,7 @@
 
 section strong,
 section a {
-  color: $hero-text;
+  color: var(--bs-emphasis-color, $hero-text);
 }
 
 @include media-breakpoint-up(md) {
@@ -19,12 +19,13 @@ section a {
 
   &:hover,
   &:focus {
-    color: darken($hero-text, 10);
+    filter: contrast(50%);
   }
 }
 
 .backing {
-  background: #fff;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
   padding: 15px 25px;
   border-radius: 60px;
   box-shadow: -5px 5px 0 $drop-shadow;
@@ -37,8 +38,8 @@ section a {
   padding: 10px 25px;
   margin-bottom: 5px;
 
-  background-color: #fff;
-  color: $hero-text;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-emphasis-color);
 
   border-radius: 50px;
   box-shadow: -5px 5px 0 $drop-shadow;
@@ -53,7 +54,7 @@ section a {
 
   &:hover,
   &:focus {
-    color: darken($hero-text, 10);
+    filter: contrast(50%);
     box-shadow: -5px 8px 0 $drop-shadow;
     top: -3px;
   }

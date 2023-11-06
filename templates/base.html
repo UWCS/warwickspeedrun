@@ -16,14 +16,9 @@
   }
   dark();
 </script>
-
-<head>
-  <meta charset="utf-8" />
-  <title>{% block title %}{{ resource.title | striptags | safe }}{% endblock %} - WASD {{ config.extra.event_year }}</title>
-  {% block head %}
-  {% include "parts/head.html" %}
-  {% endblock %}
-</head>
+{% block head %}
+{% include "parts/head.html" %}
+{% endblock %}
 
 <body class="min-vh-100 viewport-width-100 vstack">
   <div id="main" class="{% block main_extra %}bg-body px-3{% endblock %}">

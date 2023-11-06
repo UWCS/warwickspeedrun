@@ -19,11 +19,13 @@ $purple: #8A01CA;
 $pink: #C601A0;
 
 $body-bg: #fafafa;
-$body-bg-dark: $uwcs-grey;
+// $body-bg-dark: $uwcs-grey;
+$body-emphasis-color: $hero-text;
+$body-emphasis-color-dark: #fafafa;
 
 $body-color: #363636;
 
-$body-secondary-bg-dark: $uwcs-greyer;
+// $body-secondary-bg-dark: $uwcs-greyer;
 
 $font-family-sans-serif: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 $headings-font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

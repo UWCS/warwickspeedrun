@@ -3,11 +3,6 @@ function easing(t) {
     return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t
 };
 
-/** Countdown timer **/
-const subCloseDate = new Date("{{ sub_close_time }}").getTime();
-const countDownDate = new Date("{{ countdown_time }}").getTime();
-const endDate = new Date("{{ end_time }}").getTime();
-
 const findPhase = (function () {
     // Find phase and hide correct bits
 
