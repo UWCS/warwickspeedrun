@@ -7,7 +7,7 @@
 
   & h1,
   hr {
-    color: var(--bs-emphasis-color, $hero-text);
+    color: var(--bs-body-bg, $hero-text);
   }
 
   & .backing {
