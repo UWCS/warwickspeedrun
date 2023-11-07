@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% import "macros/svgs.html" as svgs %}
+{% import "macros/md.html" as md %}
+
+{% block head %}
+{{ super() }}
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-700-computingsociety-only.woff2" crossorigin />
+{% endblock %}
+
+{% block title %}Warwick Speedrunning 2024{% endblock title %}
+{% block header %}{% endblock header %}
+{% block main_extra %}{% endblock %}
+{% block outercontents %}
+<article id="content" class="w-100 bg-transparent">
+  <section id="about" class="section">
+    <div class="container">
+      <h1 class="title is-size-2"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a> | WASD {{ config.extra.event_year }} Travel Guide</h1>
+      {{ resource.content | safe }}
+    </div>
+  </section>
+</article>
+{% endblock content%}

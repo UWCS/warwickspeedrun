@@ -1,0 +1,3 @@
+WASD {{ config.extra.event_year }} will be held on-site in the University of Warwick, in the <a target="_blank" href="https://goo.gl/maps/NqFXnJLw5Jzzumho6">SU Atrium</a>. We will also be streaming it live to [Twitch](/twitch). This year we are planning to **not** accept online runs. 
+
+If you have any queries about any aspect of the event, please don't hesitate to ask on [Discord](/discord) in #ask-the-organizers, #runners-chat, or DM an @Organizer if unsure. No question is too silly, we all only want the event to go as smoothly as possible. For changes in tech requirements or run estimates, edit your Oengus submission in the first instance, but also contact an organizer if it is close to the event weekend.

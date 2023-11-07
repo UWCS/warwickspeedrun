@@ -16,7 +16,7 @@ We will be set up on the Atrium's stage, with two projector screens to either si
 
 ## The Computers
 
-The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esports) and are top-end; they have 5900X processors and RTX 3080 graphics cards. Check [this page](https://warwick.ac.uk/esports/play/) for the full stats of these beasts! We also have the full set of peripherals, including a headset. We will be able to provide some controllers but feel free to bring any of your own equipment. If you do bring your own equipment, please let us know beforehand so we know what to expect with the switch-over.
+The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esports) and are top-end; they have 5900X processors and RTX 3080 graphics cards. Check [this page](https://warwick.ac.uk/esports/play/) for the full stats of these beasts! We provide peripherals & controllers, though you are welcome to bring your own. If you do bring your own equipment, please let us know beforehand so we know what to expect with the switch-over.
 
 ![/dist/img/tech.jpg](/images/tech.jpg)
 
@@ -34,9 +34,9 @@ The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esp
 - Nintendo: Switch, Wii U, Wii, and GameCube
 - PS4
 
-If you require any of these for your run, ensure to request them beforehand. Ideally, do not use the Wii and GameCube as capturing them is more complex.
+If you require any of these for your run, ensure to mention this them beforehand.
 
-If you are bringing your own console, laptop, or PC then we will be using an HDMI capture card to record your device’s output. Please ensure you can get a HDMI output from your console (if it’s an old one), otherwise we cannot capture it.
+If you are bringing your own console, laptop, or PC then we will be using an HDMI capture card to record your device’s output. For modern devices, this is straight forward, but older devices may need an adapter.
 
 </div>
 </div>
@@ -46,9 +46,9 @@ If you are bringing your own console, laptop, or PC then we will be using an HDM
 
 ## Software
 
-We can pre-install many games, however if there are any particular versions, DLCs, or settings you need beforehand, let us know. We will be in contact well before the event if we need more information.
+We can pre-install many games, however if there are any particular versions, DLCs, or settings you need beforehand, let us know. We always recommend you bring a USB with everything installed as a backup.
 
-If you have something particularly complex or precise, we will be running tech test days to come along to or can organise remote access if necessary.
+We will be running Livesplit integration with our stream, so if you have splits of your run, send them to us or bring them with you if you want them on stream.
 
 ## On The Day
 
