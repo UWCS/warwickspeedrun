@@ -6,8 +6,8 @@
   position: relative;
 
   & h1,
-  hr {
-    color: var(--bs-body-bg, $hero-text);
+  & hr {
+    color: var(--bs-text-light);
   }
 
   & .backing {

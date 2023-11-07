@@ -1,7 +1,9 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>{% block title %}{{ resource.title | striptags | safe }}{% endblock %} - WASD {{ config.extra.event_year }}</title>
+  <title>
+    {%- block title %}{{ resource.title | default(value="Warwick Speedrun") | striptags | safe }}
+    {%- endblock %} - WASD {{ config.extra.event_year }}</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

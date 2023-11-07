@@ -1,5 +1,15 @@
 // 75% Opacity -> 100% at hover
 .opacity-hover {
+    opacity: 75%;
+    transition: opacity .25s;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+// 75% Opacity -> 100% at hover
+.low-opacity-hover {
     opacity: 50%;
     transition: opacity .25s;
 

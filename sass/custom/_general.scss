@@ -14,7 +14,7 @@ section a {
   }
 }
 
-section a {
+section a:not(:has(i, img, svg, div)) {
   text-decoration: underline;
 
   &:hover,
