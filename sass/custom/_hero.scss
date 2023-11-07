@@ -20,7 +20,7 @@
 }
 
 .hero {
-  background-image: url('/images/top-bg.png'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
+  background-image: url('/images/top-bg.png?v=2024'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
   background-size: cover;
   background-position: center;
 
@@ -29,7 +29,7 @@
   z-index: 0;
 
   & #photos {
-    background-image: url('/images/top-photos.png');
+    background-image: url('/images/top-photos.png?v=2024');
     background-size: cover;
     background-position: center;
     position: absolute;
