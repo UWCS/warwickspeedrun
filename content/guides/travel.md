@@ -1,5 +1,4 @@
 +++
-template = "travel.html"
 title = "Travel Guide"
 +++
 

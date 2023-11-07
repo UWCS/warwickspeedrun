@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% import "macros/svgs.html" as svgs %}
+{% import "macros/md.html" as md %}
+
+{% block outercontents %}
+<article id="content" class="w-100 bg-transparent">
+  <section id="about" class="section">
+    <div class="container">
+      <div class="content">
+        <h1 class="title is-size-2"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a> | WASD {{ config.extra.event_year }} Runners Guide</h1>
+        <hr class="title-divider" />
+        {{ md::load_md(path="guide/intro.md") }}
+      </div>
+
+      {% include "parts/timeline.html" %}
+    </div>
+  </section>
+  <div class="event-wrapper">
+    <svg id="event-top-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1439 162">
+      <path fill="var(--bs-body-bg, #FAFAFA)" fill-rule="evenodd" d="M1439 0c-65.34635 47.313797-157.35286 78.980464-276.01953 95C984.980469 119.029304 699 67.029304 461 82.029304 240.338064 95.936569 158.056382 140.76457 30.8945727 158.37993 20.9030912 159.76403 10.6345327 160.98011 0 162L-2 0h1441z" />
+    </svg>
+
+    <section id="content" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title is-size-2">Our Setup</h1>
+          </div>
+          {{ md::load_md(path="guide/setup.md") }}
+        </div>
+      </div>
+    </section>
+
+    <svg id="event-bottom-mask" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 141">
+      <path fill="var(--bs-body-bg, #FAFAFA)" fill-rule="evenodd" d="M0 .10914c87.12525 46.49599 178.68374 73.86863 274.67547 82.11792C418.66306 94.60099 740 24.0293 978 39.0293c220.661936 13.90727 302.943618 58.73527 430.1054273 76.35063 9.9914815 1.3841 21.26004 2.60018 31.8945727 3.62007v22H0V.10914z" />
+    </svg>
+  </div>
+
+
+  <section id="loc_guide" class="section">
+    <div class="container">
+      {{ md::load_md(path="guide/info.md") }}
+    </div>
+  </section>
+</article>
+{% endblock content%}
