@@ -75,6 +75,7 @@ h3,
 h4 {
   font-weight: 600;
   margin-bottom: $s2;
+  margin-top: $s3;
 }
 
 
@@ -90,4 +91,8 @@ hr {
 img,
 svg {
   max-width: 100%;
+}
+
+.row {
+  --bs-gutter-y: 1.5rem;
 }

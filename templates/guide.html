@@ -31,59 +31,11 @@
 
     <section id="content" class="section">
       <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-12">
-            <h1 style="color: var(--bg-body-bg)">Our Setup</h1>
-            <hr class="title-divider" />
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title is-size-2">Our Setup</h1>
           </div>
-          <div class="column is-6">
-            <div markdown="1" class="content backing">
-
-              <p>We are set up in the SU Atrium, which is a lovely space. This picture is fairly old but well illustrates our setup.</p>
-              <p><img alt="/dist/img/speedrunning.jpg" src="/dist/img/speedrunning.jpg" /></p>
-              <p>The Atrium has a stage area, which we will be set up on, with two projector screens to either side. You (the runners) will be centre stage alongside some tech. Commentators will be front of the audience. There will be a practice section off to the side.</p>
-            </div>
-
-
-          </div>
-          <div class="column is-6">
-            <div markdown="1" class="content backing">
-
-              <h2>The Computers</h2>
-              <p>The computers are loaned from <a href="https://warwick.ac.uk/esports">Warwick Esports Centre</a> and are top-end; they have 5900X processors and RTX 3080 graphics cards. Check <a href="https://warwick.ac.uk/esports/play/">this page</a> for the full stats of these beasts! We also have the full set of peripherals, including a headset. We will be able to provide some controllers but feel free to bring any of your own equipment. If you do bring your own equipment, please let us know beforehand so we know what to expect with the switch-over.</p>
-              <p><img alt="/dist/img/tech.jpg" src="/dist/img/tech.jpg" /></p>
-            </div>
-
-
-          </div>
-          <div class="column is-6">
-            <div markdown="1" class="content backing">
-
-              <h2>Consoles</h2>
-              <p><a href="https://uwcs.co.uk/">Warwick Computing Society</a> have a variety of consoles they are able to provide:</p>
-              <ul>
-                <li>XBox: 360 &amp; One</li>
-                <li>Nintendo: Switch, Wii U, Wii, and GameCube</li>
-                <li>PS4</li>
-                <li>Valve Index</li>
-              </ul>
-              <p>If you require any of these for your run, ensure to request them beforehand. Ideally, do not use the Wii and GameCube as capturing them is more complex.</p>
-              <p>If you are bringing your own console, laptop, or PC then we will be using an HDMI capture card to record your device’s output. Please ensure you can get a HDMI output from your console (if it’s an old one), otherwise we cannot capture it.</p>
-            </div>
-
-
-          </div>
-          {# <div markdown="1" class="column is-6">
-            <div markdown="1" class="content backing">
-
-              ## Remote Runs
-
-              If the following paragraph is gibberish to you, don’t worry! We will be providing a remote tech guide closer to the event.
-
-              We’ll be using our own RTMP server to receive your game stream. Please make sure this is a clean feed, with *only* the game video and audio. We’ll be using [VDO.Ninja](https://vdo.ninja/) to capture your webcam and microphone. We will send you a personal link to both of these to connect to ~15 minutes before your scheduled time. We recommend OBS to capture the game, either from your screen or a capture card from a console, and stream to our RTMP server.
-
-            </div>
-          </div> #}
+          {{ md::load_md(path="guide/setup.md") }}
         </div>
       </div>
     </section>
@@ -96,57 +48,7 @@
 
   <section id="loc_guide" class="section">
     <div class="container">
-      <h1 class="title is-size-2">Location</h1>
-
-      <div class="content">
-        <p>Please note: Warwick University is in <strong>Coventry, not the town of Warwick!</strong></p>
-      </div>
-      <div class="whats-on-wrapper">
-        <div class="content">
-          <h3>Arriving by Rail</h3>
-          <p>Coventry Railway Station is well-connected to Birmingham and London. There are frequent trains from Birmingham New Street that take ~20 minutes.</p>
-          <h3>Buses</h3>
-          <p>Coventry Railway Station has frequent buses to campus through the express 12X or the slower 11 (both operated by National Express). These can be caught from the <a href="https://goo.gl/maps/YAqPpQXVXqzpKPz76">Rail Station Bridge stop</a>, just outside the station (try to leave through the new bit). Alternatively, the 11 also stops at <a href="https://goo.gl/maps/Lu3GGVELEek24b7f8">Station Interchange</a>, through the underpass tunnel. The Station has been recently refurbished, so don’t necessarily rely on Google Street View or older information.</p>
-        </div>
-        <div class="content">
-          <h3>Arriving by Car</h3>
-          <p>Warwick University is on the south-western edge of Coventry (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See <a href="https://warwick.ac.uk/services/carparks/">this website</a> for up-to-date information. Car parks can get quite busy during the day, however will be quieter over the weekend. The car parking rules on campus can be a bit tricky, so be careful.</p>
-          <h3>Getting Around Campus</h3>
-          <p>Campus is walkable and fully wheelchair accessible. The SU Atrium (where we’ll be) is in central campus. The Bus Interchange is a two minute walk, and close to various food outlets. When navigating around campus, we recommend the <a href="https://campus.warwick.ac.uk/">Interactive Campus Map</a> or your deafult maps app of choice.</p>
-        </div>
-      </div>
-      <hr>
-
-      <h1 class="title is-size-2">Staying Nearby</h1>
-
-      <div class="whats-on-wrapper">
-        <div class="content">
-          <p>If you are coming from further afield and want to stay overnight in the local area, there is a wide range of hotels available in central Coventry, which are a short walk away from any bus-routes to the University Campus. There are many more than listed here, and we are not affliated with any.</p>
-          <p><strong><a href="https://warwick.ac.uk/services/conferences/bed-and-breakfast/">Warwick Conferences: Scarman or Radcliffe</a></strong> Situated on campus so very convenient, but quite pricey.</p>
-          <p><strong><a href="https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html">Premier Inn Coventry South</a></strong> Despite being geographically closer to the university, it is poorly served by buses.</p>
-          <p><strong><a href="https://www.village-hotels.co.uk/coventry">Village Hotel Coventry</a></strong> Placed on the 11’s route, but isn’t close to anything really.</p>
-        </div>
-        <div class="content">
-          <p>We would generally then recommend hotels around the city centre, as they are much better connected to the university than some places geographically closer by.</p>
-          <p><strong><a href="https://all.accor.com/hotel/2793/index.en.shtml">ibis Coventry Centre</a></strong> Very close to the train station, so just as frequently served by the 12X and 11 buses.</p>
-          <p><strong><a href="https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-earlsdon-park.html">Premier Inn Earlsdon Park</a></strong> or <strong><a href="https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-belgrade-plaza.html">Premier Inn Belgrade Plaza</a></strong> Slightly out the centre, fairly well-connected.</p>
-          <p><strong><a href="https://www.britanniahotels.com/hotels/the-britannia-hotel-coventry">Britannia Hotel Coventry</a></strong> Slightly out the wrong side of the city, but there are lots of buses from Poole Meadow Bus Station.</p>
-        </div>
-      </div>
-      <hr>
-
-      <h1 class="title is-size-2">Eating Around Campus</h1>
-
-      <div class="whats-on-wrapper">
-        <div class="content">
-          <p><strong><a href="https://www.warwicksu.com/venues-events/eating-drinking/">SU</a></strong> Nothing exciting but cheap. There is the pub (The Dirty Duck) and cafe (Curiositea). Also run by the SU is Rootes Grocery Store it stocks Co-Op items (expensive).</p>
-          <p><strong><a href="https://warwick.ac.uk/services/retail/eat-drink/">University</a></strong> Slightly more expensive (but still cheap) and nicer. Are a bit further away. Their opening times can be found at <a href="https://warwick.ac.uk/services/retail/openingtimes/">https://warwick.ac.uk/services/retail/openingtimes/</a>.</p>
-        </div>
-        <div class="content">
-          <p><strong><a href="https://www.cannonparkshopping.co.uk/stores/">Cannon Park</a></strong> Cheapest but furthest away (~15 minute walk). Has Tesco, Costa, Subway and more. There are also a couple of streetfood stalls nearby. ALDI is a further 2 minutes away.</p>
-          <p><strong>Leamington &amp; Coventry</strong> Have a whole bunch of nice food but require a bus ride to get to.</p>
-        </div>
-      </div>
+      {{ md::load_md(path="guide/travel.md") }}
     </div>
   </section>
 </article>
