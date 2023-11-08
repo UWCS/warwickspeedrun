@@ -1,14 +1,10 @@
-{% extends "base.html" %}
+{% extends "guide.html" %}
 
-{% import "macros/svgs.html" as svgs %}
-{% import "macros/md.html" as md %}
-
-{% block outercontents %}
-<article id="content" class="w-100 bg-transparent">
+{% block guide %}
   <section id="about" class="section">
     <div class="container">
       <div class="content">
-        <h1 class="title is-size-2"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a> | WASD {{ config.extra.event_year }} Runners Guide</h1>
+        <h1 class="title is-size-2">WASD {{ config.extra.event_year }} Runners Guide</h1>
         <hr class="title-divider" />
         {{ md::load_md(path="guide/intro.md") }}
       </div>
@@ -43,5 +39,4 @@
       {{ md::load_md(path="guide/info.md") }}
     </div>
   </section>
-</article>
-{% endblock content%}
+{% endblock guide %}
