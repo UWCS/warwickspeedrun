@@ -3,7 +3,11 @@ set -e
 
 export SCRIPT_DIR=$(dirname "$(realpath $0)")
 cd $SCRIPT_DIR && echo "Running in $SCRIPT_DIR"
-if [ -z $NO_PULL ]; then git pull --force --recurse-submodules; fi
+if [ -z $NO_PULL ]; then 
+    git fetch --all --prune
+    git reset --hard origin/master
+    git pull --recurse-submodules
+fi
 
 # Build main
 ./zola build --base-url https://warwickspeed.run --output-dir ../build --force
