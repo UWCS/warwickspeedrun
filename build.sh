@@ -14,11 +14,7 @@ fi
 
 # Remove redundant css from prod site
 if which purgecss; then
-    (
-    cd ../build
-    purgecss --config $SCRIPT_DIR/purgecss.config.js
-    purgecss --config $SCRIPT_DIR/purgecss.config.js --css icon-packs/*.css --output icon-packs
-    )
+    purgecss --config purgecss.config.js
 fi
 
 # Swap versions asap

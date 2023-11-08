@@ -1,7 +1,7 @@
 module.exports = {
-  content: ['*.html', '**/*.html', '*.js', '**/*.js'],
-  css: ['*.css'],
-  output: ['.'],
+  content: ['public/*.html', 'public/**/*.html', 'public/*.js', 'public/**/*.js'],
+  css: ['public/*.css'],
+  output: 'public',
   dynamicAttributes: ["data-bs-theme", "aria-expanded"],
   safelist: [/phase-/]
 }
