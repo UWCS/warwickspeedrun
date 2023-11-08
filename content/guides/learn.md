@@ -6,7 +6,7 @@ Don't know where to start speedrunning? Hopefully we can give you some pointers!
 
 <div class="row">
 
-<div class="col-6">
+<div class="col-lg-6">
 
 #### Step 1 - Find your game!
 
@@ -17,7 +17,7 @@ Pick a game you want to play endlessly and **not get bored by!** Speedrunning is
 Some games have a obvious end, some do not! Check speedrun.com for existing categories if you aren’t sure what goals exist for your favourite game. Sometimes this is full completion (100%), reaching the end only (Any%), or without glitches & exploits (Glitchless).
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 
 #### Step 2 - Practice!
 
@@ -31,7 +31,7 @@ Or simply **ask someone!** Most speedrunners are passionate about their game, an
 
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 
 #### Step 3 - Put it in Action!
 
@@ -43,7 +43,7 @@ Eventually you'll want to be putting together full runs. But remember, at this s
 
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 
 #### Step 4 - Record your Run!
 
@@ -55,7 +55,7 @@ If you are recording a console, HDMI capture cards are useful -- you don't need 
 
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 
 #### Step 5 - Submit!
 

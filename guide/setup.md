@@ -1,5 +1,5 @@
 
-<div class="col-6">
+<div class="col-lg-6">
 <div class="content backing">
 
 We will be in Warwick Students' Union Atrium, which is a great venue for us.
@@ -11,7 +11,7 @@ We will be set up on the Atrium's stage, with two projector screens to either si
 </div>
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 <div class="content backing">
 
 ## The Computers
@@ -23,7 +23,7 @@ The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esp
 </div>
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 <div class="content backing">
 
 ## Consoles
@@ -41,7 +41,7 @@ If you are bringing your own console, laptop, or PC then we will be using an HDM
 </div>
 </div>
 
-<div class="col-6">
+<div class="col-lg-6">
 <div class="content backing">
 
 ## Software
@@ -57,7 +57,7 @@ Please come along at least half an hour before your scheduled slot and come talk
 </div>
 </div>
 
-<!-- <div class="col-6">
+<!-- <div class="col-lg-6">
 <div class="content backing">
 
 ## Remote Runs

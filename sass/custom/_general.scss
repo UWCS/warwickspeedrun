@@ -3,6 +3,10 @@
   display: none;
 }
 
+#main {
+  flex-grow: 1;
+}
+
 section strong,
 section a {
   color: var(--bs-emphasis-color, $hero-text);
@@ -95,4 +99,10 @@ svg {
 
 .row {
   --bs-gutter-y: 1.5rem;
+}
+
+#timeline-container h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7a7a7a;
 }

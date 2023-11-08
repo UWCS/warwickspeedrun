@@ -2,4 +2,4 @@ Started in 2016, Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedru
 
 WASD will be returning on {{ event_date_range }} with submissions open now!
 
-The event raises money for SpecialEffect, a charity which develops and provides assistive technology to help people with disabilities to play games. To date, we have raised over {{money_raised}}!
+The event raises money for SpecialEffect, a charity which develops and provides assistive technology to help people with disabilities to play games. To date, we have raised over {{ money_raised }}!
