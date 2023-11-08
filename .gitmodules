@@ -1,4 +1,3 @@
-[submodule "themes/uwcs"]
-	path = themes/uwcs
-	url = https://github.com/UWCS/new-site-theme
-	branch = master
+[submodule "sass/bootstrap"]
+	path = sass/bootstrap
+	url = https://github.com/twbs/bootstrap
