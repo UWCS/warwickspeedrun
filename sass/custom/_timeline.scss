@@ -1,8 +1,10 @@
 .timeline {
     list-style-type: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: center;
+    padding: 0;
 
     & .timestamp {
         margin: 20px;
@@ -17,7 +19,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        transition: all 200ms ease-in;
+        // transition: all 200ms ease-in;
         padding: 20px;
         min-width: max-content;
         border-top: 4px solid $hero-gradient-tint;
@@ -28,12 +30,12 @@
         content: "";
         width: 25px;
         height: 25px;
-        rotate: 45deg;
+        transform: rotate(45deg);
         border: 4px solid #ddd;
         position: absolute;
         top: -15px;
         left: calc(50% - 12.5px);
-        transition: all 200ms ease-in;
+        // transition: all 200ms ease-in;
         background-color: $hero-gradient-tint;
         border: none;
     }
@@ -42,6 +44,7 @@
         & .status {
             border-top: 4px solid;
             border-image: linear-gradient(to right, $hero-gradient-tint 50%, #D6DCE0 50%) 100% 1;
+            border-bottom: 0;
         }
 
         & .status:before {
@@ -58,42 +61,42 @@
         & .status:before {
             background-color: white;
             border: 4px solid #ddd;
-            transition: all 200ms ease-in;
+            // transition: all 200ms ease-in;
         }
     }
 }
 
-
-@media (min-device-width: 640px) and (max-device-width: 960px) {
+@include media-breakpoint-between(md, lg) {
     .timeline {
         float: left;
     }
 }
 
-@media (max-device-width: 640px) {
+@include media-breakpoint-down(md) {
     #timeline-div {
         display: flex;
         justify-content: center;
     }
 }
 
-@media (max-device-width: 960px) {
+@include media-breakpoint-down(lg) {
     .timeline {
         list-style-type: none;
         display: inline-block;
 
 
         & .timestamp {
-            width: 100px;
+            width: 80px;
             align-items: end;
             margin-right: 30px;
         }
 
         & .tl-elem {
-            transition: all 200ms ease-in;
+            // transition: all 200ms ease-in;
             width: inherit;
             display: flex;
             flex-direction: row;
+            -webkit-flex-direction: row;
         }
 
         .tl-elem .status {
@@ -105,6 +108,7 @@
         .tl-elem.complete .status {
             border-top: 0;
             border-left: 4px solid;
+            border-right: 0;
             border-image: none;
             border-image: linear-gradient(to bottom, $hero-gradient-tint 50%, #D6DCE0 50%) 1 100%;
         }
@@ -117,7 +121,7 @@
         & .status:before {
             left: -14.5px;
             top: calc(50% - 12.5px);
-            transition: all 200ms ease-in;
+            // transition: all 200ms ease-in;
             z-index: 5;
         }
     }
