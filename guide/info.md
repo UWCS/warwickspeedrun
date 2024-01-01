@@ -20,7 +20,7 @@ We've had some great donation incentives in the past, and there's nothing like m
 
 Donation incentives can be almost anything:
 
-- an upgrade to the run: "do x bonus level", "enable hard mode", or "collect a bonus collectible"
+- An upgrade to the run: "do x bonus level", "enable hard mode", or "collect a bonus collectible"
 - A bid war over a basic choice: "which character to play with?", "clothing choice"
 - Trigger an event: "will do x for every donation" (towards that incentive)
 - Something silly (e.g. install a funny cosmetic mod or pet a dog in the game)

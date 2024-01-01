@@ -2,7 +2,7 @@
 <div class="col-lg-6">
 <div class="content backing">
 
-We will be in Warwick Students' Union Atrium, which is a great venue for us.
+WASD 2024 will be in Warwick University's Students' Union Atrium, which is a great venue for us.
 
 ![/images/layout.png](/images/layout.png)
 
@@ -30,11 +30,11 @@ The computers are loaned from [Warwick Esports Centre](https://warwick.ac.uk/esp
 
 [Warwick Computing Society](https://uwcs.co.uk/) have a variety of consoles they are able to provide:
 
-- XBox One & 360
+- Xbox One & 360
 - Nintendo: Switch, Wii U, Wii, and GameCube
 - PS4
 
-If you require any of these for your run, ensure to mention this them beforehand.
+If you require any of these for your run, please mention this beforehand.
 
 If you are bringing your own console, laptop, or PC then we will be using an HDMI capture card to record your device’s output. For modern devices, this is straight forward, but older devices may need an adapter.
 
