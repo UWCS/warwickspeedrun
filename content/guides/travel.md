@@ -4,18 +4,17 @@ title = "Travel Guide"
 
 ## Location
 
-Please note: Warwick University is on the outskirts of **Coventry, not the town of Warwick!**
+Warning: the University of Warwick is on the outskirts of **Coventry, not the town of Warwick!**
 
 <div class="whats-on-wrapper">
 
 <div class="content">
 
-### Arriving by Rail
+### Rail and Bus
 
-Coventry Railway Station is well-connected to Birmingham and London. There are frequent trains from Birmingham New Street that take ~20 minutes. In addition, it may be more convenient to travel to Canley Rail Station which is also in walking distance of the University.
+[Coventry Railway Station](https://maps.app.goo.gl/ZVKQ3m2a81Uc7mq38) is well-connected to both Birmingham and London. Since the university is on the outskirts of Coventry, [Canley Station](https://maps.app.goo.gl/7eR142uVegZR7f6x8) has the shortest walking distance.
 
-### Buses 
-Coventry Railway Station has frequent buses to campus through the express 12X or the slower 11 (both operated by National Express). These can be caught from the [Rail Station Bridge stop](https://goo.gl/maps/YAqPpQXVXqzpKPz76), just outside the station (try to leave through the new bit). Alternatively, the 11 also stops at [Station Interchange](https://goo.gl/maps/Lu3GGVELEek24b7f8), through the underpass tunnel.
+There are frequent buses from [just outside Coventry Railway Station](https://goo.gl/maps/YAqPpQXVXqzpKPz76) to campus, taking either the 12X or 11 (operated by National Express).
 
 </div>
 
@@ -23,7 +22,7 @@ Coventry Railway Station has frequent buses to campus through the express 12X or
 
 ### Arriving by Car
 
-Warwick University is on the south-western edge of **Coventry** (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See [this map](https://warwick.ac.uk/services/carparks/where/) and [this website](https://warwick.ac.uk/services/carparks/) for up-to-date information. The car parking rules on campus can be a bit tricky, so please be careful.
+Warwick University is on the south-western edge of **Coventry** (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See [this website](https://warwick.ac.uk/services/carparks/) for up-to-date information. The parking rules on campus can be a little awkward, so please be careful.
 
 ### Getting Around Campus
 
@@ -41,28 +40,13 @@ Campus is walkable and fully wheelchair accessible. The SU Atrium (where we’ll
 
 <div class="content">
 
-If you are coming from further afield and want to stay overnight in the local area, there is a wide range of hotels available in central Coventry, which are a short walk away from any bus-routes to the University Campus. There are many more than listed here, and we are not affliated with any.
+If you're coming from further afield and want to stay overnight, there are a wide range of hotels to choose from - while we are not affiliated with any, here are a selection:
 
-[Ibis Coventry Centre](https://all.accor.com/hotel/2793/index.en.shtml) Very close to the train station, so just as frequently served by the 12X and 11 buses.
+If you'd like to stay in central Coventry, then [Premier Inn Earlsdon Park](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-earlsdon-park.html) and [Ibis Coventry Centre](https://all.accor.com/hotel/2793/index.en.shtml) are a close walk to the train station and bus routes. [Hotel Indigo Coventry](https://coventry.hotelindigo.com/) is the closest, but more expensive.
 
-[Premier Inn Earlsdon Park](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-earlsdon-park.html) or [Premier Inn Belgrade Plaza](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-belgrade-plaza.html) Slightly out the centre, fairly well-connected.
-
-[Britannia Hotel Coventry](https://www.britanniahotels.com/hotels/the-britannia-hotel-coventry) On the far end of the city, though well served from Poole Meadow Bus Station. Likely the cheapest.
+If you'd like to be geographically closer, there is accomodation directly [on-campus](https://warwick.ac.uk/services/conferences/bed-and-breakfast/) at a premium. [Premier Inn Coventry South](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html) and [Village Hotel Coventry](https://www.village-hotels.co.uk/coventry) are also closer, with less amenities directly around. Finally, [Premier Inn Balsall Common](https://www.premierinn.com/gb/en/hotels/england/west-midlands/balsall-common/balsall-common-near-nec.html) is further out, but good value-for-money if you're driving.
 
 </div>
-
-<div class="content">
-
-We would generally then recommend hotels around the city centre, as they are much better connected to the university than some places geographically closer by. However, if you want to be closer (or drive), we have some options:
-
-[Warwick Conferences: Scarman or Radcliffe](https://warwick.ac.uk/services/conferences/bed-and-breakfast/) On campus, but at a premium.
-
-[Premier Inn Coventry South](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html) Despite being geographically closer to the university, the buses can be unreliable.
-
-[Village Hotel Coventry](https://www.village-hotels.co.uk/coventry) Placed on the 11’s route, but doesn't have much around.
-
-</div>
-
 </div>
 
 <hr>
@@ -70,20 +54,9 @@ We would generally then recommend hotels around the city centre, as they are muc
 ## Eating Around Campus
 
 <div class="whats-on-wrapper">
-
 <div class="content">
 
-Warwick campus hosts a range of places to eat and buy food, owned either by the [SU](https://www.warwicksu.com/venues-events/eating-drinking/) or [University](https://warwick.ac.uk/services/retail/openingtimes/) itself. Check these links for a full list.
-
-**In & around the SU**: Curiositea (cafe), Dirty Duck (pub), Pret A Manger, Rootes Grocery Store, Jidong (bubble tea).
-**On Campus**: Benugo (Arts Centre, fancy), Cafe Nero, Bar Fusion (Also close to our Esports Centre!).
-
-</div>
-
-<div class="content">
-
-**Cannon Park** (~15mins walk): Greggs, Subway, Costa, Tesco, ALDI, Street food vans. Furthest away, but largest variety. There is also a nice pub called The Phantom Coach which is a little past Cannon Park.  
-**Leamington & Coventry** Have plenty of other places to get food but may require a short bus ride to reach.
+The university campus hosts a range of places to eat and drink, owned by either the [SU](https://www.warwicksu.com/venues-events/eating-drinking/) or [University](https://warwick.ac.uk/services/retail/openingtimes/). There are also three pub-restaurants nearby: The Dirty Duck, Varsity, and The Phantom Coach. The [Cannon Park](https://www.cannonparkshopping.co.uk/) shopping center is directly adjacent to campus, with a big Tesco, Aldi, and some fast food places like Greggs and Subway.
 
 </div>
 
