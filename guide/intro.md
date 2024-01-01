@@ -1,4 +1,4 @@
-WASD {{ event_year }} will be on-site at the University of Warwick, UK, in the atrium of the <a target="_blank" href="https://goo.gl/maps/NqFXnJLw5Jzzumho6">Student Union</a>, and streamed live to [Twitch](/twitch). For 2024, we don't currently plan to accept online runs.
+WASD {{ event_year }} will be on-site at the University of Warwick, UK, in the <a target="_blank" href="https://goo.gl/maps/NqFXnJLw5Jzzumho6">Students' Union Atrium</a>, and streamed live to [Twitch](/twitch). For 2024, we don't currently plan to accept online runs.
 
 Got a question about any aspect of the event? Please don't hesitate to reach out on our [Discord](/discord), either in public channels or directly to an @Organiser.
 

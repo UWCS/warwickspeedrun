@@ -3,7 +3,7 @@
 
 ## PCs and Consoles
 
-The PCs are kindly loaned from the [Warwick Esports Centre](https://warwick.ac.uk/esports), and should have more than powerful enough [specifications](https://warwick.ac.uk/esports/play/) for your runs. We can provide a controller, or you can bring your own if you prefer - just let us know.
+The PCs are kindly loaned from the [Warwick Esports Centre](https://warwick.ac.uk/esports), and should have more than powerful enough [specifications](https://warwick.ac.uk/esports/play/) for your runs. We can provide a controller, or you can bring your own gear if you prefer - just let us know.
 
 ![/dist/img/tech.jpg](/images/tech.jpg)
 
@@ -11,7 +11,7 @@ We can pre-install many games, however if you have requirements for specific ver
 
 The [Computing Society](https://uwcs.co.uk/) can provide the following consoles - again, let us know if you need one for your run:
 
-- Xbox: Xbox One and Xbox 360
+- Xbox: Xbox One X and Xbox 360
 - Nintendo: Switch, Wii U, Wii, and GameCube
 - Playstation: PS4
 
@@ -25,7 +25,7 @@ If you're bringing your own device, please note that we'll be using a HDMI captu
 
 ## On the Day
 
-Please arrive **at least half an hour before** your scheduled slot, and come talk to the tech crew so we can set things up beforehand. The SU atrium should look something like this:
+Please arrive **at least half an hour before** your scheduled slot, and come talk to the tech crew so we can set things up beforehand. The SU Atrium should look something like this:
 
 ![/images/layout.png](/images/layout.png)
 

@@ -12,9 +12,11 @@ Warning: the University of Warwick is on the outskirts of **Coventry, not the to
 
 ### Rail and Bus
 
-[Coventry Railway Station](https://maps.app.goo.gl/ZVKQ3m2a81Uc7mq38) is well-connected to both Birmingham and London. Since the university is on the outskirts of Coventry, [Canley Station](https://maps.app.goo.gl/7eR142uVegZR7f6x8) has the shortest walking distance.
+[Coventry Railway Station](https://maps.app.goo.gl/ZVKQ3m2a81Uc7mq38) is well-connected to both Birmingham and London. 
 
-There are frequent buses from [just outside Coventry Railway Station](https://goo.gl/maps/YAqPpQXVXqzpKPz76) to campus, taking either the 12X or 11 (operated by National Express).
+There are frequent buses from [just outside Coventry Railway Station](https://goo.gl/maps/YAqPpQXVXqzpKPz76) to campus, taking either the 12X or 11 -- these also connect to the city centre.
+
+If you don't mind walking, [Canley Station](https://maps.app.goo.gl/7eR142uVegZR7f6x8) is the closest to the university, at a half an hour walk, although not well served by buses.
 
 </div>
 
@@ -44,7 +46,9 @@ If you're coming from further afield and want to stay overnight, there are a wid
 
 If you'd like to stay in central Coventry, then [Premier Inn Earlsdon Park](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-city-centre-earlsdon-park.html) and [Ibis Coventry Centre](https://all.accor.com/hotel/2793/index.en.shtml) are a close walk to the train station and bus routes. [Hotel Indigo Coventry](https://coventry.hotelindigo.com/) is the closest, but more expensive.
 
-If you'd like to be geographically closer, there is accomodation directly [on-campus](https://warwick.ac.uk/services/conferences/bed-and-breakfast/) at a premium. [Premier Inn Coventry South](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html) and [Village Hotel Coventry](https://www.village-hotels.co.uk/coventry) are also closer, with less amenities directly around. Finally, [Premier Inn Balsall Common](https://www.premierinn.com/gb/en/hotels/england/west-midlands/balsall-common/balsall-common-near-nec.html) is further out, but good value-for-money if you're driving.
+If you'd like to be geographically closer, there is accomodation directly [on-campus](https://warwick.ac.uk/services/conferences/bed-and-breakfast/) at a premium. [Village Hotel Coventry](https://www.village-hotels.co.uk/coventry) is somewhat close and connected by bus, but has less amenities directly around. 
+
+[Premier Inn Balsall Common](https://www.premierinn.com/gb/en/hotels/england/west-midlands/balsall-common/balsall-common-near-nec.html) and [Premier Inn Coventry South](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html) are good value-for-money if you're driving, but very poorly served by buses.
 
 </div>
 </div>
@@ -57,6 +61,8 @@ If you'd like to be geographically closer, there is accomodation directly [on-ca
 <div class="content">
 
 The university campus hosts a range of places to eat and drink, owned by either the [SU](https://www.warwicksu.com/venues-events/eating-drinking/) or [University](https://warwick.ac.uk/services/retail/openingtimes/). There are also three pub-restaurants nearby: The Dirty Duck, Varsity, and The Phantom Coach. The [Cannon Park](https://www.cannonparkshopping.co.uk/) shopping center is directly adjacent to campus, with a big Tesco, Aldi, and some fast food places like Greggs and Subway.
+
+Coventry Centre and Royal Leamington Spa have a more diverse selection, but require buses to reach.
 
 </div>
 
