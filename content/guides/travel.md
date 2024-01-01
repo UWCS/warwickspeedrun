@@ -4,7 +4,7 @@ title = "Travel Guide"
 
 ## Location
 
-Please note: Warwick University is in **Coventry, not the town of Warwick!**
+Please note: Warwick University **Coventry, not the town of Warwick!**
 
 <div class="whats-on-wrapper">
 
@@ -23,7 +23,7 @@ Coventry Railway Station has frequent buses to campus through the express 12X or
 
 ### Arriving by Car
 
-Warwick University is on the south-western edge of Coventry (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See [this map](https://warwick.ac.uk/services/carparks/where/where_can_i_park_-Jan_2022v2.pdf) and [this website](https://warwick.ac.uk/services/carparks/) for up-to-date information. The car parking rules on campus can be a bit tricky, so be careful.
+Warwick University is on the south-western edge of Coventry (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See [this map](https://warwick.ac.uk/services/carparks/where/) and [this website](https://warwick.ac.uk/services/carparks/) for up-to-date information. The car parking rules on campus can be a bit tricky, so be careful.
 
 ### Getting Around Campus
 
