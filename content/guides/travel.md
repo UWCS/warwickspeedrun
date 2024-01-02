@@ -35,10 +35,10 @@ Campus is walkable and fully wheelchair accessible. The SU Atrium (where we’ll
 
 <hr>
 
-## Staying Nearby
-
 <div class="whats-on-wrapper">
 <div class="content">
+
+## Staying Nearby
 
 If you're coming from further afield and want to stay overnight, there are a wide range of hotels to choose from - while we are not affiliated with any, here are a selection:
 
@@ -47,14 +47,10 @@ If you'd like to stay in central Coventry, then [Premier Inn Earlsdon Park](http
 If you'd like to be geographically closer, there is accomodation directly [on-campus](https://warwick.ac.uk/services/conferences/bed-and-breakfast/) at a premium. [Premier Inn Coventry South](https://www.premierinn.com/gb/en/hotels/england/west-midlands/coventry/coventry-south-a45.html) and [Village Hotel Coventry](https://www.village-hotels.co.uk/coventry) are also closer and connected by bus, with less amenities directly around. Finally, [Premier Inn Balsall Common](https://www.premierinn.com/gb/en/hotels/england/west-midlands/balsall-common/balsall-common-near-nec.html) is further out, but good value-for-money if you're driving.
 
 </div>
-</div>
 
-<hr>
-
-## Eating Around Campus
-
-<div class="whats-on-wrapper">
 <div class="content">
+
+## Eating around Campus
 
 The university campus hosts a range of places to eat and drink, owned by either the [SU](https://www.warwicksu.com/venues-events/eating-drinking/) or [University](https://warwick.ac.uk/services/retail/openingtimes/). There are also three pub-restaurants nearby: The Dirty Duck, Varsity, and The Phantom Coach. The [Cannon Park](https://www.cannonparkshopping.co.uk/) shopping center is directly adjacent to campus, with a big Tesco, Aldi, and some fast food places like Greggs and Subway.
 
