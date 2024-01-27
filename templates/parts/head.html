@@ -48,7 +48,7 @@
 </head>
 
 <script>
-  const schedulePhase = {% if purgecssConfig.extra.show_schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %}
+  const schedulePhase = {% if config.extra.show_schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %}
   
 /** Countdown timer **/
 const subCloseDate = new Date("{{ config.extra.sub_close_time }}").getTime();
