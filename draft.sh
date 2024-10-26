@@ -12,6 +12,6 @@ if [ -z $NO_PULL ]; then
 fi
 
 # Build main
-./zola build --base-url https://draft.warwickspeed.run --output-dir ../draft/public --force
+./zola build --base-url https://wasd-draft.uwcs.co.uk --output-dir ../draft/public --force
 
 [[ -f /srv/restart-lighttpd.sh ]] && sudo /srv/restart-lighttpd.sh
