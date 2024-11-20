@@ -35,7 +35,7 @@ We currently have three guides:
     <div class="content backing">
         <h2>How to Speedrun</h2>
         <p>An overview of getting started with speedrunning</p>
-        <a class="ms-3" href="guides/learn">Read More >>></a>
+        <a class="ms-3" href="learn">Read More >>></a>
     </div>
 </div>
 
@@ -43,7 +43,7 @@ We currently have three guides:
     <div class="content backing">
     <h2>Runners Guide</h2>
     <p>Event & submission details for runners, including a tech guide</p>
-    <a class="ms-3" href="guides/runner">Read More >>></a>
+    <a class="ms-3" href="runner">Read More >>></a>
     </div>
 </div>
 
@@ -51,7 +51,7 @@ We currently have three guides:
     <div class="content backing">
     <h2>Travel Guide</h2>
     <p>How to get to University of Warwick (It's in Coventry!) and where to stay around here</p>
-    <a class="ms-3" href="guides/travel">Read More >>></a>
+    <a class="ms-3" href="travel">Read More >>></a>
     </div>
 </div>
 
