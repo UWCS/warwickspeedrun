@@ -28,7 +28,7 @@ If you're bringing your own device, please note that we'll be using a HDMI captu
 
 ## On the Day
 
-Please arrive **at least half an hour before** your scheduled slot, and come talk to the tech crew so we can set things up beforehand. The SU Atrium should look something like this:
+Please arrive **at least half an hour before** your scheduled slot, and come talk to the tech crew so we can set things up beforehand. Our layout should look something like this:
 
 ![/images/layout.png](/images/layout.png)
 
