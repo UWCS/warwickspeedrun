@@ -33,15 +33,16 @@
   <script src="{{ get_url(path="scripts/site.js", cachebust=true) }}" defer></script>
   <script src="{{ get_url(path="scripts/darkmode.js", cachebust=true) }}" defer></script>
 
-  <link rel="preload" as="font" type="font/woff2" href="/fonts/mulish-v13-latin-regular.woff2" crossorigin />
-  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-600.woff2" crossorigin />
+  {#<link rel="preload" as="font" type="font/woff2" href="/fonts/mulish-v13-latin-regular.woff2" />
+  <link as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-600.woff2" />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-normal.woff2" />#}
 
   {# Open Graph #}
   <meta property="og:title" content="Warwick Speedrunning 2024" />
   <meta name="description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
   <meta property="og:description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
   <meta property="og:url" content="{{current_url | safe }}" />
-  <meta property="og:image" content="{{ get_url(path=" bg-16-9.png")}}" />
+  <meta property="og:image" content="{{ get_url(path="bg-16-9.png")}}" />
   <meta property="og:locale" content="en_GB" />
   <meta name="keywords" content="Speedrunning, Warwick, Speedrun, Charity, SpecialEffect, UK, UWCS, Computing, University, Computer Science, Warwick, University of Warwick Computing Society, Programming, Gaming, Coding">
 

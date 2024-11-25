@@ -1,22 +1,22 @@
 $wasd-background: #fafafa;
 
-$hero-gradient-end: #3b0051;
-$hero-gradient-start: #661e92;
-$hero-gradient-tint: #d71eef;
-$hero-text: #1c002d;
+$hero-gradient-end: #15B228;
+$hero-gradient-start: #0E624A;
+$hero-gradient-tint: #15B228;
+$hero-text: #0F6C46;
 
-$where-grad-start: #501e92;
-$where-grad-end: #370051;
+$where-grad-start: #15B228;
+$where-grad-end: #0E624A;
 $where-text: $hero-text;
 
-$drop-shadow: #1F005188;
+$drop-shadow: #0E624A88;
 
 $uwcs-grey: #202429;
 $uwcs-greyer: #2F3338;
 
-$dark-purple: #74009D;
-$purple: #8A01CA;
-$pink: #C601A0;
+$dark-purple: #0E624A;
+$purple: #15B228;
+$pink: #E4E82B;
 
 $body-bg: #fafafa;
 // $body-bg-dark: $uwcs-grey;
@@ -26,6 +26,17 @@ $body-emphasis-color-dark: #fafafa;
 $body-color: #363636;
 
 // $body-secondary-bg-dark: $uwcs-greyer;
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin-regular.woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v26-latin-600.woff2');
+    font-weight: 600;
+}
 
 $font-family-sans-serif: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 $headings-font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
