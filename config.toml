@@ -30,4 +30,4 @@ event_date_range = "8-9th Feb"
 signup_link = "https://oengus.fun/wasd2025"
 money_raised = "&#163;10,000"
 
-show_schedule = false
+show_schedule = true
