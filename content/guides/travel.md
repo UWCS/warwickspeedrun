@@ -28,7 +28,7 @@ Warwick University is on the south-western edge of **Coventry** (Postcode: CV4 7
 
 ### Getting Around Campus
 
-Campus is walkable and fully wheelchair accessible. The SU Atrium (where we’ll be) is on central campus and two minutes from the Bus Interchange. When navigating around campus, the [Interactive Campus Map](https://campus.warwick.ac.uk/search/623c8897421e6f5928c0d2e2) can be useful.
+Campus is walkable and fully wheelchair accessible. The Esports Centre (where we’ll be) is on central campus and two minutes from the Bus Interchange. When navigating around campus, the [Interactive Campus Map](https://campus.warwick.ac.uk/search/66167610d8dbf518cbed2bfb?projectId=warwick) can be useful.
 
 </div>
 </div>
