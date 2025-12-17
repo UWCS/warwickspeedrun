@@ -7,7 +7,7 @@
 {{ super() }}
 {% endblock %}
 
-{% block title %}Warwick Speedrunning 2024{% endblock title %}
+{% block title %}Warwick Speedrunning {{ config.extra.event_year }} {% endblock title %}
 {% block header %}{% endblock header %}
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
@@ -47,7 +47,7 @@
               <p class="phase-during" hidden>Donate <strong><a target="_blank" href="https://warwickspeed.run/donate"> on Tiltify!</a></strong>!</p>
               <p class="phase-after" hidden><strong>WASD {{ config.extra.event_year }} has finished!</strong> Thanks for supporting us and SpecialEffect!</p>
               <!--<p class="phase-after" hidden><strong>WASD {{ config.extra.event_year }} raised £1615 for SpecialEffect.</strong> Thanks everyone for your support!</p>-->
-              <!--<p class="phase-after" hidden>More info on WASD 2025 will be released soon ...</P>-->
+              <p class="phase-after" hidden>More info on WASD {{ config.extra.event_year | int + 1}} will be released soon ...</p>
 
             </div>
             <div class="buttons">
