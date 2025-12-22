@@ -1,7 +1,7 @@
 +++
 +++
 
-WASD {{ event_year }} will be on-site at the University of Warwick, UK, in the [{{ campus_location}}]({{ campus_location_url }}), and streamed live to [Twitch](/twitch).
+WASD {{ event_year }} will be on-site at the University of Warwick, UK, in the <a target="_blank" href="{{ campus_location_url }}">{{ campus_location }}</a>, and streamed live to [Twitch](/twitch).
 <!--For {{ event_year }}, we don't currently plan to accept online runs.-->
 
 Got a question about any aspect of the event? Please don't hesitate to reach out on our [Discord](/discord), either in public channels or directly to someone with the `Organiser` role.
