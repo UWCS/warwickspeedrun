@@ -1,14 +1,9 @@
 .event-wrapper {
-  background-image: url('/images/event-bg.png?v=2025'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
+  background-image: url('/images/event-bg.png?v=2026'), linear-gradient(5deg, $hero-gradient-end 5%, $hero-gradient-start 70%);
   background-size: cover;
   background-position: center;
 
   position: relative;
-
-  & h1,
-  & hr {
-    color: var(--bs-text-light);
-  }
 
   & .backing {
     border-radius: 40px;
@@ -47,6 +42,10 @@
     }
   }
 
+  & #setup-text {
+    color: rgba(black, 0.85);
+  }
+
   & #event-bottom-mask,
   & #event-top-mask {
     position: relative;
@@ -65,10 +64,12 @@
     min-height: 500px;
     position: relative;
 
+    & #event-title {
+      color: rgba(black, 0.9);
+    }
+
     & hr {
-      background-color: var(--bs-emphasis-color, $hero-text);
-      opacity: 1;
-      margin-bottom: 2em;
+      border-color: rgba(black, 0.9) !important;
     }
 
     & .columns {
@@ -79,5 +80,5 @@
       }
     }
   }
-
 }
+

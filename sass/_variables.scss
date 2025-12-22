@@ -1,29 +1,35 @@
-$wasd-background: #fafafa;
+$wasd-background: #FAFAFA;
 
-$hero-gradient-end: #15B228;
-$hero-gradient-start: #0E624A;
-$hero-gradient-tint: #15B228;
-$hero-text: #0F6C46;
+$hero-gradient-end: #FDCB03;
+$hero-gradient-start: #FF9C11;
+$hero-gradient-tint: #FF7411;
+$hero-text: #E66400;
 
-$where-grad-start: #15B228;
-$where-grad-end: #0E624A;
+$where-grad-start: #FDDC03;
+$where-grad-end: #FFBC11;
 $where-text: $hero-text;
 
-$drop-shadow: #0E624A88;
+$drop-shadow: #B15F1BC4;
 
 $uwcs-grey: #202429;
 $uwcs-greyer: #2F3338;
 
-$dark-purple: #0E624A;
-$purple: #15B228;
-$pink: #E4E82B;
+$dark-purple: #FF7411;
+$purple: #FEE404;
+$pink: #FDE403;
 
-$body-bg: #fafafa;
+$body-bg: #FAFAFA;
 // $body-bg-dark: $uwcs-grey;
 $body-emphasis-color: $hero-text;
-$body-emphasis-color-dark: #fafafa;
+$body-emphasis-color-dark: #FAFAFA;
 
-$body-color: #363636;
+[data-bs-theme=dark] {
+    $body-color: #FAFAFA;
+}
+
+[data-bs-theme=light] {
+    $body-color: rgba(black, 0.9);
+}
 
 // $body-secondary-bg-dark: $uwcs-greyer;
 

@@ -12,11 +12,13 @@ section a {
   color: var(--bs-emphasis-color, $hero-text);
 }
 
+/**
 @include media-breakpoint-up(md) {
   .section {
     padding: 3rem 3rem;
   }
 }
+**/  
 
 section a:not(:has(i, img, svg, div)) {
   text-decoration: underline;
@@ -73,23 +75,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/**
+p {
+  color: var(--bs-body-color);
+}
+**/
+
 h1,
 h2,
 h3,
 h4 {
+  //color: var(--bs-body-color);
+  line-height: 150%;
   font-weight: 600;
   margin-bottom: $s2;
   margin-top: $s3;
 }
 
-
-h1 {
-  margin-bottom: $s2;
-}
-
 hr {
-  opacity: 4%;
-  border-width: 2px;
+  opacity: .6;
+  border-top-width: 5px !important;
+  margin-bottom: 2em;
+  border-color: var(--bs-body-color);
+  //border-color: rgba(white, 0.8);
 }
 
 img,
@@ -103,6 +111,14 @@ svg {
 
 #timeline-container h4 {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 20px;
-  color: #7a7a7a;
 }
+
+/**
+#about {
+  & hr.title-divider {
+    border-color: rgba(white, 0.8) !important;
+  }
+}
+**/

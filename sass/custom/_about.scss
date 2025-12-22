@@ -51,7 +51,7 @@
     & h4 {
       text-align: center;
       margin-bottom: 20px;
-      color: hsl(0, 0%, 48%);
+      color: var(--bs-body-color);
     }
 
     // Logo row
@@ -85,7 +85,7 @@
           width: auto;
 
           & path {
-            fill: #222222;
+            fill: var(--bs-body-color);
           }
         }
       }

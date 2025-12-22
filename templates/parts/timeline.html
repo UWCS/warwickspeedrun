@@ -1,25 +1,25 @@
 <h4 class="title is-size-4">Timeline</h4>
 <div id="timeline-div">
-  <ul class="timeline" id="timeline">
-    <li class="tl-elem phase-sub complete">
-      <div class="timestamp">Now</div>
-      <div class="status">Submissions Open</div>
-    </li>
-    <li class="tl-elem phase-sub-closed">
-      <div class="timestamp">{{ config.extra.subs_close_date }}</div>
-      <div class="status">Submissions Close</div>
-    </li>
-    {# <li class="tl-elem">
-      <div class="timestamp">~#th Jan</div>
-      <div class="status">Runs Accepted</div>
-    </li> #}
-    <li class="tl-elem phase-schedule phase-before">
-      <div class="timestamp">~19th Jan</div>
-      <div class="status">Schedule Released</div>
-    </li>
-    <li class="tl-elem phase-during phase-ended">
-      <div class="timestamp">{{ config.extra.event_date_range }}</div>
-      <div class="status">WASD!</div>
-    </li>
-  </ul>
+    <ul class="timeline" id="timeline">
+        <li class="tl-elem phase-sub complete">
+            <div class="timestamp">Now</div>
+            <div class="status">Submissions Open</div>
+        </li>
+        <li class="tl-elem phase-sub-closed">
+            <div class="timestamp">{{ config.extra.subs_close_date }}</div>
+            <div class="status">Submissions Close</div>
+        </li>
+        {# <li class="tl-elem">
+            <div class="timestamp">~#th Jan</div>
+            <div class="status">Runs Accepted</div>
+        </li> #}
+        <li class="tl-elem phase-schedule phase-before">
+            <div class="timestamp">{{ config.extra.schedule_release_date }}</div>
+            <div class="status">Schedule Released</div>
+        </li>
+        <li class="tl-elem phase-during phase-ended">
+            <div class="timestamp">{{ config.extra.event_date_range }}</div>
+            <div class="status">WASD!</div>
+        </li>
+    </ul>
 </div>

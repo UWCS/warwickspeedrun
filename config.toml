@@ -4,12 +4,13 @@ base_url = "https://warwickspeed.run"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
+minify_html = false
+
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
 ignored_content = [
-    "**/README.md",
-    "**/archive/*/*"  # DRAFT
+    "**/README.md"
 ]
 
 [markdown]
@@ -20,14 +21,22 @@ external_links_target_blank = true
 paths_keep_dates = true
 
 [extra]
-event_year = "2025"  # e.g. "2022" or "Summer 2021"
-event_start_date = "8th Feb 2025"
-subs_close_date = "17th Jan"
-sub_close_time = "2025-01-17T23:59:00Z"
-countdown_time = "2025-02-08T10:00:00Z"
-end_time = "2025-02-09T21:00:00Z"
-event_date_range = "8-9th Feb"
-signup_link = "https://oengus.fun/wasd2025"
+event_year = "2026"  # e.g. "2022" or "Summer 2021"
+event_start_date = "14th Feb 2026"
+subs_close_date = "31st Jan"
+sub_close_time = "2026-01-31T23:59:00Z"
+schedule_release_date="2nd Feb"
+countdown_time = "2026-02-14T10:00:00Z"
+end_time = "2026-02-15T21:00:00Z"
+event_date_range = "14-15th Feb"
+signup_link = "https://oengus.fun/WASD2026"
 money_raised = "&#163;10,000"
+campus_location = "SU Atrium"
+campus_location_url = "https://link.mazemap.com/BF97vtlk"
+website_point_of_contact = "Raven"
+website_point_link = "https://github.com/raven0034"
 
 show_schedule = true
+
+[extra.theme]
+primary = "#FDCB03"

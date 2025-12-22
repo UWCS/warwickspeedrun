@@ -4,9 +4,15 @@
 <div class="col-lg-6">
 <div class="content backing">
 
-Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run by students at the Esports Centre, University of Warwick, UK. Now in its ninth year, it's the largest student-run speedrunning event in the UK.
+Warwick's Awesome Speedruns and Demos (WASD) is a 2-day speedrunning marathon run yearly at the University of Warwick, UK.
 
-Donations to the event are in support of [SpecialEffect](https://specialeffect.org.uk/), a wonderful UK-based charity whose mission is to put fun and inclusion back into the lives of people with physical disabilities, by helping them to play video games. They achieve this by using and developing a range of accessibility hardware and software, from modified joypads to eye-gaze technology. To date, the WASD events have raised over {{ money_raised }} for SpecialEffect!
+WASD is the *largest* student-run speedrunning event in the UK, and it's now in its ***tenth*** year! WASD is back for {{ event_year }}, kicking off on {{ event_start_date }} at: <a target="_blank" href="{{ campus_location_url }}">{{ campus_location }}, University of Warwick, UK</a>!
+
+We'll have great fun speedrunning, spectating and commentating a whole host of games, as well as doing various silly donation incentives to spice things up more!
+
+The event raises money for [SpecialEffect](https://specialeffect.org.uk), a charity which develops and provides assistive technology to help people with disabilities to play games.
+
+To date, we have raised over {{ money_raised }}!
 
 </div>
 </div>
@@ -18,7 +24,7 @@ Donations to the event are in support of [SpecialEffect](https://specialeffect.o
 
 WASD {{ event_year }} begins on **{{ event_start_date }}**.
 
-WASD submissions close on **{{ subs_close_date }}**.
+WASD submissions close on **{{ subs_close_date }}**, with the schedule being released around **{{ schedule_release_date }}**.
 
 <h4 class="title is-size-4">Where?</h4>
 

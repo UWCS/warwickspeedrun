@@ -7,26 +7,26 @@
 {% block header %}{% endblock header %}
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="container align-items-center">
-    <div class="navbar-nav">
-      <a class="nav-link" href="/"><i class="bi bi-house-fill"></i> Front Page</a>
-      <a class="nav-link" href="/guides"><i class="bi bi-bookmark-fill"></i> Guides</a>
-      <button id="dark-mode" class="nav-link ml-1" aria-label="Toggle dark mode">
-        <span class="fs-4 icon">{{ shortcodes::icon(icon="ph-moon") }}</span>
-      </button>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container align-items-center">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/"><i class="bi bi-house-fill"></i> Front Page</a>
+                <a class="nav-link" href="/guides"><i class="bi bi-bookmark-fill"></i> Guides</a>
+                <button id="dark-mode" class="nav-link ml-1" aria-label="Toggle dark mode">
+                    <span class="fs-4 icon">{{ shortcodes::icon(icon="ph-moon") }}</span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<article id="content" class="w-100 bg-transparent">
+
   {% block guide %}
-  <section id="about" class="section">
-    <div class="container">
-      <h1 class="title is-size-2">WASD {{ config.extra.event_year }} {{ resource.title }}</h1>
-      {{ resource.content | safe }}
-    </div>
-  </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h1 class="title is-size-2">WASD {{ config.extra.event_year }} {{ resource.title }}</h1>
+            {{ resource.content | safe }}
+        </div>
+    </section>
   {% endblock guide %}
-</article>
+
 {% endblock outercontents%}

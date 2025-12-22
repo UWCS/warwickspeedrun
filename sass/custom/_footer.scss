@@ -8,7 +8,13 @@
 
 footer.footer {
   background-color: $where-grad-end;
-  color: rgba(white, 0.85);
+  color: rgba(black, 0.85);
+
+  & #copyright {
+    & p {
+      color: rgba(black, 0.9);
+    }
+  }
 
   & #footer-wave {
     width: 100%;
@@ -25,7 +31,7 @@ footer.footer {
   }
 
   & .socials-title {
-    color: rgba(white, 0.9);
+    color: rgba(black, 0.9);
 
     margin-bottom: 0.4em;
   }
@@ -34,11 +40,11 @@ footer.footer {
     & a {
       text-decoration: underline;
 
-      color: rgba(white, 0.85);
+      color: rgba(black, 0.85);
 
       &:hover,
       &:focus {
-        color: white;
+        color: black;
       }
     }
   }
@@ -49,7 +55,7 @@ footer.footer {
 
       & a {
         font-size: 36px;
-        color: rgba(white, 0.7);
+        color: rgba(black, 0.7);
 
         margin-right: 1rem;
 
@@ -57,7 +63,7 @@ footer.footer {
 
         &:hover,
         &:focus {
-          color: rgba(white, 0.9);
+          color: rgba(rgb(0, 0, 0), 0.9);
         }
       }
     }

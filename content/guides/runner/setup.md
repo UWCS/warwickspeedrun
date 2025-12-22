@@ -6,14 +6,17 @@
 
 ## PCs and Consoles
 
-The PCs are kindly loaned from the [Warwick Esports Centre](https://warwick.ac.uk/esports), and should have more than powerful enough [specifications](https://warwick.ac.uk/esports/play/) for your runs. We can provide a controller, or you can bring your own gear if you prefer - just let us know.
+<!--
+The PCs are kindly loaned from the [Warwick Esports Centre](https://warwick.ac.uk/esports), and should have more than powerful enough [specifications](https://warwick.ac.uk/esports/play/) for your runs. 
+-->
+We can provide a controller, or you can bring your own gear if you prefer - just let us know.
 
 ![/dist/img/tech.jpg](/images/tech.jpg)
 
 The [Computing Society](https://uwcs.co.uk/) can provide the following consoles - again, let us know if you need one for your run:
 
 - Xbox: Xbox One X and Xbox 360
-- Nintendo: Switch, Wii U, Wii, and GameCube
+- Nintendo: Switch 2, Switch, Wii U
 - Playstation: PS4
 
 We can pre-install many games, however if you have requirements for specific versions, DLCs, or settings, let us know. We'd always recommend you bring a USB with everything installed as a backup, just in case.

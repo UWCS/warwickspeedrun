@@ -8,28 +8,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<script>
-  function dark () {
-      const curr_light = localStorage.getItem("dark_mode") == "light";
-      document.documentElement.setAttribute('data-bs-theme', curr_light ? "light" : "dark");
-  }
-  dark();
-</script>
-{% block head %}
-{% include "parts/head.html" %}
-{% endblock %}
-
-<body class="min-vh-100 viewport-width-100 vstack">
-  <div id="main" class="{% block main_extra %}bg-body px-3{% endblock %}">
-    {% block outercontents %}
-    <article id="content" class="py-4">
-      {% block header %}<h1>{{ resource.title | safe }}</h1>{% endblock %}
-      {% block content %}{% endblock %}
-    </article>
+    {% block head %}
+    {% include "parts/head.html" %}
     {% endblock %}
-  </div>
-  {% include "parts/footer.html" %}
-</body>
 
+    <body class="min-vh-100 viewport-width-100 vstack">
+        <div id="main" class="{% block main_extra %}bg-body px-3{% endblock %}">
+            {% block outercontents %}
+            <article id="content" class="py-4">
+                {% block header %}<h1>{{ resource.title | safe }}</h1>{% endblock %}
+                {% block content %}{% endblock %}
+            </article>
+            {% endblock %}
+        </div>
+        {% include "parts/footer.html" %}
+    </body>
 </html>

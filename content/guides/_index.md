@@ -8,7 +8,7 @@ We currently have three guides:
 
 <style>
     .content {
-        background-color: #2F3338;
+        /*background-color: #2F3338;*/
         position: relative;
         /* margin: 1em; */
         padding: 1.5em 2em;

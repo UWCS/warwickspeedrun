@@ -14,7 +14,7 @@ Warning: the University of Warwick is on the outskirts of **Coventry, not the to
 
 [Coventry Railway Station](https://maps.app.goo.gl/ZVKQ3m2a81Uc7mq38) is well-connected to both Birmingham and London. 
 
-There are frequent buses from [just outside Coventry Railway Station](https://goo.gl/maps/YAqPpQXVXqzpKPz76) to campus, taking either the 12X or 11 -- these also connect to the city centre.
+There are frequent buses from [just outside Coventry Railway Station](https://goo.gl/maps/YAqPpQXVXqzpKPz76) to campus, taking either the 12X or 11 - these also connect to the city centre.
 
 [Canley Station](https://maps.app.goo.gl/7eR142uVegZR7f6x8) is the closest to the university geographically, but is a half-hour walk and not well served by buses.
 
@@ -28,7 +28,7 @@ Warwick University is on the south-western edge of **Coventry** (Postcode: CV4 7
 
 ### Getting Around Campus
 
-Campus is walkable and fully wheelchair accessible. The Esports Centre (where we’ll be) is on central campus and two minutes from the Bus Interchange. When navigating around campus, the [Interactive Campus Map](https://campus.warwick.ac.uk/search/66167610d8dbf518cbed2bfb?projectId=warwick) can be useful.
+Campus is walkable and fully wheelchair accessible. The <a target="_blank" href="{{ campus_location_url }}">{{ campus_location }}</a> is on central campus and close to the Bus Interchange. When navigating around campus, the [Interactive Campus Map](https://link.mazemap.com/BF97vtlk) can be useful.
 
 </div>
 </div>
