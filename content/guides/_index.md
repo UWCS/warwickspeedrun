@@ -1,7 +1,7 @@
 +++
 title = "Guides"
-template = "guide.html"
 page_template = "guide.html"
+template = "guide.html"
 +++
 
 We currently have three guides:

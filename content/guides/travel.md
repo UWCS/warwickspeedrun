@@ -27,7 +27,6 @@ There are frequent buses from [just outside Coventry Railway Station](https://go
 Warwick University is on the south-western edge of **Coventry** (Postcode: CV4 7AL). There is lots of parking available on campus, although not all of it is publicly accessible. See [this website](https://warwick.ac.uk/services/carparks/) for up-to-date information. The parking rules on campus can be a little awkward, so please be careful.
 
 ### Getting Around Campus
-
 Campus is walkable and fully wheelchair accessible. The <a target="_blank" href="{{ campus_location_url }}">{{ campus_location }}</a> is on central campus and close to the Bus Interchange. When navigating around campus, the [Interactive Campus Map](https://link.mazemap.com/BF97vtlk) can be useful.
 
 </div>

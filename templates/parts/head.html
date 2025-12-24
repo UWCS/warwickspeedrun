@@ -1,9 +1,8 @@
-
 <head>
     <meta charset="utf-8">
     <title>
         {%- block title %}{{ resource.title | default(value="Warwick Speedrun") | striptags | safe }}
-        {%- endblock %} - WASD {{ config.extra.event_year }}
+        {%- endblock %} - WASD {{ e.event_year }}
     </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,12 +43,12 @@
     </script>
 
     <script>
-        const schedulePhase = {% if config.extra.show_schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %}
+        const schedulePhase = {% if e.show_schedule %} "phase-schedule" {% else %} "phase-sub-closed" {% endif %}
         
         /** Countdown timer **/
-        const subCloseDate = new Date("{{ config.extra.sub_close_time }}").getTime();
-        const countDownDate = new Date("{{ config.extra.countdown_time }}").getTime();
-        const endDate = new Date("{{ config.extra.end_time }}").getTime();
+        const subCloseDate = new Date("{{ e.sub_close_time }}").getTime();
+        const countDownDate = new Date("{{ e.countdown_time }}").getTime();
+        const endDate = new Date("{{ e.end_time }}").getTime();
     </script>
 
     {#<link rel="preload" as="font" type="font/woff2" href="/fonts/mulish-v13-latin-regular.woff2" />
@@ -57,7 +56,7 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-v26-latin-normal.woff2" />#}
 
     {# Open Graph #}
-    <meta property="og:title" content="Warwick Speedrunning {{ config.extra.event_year }}" />
+    <meta property="og:title" content="Warwick Speedrunning {{ e.event_year }}" />
     <meta property="og:description" content="A student-led speedrunning marathon in the UK supporting SpecialEffect." />
     <meta property="og:url" content="{{current_url | safe }}" />
     <meta property="og:image" content="{{ get_url(path="bg-16-9.png")}}" />

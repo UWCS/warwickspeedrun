@@ -6,7 +6,7 @@
             <div class="status">Submissions Open</div>
         </li>
         <li class="tl-elem phase-sub-closed">
-            <div class="timestamp">{{ config.extra.subs_close_date }}</div>
+            <div class="timestamp">{{ e.subs_close_date }}</div>
             <div class="status">Submissions Close</div>
         </li>
         {# <li class="tl-elem">
@@ -14,11 +14,11 @@
             <div class="status">Runs Accepted</div>
         </li> #}
         <li class="tl-elem phase-schedule phase-before">
-            <div class="timestamp">{{ config.extra.schedule_release_date }}</div>
+            <div class="timestamp">{{ e.schedule_release_date }}</div>
             <div class="status">Schedule Released</div>
         </li>
         <li class="tl-elem phase-during phase-ended">
-            <div class="timestamp">{{ config.extra.event_date_range }}</div>
+            <div class="timestamp">{{ e.event_date_range }}</div>
             <div class="status">WASD!</div>
         </li>
     </ul>

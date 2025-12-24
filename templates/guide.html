@@ -3,7 +3,7 @@
 {% import "macros/svgs.html" as svgs %}
 {% import "macros/md.html" as md %}
 
-{% block title %}Warwick Speedrunning {{ config.extra.event_year}} {% endblock title %}
+{% block title %}{% endblock title %}
 {% block header %}{% endblock header %}
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
@@ -20,13 +20,13 @@
     </nav>
 
 
-  {% block guide %}
+  {% block content %}
     <section id="about" class="section">
         <div class="container">
-            <h1 class="title is-size-2">WASD {{ config.extra.event_year }} {{ resource.title }}</h1>
-            {{ resource.content | safe }}
+            <h1 class="title is-size-2">WASD {{ e.event_year }} {% if resource.title %}{{"- " ~ resource.title }}{% endif %}</h1>
+            {{ md::comp(data=resource.content) | safe }}
         </div>
     </section>
-  {% endblock guide %}
+  {% endblock content %}
 
 {% endblock outercontents%}

@@ -1,21 +1,19 @@
-{% macro load_md(path) %}
-{% set page = get_page(path=path) %}
-{% set content = page.content %}
-
-{% for key, value in config.extra %}
-    {% if value is string %}
-        {% set_global content = content | replace(from="{{ " ~ key ~ " }}", to=value) %}
-    {% endif %}
-{% endfor %}
-{{ content | safe }}
+{% macro comp(data) %}
+    {% for key, value in config.extra %}
+        {% if value is string %}
+            {% set_global data = data | replace(from="{{ " ~ key ~ " }}", to=value) %}
+            {% set_global data = data | replace(from="{{ e." ~ key ~ " }}", to=value) %}
+            {% set_global data = data | replace(from="{{ config.extra." ~ key ~ " }}", to=value) %}
+        {% endif %}
+    {% endfor %}
+    {{ data | safe }}
 {% endmacro %}
 
-{% macro load_html(path) %}
-{% set data = load_data(path=path) %}
-{% for key, value in config.extra %}
-    {% if value is string %}
-        {% set_global data = data | replace(from="{{ " ~ key ~ " }}", to=value) %}
+{% macro get_content(path) %}
+    {% if path is matching("\.md$") %}
+        {% set page = get_page(path=path) %}
+        {{ page.content | safe}}
+    {% else %}
+        {{ load_data(path=path) | safe }}
     {% endif %}
-{% endfor %}
-{{ data | safe }}
 {% endmacro %}

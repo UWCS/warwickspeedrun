@@ -5,17 +5,18 @@
 {% elif term %} {% set resource = term %}
 {% elif taxonomy %} {% set resource = taxonomy %}
 {% endif %}
+{% set_global e = config.extra %}
 
 <!DOCTYPE html>
 <html lang="en">
     {% block head %}
-    {% include "parts/head.html" %}
+        {% include "parts/head.html" %}
     {% endblock %}
 
     <body class="min-vh-100 viewport-width-100 vstack">
         <div id="main" class="{% block main_extra %}bg-body px-3{% endblock %}">
             {% block outercontents %}
-            <article id="content" class="py-4">
+            <article id="content">
                 {% block header %}<h1>{{ resource.title | safe }}</h1>{% endblock %}
                 {% block content %}{% endblock %}
             </article>
