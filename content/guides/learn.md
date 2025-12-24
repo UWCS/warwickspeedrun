@@ -1,5 +1,7 @@
 +++
 title = "How To Speedrun"
+description = "An overview of getting started with speedrunning"
+weight = 2
 +++
 
 Don't know where to start speedrunning? Hopefully we can give you some pointers! If you are unsure about any of this, ask around in our [Discord](/discord) -- there are many people happy to help.
@@ -67,5 +69,6 @@ For an event like ours, we would much prefer an **informative and interesting** 
 
 We're asking quite a few questions about tech, for most of you, these can be primarily ignored, but we don't want to miss any of your weirder setups!
 
+</div>
 </div>
 

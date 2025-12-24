@@ -1,0 +1,19 @@
+.content {
+    position: relative;
+    padding: 1.5em 2em;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.col-lg-6 {
+    flex-shrink: 1;
+}
+
+.stretched-link::after {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    content: "";
+}

@@ -90,17 +90,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/**
-p {
-  color: var(--bs-body-color);
-}
-**/
-
 h1,
 h2,
 h3,
 h4 {
-  //color: var(--bs-body-color);
   line-height: 150%;
   font-weight: 600;
   margin-bottom: $s2;
@@ -124,16 +117,8 @@ svg {
   --bs-gutter-y: 1.5rem;
 }
 
-#timeline-container h4 {
+#timeline-title {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-
-/**
-#about {
-  & hr.title-divider {
-    border-color: rgba(white, 0.8) !important;
-  }
-}
-**/

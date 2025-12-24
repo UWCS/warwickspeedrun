@@ -1,5 +1,7 @@
 +++
 title = "Travel Guide"
+description = "How to get to University of Warwick (It's in Coventry!) and where to stay around here"
+weight = 3
 +++
 
 ## Location

@@ -7,7 +7,7 @@
 {% block header %}{% endblock header %}
 {% block main_extra %}{% endblock %}
 {% block outercontents %}
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" aria-label="main navigation">
         <div class="container align-items-center">
             <div class="navbar-nav">
                 <a class="nav-link" href="/"><i class="bi bi-house-fill"></i> Front Page</a>
@@ -19,14 +19,37 @@
         </div>
     </nav>
 
+    {% block content %}
+        <section id="about" class="section">
+            <div class="container">
+                <h1 class="title is-size-2">WASD {{ e.event_year }} {% if resource.title %}{{"- " ~ resource.title }}{% endif %}</h1>
+                {{ md::comp(data=resource.content) }}
+                <!--Note slight limitation is it's a pain to do a sort by weight on an array of mixed sections and pages-->
+                {% if section %}
+                    {% set guides = [] %}
+                
+                    {% for s in section.subsections %}
+                        {% set_global guides = guides | concat(with=get_section(path=s)) %}
+                    {% endfor %}
+                    {% set guides = guides | concat(with=section.pages) %}
+                    
+                    <p>We currently have {{ guides | length }} guides:</p>
+                    <div class="row">
+                        {% for guide in guides %}
+                            {% if guide.path != "guides/_index" %}
+                                <div class="col-lg-6">
+                                    <div class="content backing">
+                                        <h2>{{ guide.title }}</h2>
+                                        <p>{{ guide.description }}</p>
+                                        <a class="ms-3" href="{{ guide.permalink }}">Read More >>></a>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </section>
+    {% endblock content %}
 
-  {% block content %}
-    <section id="about" class="section">
-        <div class="container">
-            <h1 class="title is-size-2">WASD {{ e.event_year }} {% if resource.title %}{{"- " ~ resource.title }}{% endif %}</h1>
-            {{ md::comp(data=resource.content) | safe }}
-        </div>
-    </section>
-  {% endblock content %}
-
-{% endblock outercontents%}
+{% endblock outercontents %}
